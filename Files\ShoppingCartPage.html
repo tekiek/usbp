@@ -1,13 +1,14 @@
 <ac:pagelayout id="ShoppingCartPage" productpictureheight="150" productpicturewidth="72">
-  <div class="CartPage" style="overflow:hidden;">
+
+  <!-- page: shopping cart -->
+  <div class="CartPage clearfix">
     <div class="CartLeftColumn">
       <ac:widgetarea id="Left">
 </ac:widgetarea>
     </div>
 
-    <!-- Page Wrapper -->
-    <div class="ShoppingCartPage row">
-      
+    <div class="ShoppingCartPage row clearfix xs-mt5 xs-m2 md-m0 md-mt3 md-p0  ">
+
       <ac:widgetarea id="Right">
 <ac:widget id="LARGESHOPPINGCART4487" type="LargeShoppingCart">
 
@@ -30,109 +31,115 @@
           <div style="position:relative;">
 
             <!-- Left Rail -->
-            <div class="col-md-8">
+            <div class="col-md-8 xs-m0 xs-p0 ">
 
-              <!-- Shopping Cart Table -->
-              <div class="row cart--row__header">
-                <div class="col-md-6">Product</div>
-                <div class="col-md-2">Unit Price</div>
-                <div class="col-md-2">Quantity</div>
-                <div class="col-md-2">Total</div>
-              </div>
+              <div class="xs-border xs-p2 rounded">
 
-              <ac:layoutarea id="ShopCartItem">
-                <div class="row item--rows">
+                <!-- Shopping Cart Table -->
+                <div class="row cart--row__header xs-border-bottom xs-p0 xs-pb2 bold xs-m0 text-2">
+                  <div class="col-xs-3">Product</div>
+                  <div class="col-xs-3">Cost</div>
+                  <div class="col-xs-3">Count</div>
+                  <div class="col-xs-3">Total</div>
+                </div>
 
-                  <!-- Item Details | Info -->
-                  <div class="col-md-6 item--rows__cols">
-                    <div class="media">
-                      <div class="media-left">
-                        <script>var myChild="$$CHILDBRANCHIMAGE$$";if(""!=myChild)document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">');else{var myID="##ITEMID##";myID.length<10&&document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">')}</script> 
-                      </div>
-                      <div class="media-body">
-                        <h4 class="media-heading">
-                          <div class="ItemName"><b>$$ITEMNAME$$</b></div>
-                        </h4>
-                        <div class="Variants">$$VARIANTS$$</div>
-                        <div class="Personalizations">$$PERSONALIZE$$</div>
-                        <div style="clear:both">
-                          $$MOVETOWISHLISTBUTTON$$
-                          $$MOVETOCARTBUTTON$$
+                <ac:layoutarea id="ShopCartItem">
+                  <div class="row item--rows xs-border-bottom xs-pb3 xs-m0 xs-mt3">
+
+                    <!-- Item Details | Info -->
+                    <div class="col-xs-3 item--rows__cols xs-p0">
+                      <div class="media">
+                        <div class="media-left hidden">
+                        </div>
+                        <div class="media-body">
+                          <h4 class="media-heading">
+                            <div class="ItemName"><b>$$ITEMNAME$$</b></div>
+                          </h4>
+                          <div class="Variants xs-hide md-block">
+                            $$VARIANTS$$
+                          </div>
+                          <div class="Personalizations">$$PERSONALIZE$$</div>
+                          <div style="clear:both">
+                            $$MOVETOWISHLISTBUTTON$$
+                            $$MOVETOCARTBUTTON$$
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Item Details | Info: END -->
+                    <!-- Item Details | Info: END -->
 
-                  <!-- Item Details: Price -->
-                  <div class="col-md-2">
-                    <div>
-                      <del>
-                        $$ITEMORIGINALPRICEDOLLARS$$$$ITEMORIGINALPRICECENTS$$
-                      </del>
-                    </div> 
-                    <div>$$ITEMPRICEDOLLARS$$$$ITEMPRICECENTS$$ $$UNITS$$</div>
-                  </div>
-                  <!-- Item Details: Price: END -->
-
-                  <!-- Item Details: Quanity -->
-                  <div class="col-md-2">
-                    <div class="CartUpdateItemArea">
-                      <div>
-                        $$QUANTITYTEXTBOX$$
-                        <div class="UpdateButton">
-                          <div class="btn--quanity btn btn-default btn-xs">$$UPDATEBUTTON$$</div>
-                          <div class="btn--quanity btn btn-default btn-xs">$$REMOVEFROMCARTLINK$$</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Item Details: Quanity: END -->
-
-                  <div class="col-md-2">
                     <!-- Item Details: Price -->
-                    <div>
-                      <del>
-                        $$ITEMORIGINALTOTALDOLLARS$$$$ITEMORIGINALTOTALCENTS$$
-                      </del>
+                    <div class="col-xs-3">
+                      <div>
+                        <del>
+                          $$ITEMORIGINALPRICEDOLLARS$$$$ITEMORIGINALPRICECENTS$$
+                        </del>
+                      </div> 
+                      <div>$$ITEMPRICEDOLLARS$$$$ITEMPRICECENTS$$ $$UNITS$$</div>
                     </div>
-                    <div>$$ITEMTOTALDOLLARS$$$$ITEMTOTALCENTS$$</div>
                     <!-- Item Details: Price: END -->
+
+                    <!-- Item Details: Quanity -->
+                    <div class="col-xs-3">
+                      <div class="CartUpdateItemArea">
+                        <div>
+                          $$QUANTITYTEXTBOX$$
+                          <div class="UpdateButton">
+                            <div class="btn--quanity btn btn-default btn-xs">$$UPDATEBUTTON$$</div>
+                            <div class="btn--quanity btn btn-default btn-xs">$$REMOVEFROMCARTLINK$$</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Item Details: Quanity: END -->
+
+                    <div class="col-xs-3">
+                      <!-- Item Details: Price -->
+                      <div>
+                        <del>
+                          $$ITEMORIGINALTOTALDOLLARS$$$$ITEMORIGINALTOTALCENTS$$
+                        </del>
+                      </div>
+                      <div>$$ITEMTOTALDOLLARS$$$$ITEMTOTALCENTS$$</div>
+                      <!-- Item Details: Price: END -->
+                    </div>
+                  </div>
+
+                </ac:layoutarea>
+
+                <!-- Total Price -->
+
+
+                <div class="row row--tolal-price xs-p2 text-2 bold xs-m0">
+                  <div class="col-xs-10"> </div>
+                  <div class="col-xs-2 col--tolal-price text-1 xs-p0">
+                    <ac:visibilityarea id="SubtotalArea">
+                      $$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$
+                    </ac:visibilityarea>
                   </div>
                 </div>
+                <!-- Total Price: END -->
 
-              </ac:layoutarea>
-
-              <!-- Total Price -->
-              <div class="row row--tolal-price">
-                <div class="col-md-10"> </div>
-                <div class="col-md-2 col--tolal-price">
-                  <ac:visibilityarea id="SubtotalArea">
-                    $$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$
-                  </ac:visibilityarea>
-                </div>
-              </div>
-              <!-- Total Price: END -->
-
-              <!-- Checkout Button -->
-              <div class="row">
-                <div class="col-md-12">
-                  <div>
-                    $$CHECKOUTBUTTON$$
+                <!-- Checkout Button -->
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div>
+                      $$CHECKOUTBUTTON$$
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!-- Checkout Button: END -->
+                <!-- Checkout Button: END -->
 
+              </div>
             </div>
             <!-- Left Rail: END -->
 
             <!-- Right Rail -->
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-xs hidden-sm">
               $$SAVEDCARTNOTIFICATION$$
 
               <!-- Pay With -->
-              <div class="PayWith">
+              <div class="PayWith xs-border xs-p3 rounded xs-text-center xs-m0">
                 <strong>Pay With</strong>
                 <img src="/images/payments/credit_cards.gif" alt="Mastercard, Visa, AMEX, Discover Accepted">
                 <br><br>

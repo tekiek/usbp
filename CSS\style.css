@@ -182,20 +182,71 @@ div.FeaturedItemsThumbnail, div.FeaturedItemsThumbNail { border: 1px solid #D3DE
 /* [ProductDetails] */
 /* Custom CSS */
 
-    .pdetails--breadcrumb .ProductDetailsCategoryTrail {
-      margin: 0px;
-    }
 
-    .pdetails--header h2,
-    .pdetails--header .ProductDetailsPricing,
-    .ProductDetailsVariations h2 {
-      font-size: 24px !important;
-      font-weight: normal !important;
-    }
+/* Buttons */
+#btnAddToCart,
+#btnProductGroupAddToCartButton {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
 
+/* Buttons: end */
+
+/* text fields */
+#txtQuantity,
+.pgroup--wrapper .table tr input {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-color: #D6D5D4;
+}
+/* text fields: end */
+
+/* select */
+.ProductDetailsVariations select,
+.pgroup--wrapper .table tr select {
+  width: 100%;
+  font-size: 14px;
+  margin: 15px 0;
+  height: 30px;
+  border-color: #D6D5D4;
+  background-color: white;
+}
+/* select: end */
+
+
+/* bread crumb */
+.pdetails--breadcrumb .ProductDetailsCategoryTrail {
+  margin: 0px;
+}
+/* bread crumb: end */
+
+
+/* header */
+.pdetails--header h2,
+.pdetails--header .ProductDetailsPricing,
+.ProductDetailsVariations h2 {
+  font-size: 24px !important;
+  font-weight: normal !important;
+}
+/* header: end */
+
+
+/* photos */
 #PhotoThumbnails_imgPhoto {
   max-height: 100%;
 }
+
 .ProductDetailsPhoto {
   width: 100%px;
   max-height: 240px;
@@ -204,6 +255,7 @@ div.FeaturedItemsThumbnail, div.FeaturedItemsThumbNail { border: 1px solid #D3DE
   padding: 20px 0;
   overflow: hidden;
 }
+
 .ProductDetailsPicCaption {
   display: none;
 }
@@ -215,76 +267,50 @@ div.FeaturedItemsThumbnail, div.FeaturedItemsThumbNail { border: 1px solid #D3DE
 div.ProductDetailsThumbPhoto {
   margin: 5px;
 }
+
 img.ProductDetailsThumbPhoto {
   margin: 5px;
 }
-.pdetails--details {
-  margin: 20px 0 0 0;
-}
-#dvProductQuantity {
-  padding: 10px 0 0 0;
-  border-top: 1px solid #D6D5D4;
-}
-#btnAddToCart {
-  width: 100%;
-  margin: 10px 0;
-  font-size: 14px;
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
-  box-shadow: none;
-}
-#txtQuantity {
-  width: 100%;
-  text-align: left;
-  padding: 5px;
-  border-radius: 5px;
-  border-color: #D6D5D4;
-}
+/* photos: end */
+
+/* product details content */
+
 #dvProductVariations > table {
   width: 100%;
   float: none;
   border-top: 1px solid #D6D5D4;
   margin: 10px 0;
 }
+
 #dvProductVariations > table:first-of-type {
   border-top: 0px;
 }
-.ProductDetailsVariations select {
-  width: 100%;
-  font-size: 14px;
-  margin: 10px 0;
-  height: 30px;
-  border-color: #D6D5D4;
-  background-color: white;
-}
+
 .varpicmax_td {
   padding: 0 5px 5px 0;
 }
+
 .varpicmax_td img {
   border: 1px solid #D6D5D4;
 }
-.ProductDetailsTabs {
-  border: 1px solid #D6D5D4;
-  padding: 20px;
-  border-radius: 5px;
-  margin: 20px 0;
-}
+
+
+/* no kit bottom details */
 .ProductDetailsTabs p {
   margin-bottom: auto;
 }
+
 .ProductDescriptionHeader {
-  font-size: 18px;
-  font-weight: bold;
-  border-top: 1px solid #D6D5D4;
+  font-size: 22px;
+  line-height: 2.25rem;
+  border-bottom: 1px solid #D6D5D4;
   display: block;
-  padding: 10px 0 0 0;
-  color: #337ab7;
+  padding: 20px 0 10px 0;
+  color: #517fa4;
   letter-spacing: .1em;
+  margin: 0 0 10px 0;
 }
-.ProductDescriptionHeader:first-of-type {
-  border-top: none;
-}
+
 .ProductDetailsTabs #tabs-1,
 .ProductDetailsTabs #tabs-2,
 .ProductDetailsTabs #tabs-3,
@@ -293,42 +319,10 @@ img.ProductDetailsThumbPhoto {
   margin: 10px 0 0;
   padding: 0 0 10px;
 }
-.ProductDetailsQuantityPricePriceLabel p,
-.ProductDetailsQuantityPriceQuantityLabel p {
-  margin: 0px;
-  font-weight: bold;
-}
-#dvQuantityDiscounts {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 20px 0;
-}
-#lblQuantityDiscounts > br {
-  display: none;
-}
-.ProductDetailsQuantityPricePrice,
-.ProductDetailsQuantityPriceQuantity {
-  vertical-align: middle !important;
-}
-.ProductDetailsQuantityPriceQuantityLabel,
-.ProductDetailsQuantityPriceQuantity {
-  border-top: 0px !important;
-  background: #f5f5f5;
-  font-style: bold;
-}
-.ProductDetailsQuantityPriceQuantity {
-  border-left: 1px solid #ccc;
-}
-.ProductDetailsQuantityPriceQuantityLabel {
-  text-align: center;
-}
-table.ProductDetailsQuantityPriceTable {
-  margin: 0px;
-}
-table.ProductDetailsQuantityPriceTable td {
-  padding: 0px;
-}
+/* no kit bottom details */
+
+
+
 .pdetails--accessories--label {
   color: #3984C5; 
   font-size: 16px; 
@@ -342,6 +336,33 @@ table.ProductDetailsQuantityPriceTable td {
   font-weight: bold; 
   padding-top: 5px;
 }
+
+/* Kit table */
+.pgroup--wrapper .ProductGroupFooter,
+.pgroup--wrapper .ProductGroupFooter a,
+.pgroup--wrapper .ProductDetailsPricing {
+  color: black !important;
+  text-align: right;
+}
+
+.pgroup--wrapper .ProductGroupFooter a {
+  color: #0077ee !important;
+}
+
+.pgroup--wrapper>.table>tbody>tr>td, 
+.pgroup--wrapper>.table>tbody>tr>th, 
+.pgroup--wrapper>.table>tfoot>tr>td, 
+.pgroup--wrapper>.table>tfoot>tr>th, 
+.pgroup--wrapper>.table>thead>tr>td, 
+.pgroup--wrapper>.table>thead>tr>th {
+  white-space: normal !important;
+  text-align: left !important;
+}
+
+.pgroup--wrapper>.table>thead>tr>th {
+  border-bottom: 0px;
+}
+/* Kit table: end */
 /* Custom CSS: END */
 
 .ProductDetails { margin: 0 0 0 365px; text-align: right; }
@@ -1294,48 +1315,43 @@ div.FeaturedItemsThumbNail_18437 { border: none !important; height: auto !import
 
 /* [ShoppingCart] */
 /* Custom CSS */
-.ShoppingCartVariations td {
-  padding: 0px !important;
-}
-.price--alert,
-.price--alert .LineItemPrice {
-  font-size: 22px;
-  font-weight: normal;
-}
-.item--rows {
-  margin: 20px 0;
-}
-.item--rows__cols {
-  padding: 0px;
-}
-.cart--row__header {
-  border-bottom: 1px solid #ddd;
-  padding: 0 0 10px 0;
-  font-weight: bold;
-}
+
+/* text fields */
 input.ShoppingCartQtyTextbox {
-  border-radius: 4px;
-  padding: 5px;
-  color: #777;
   width: 100%;
+  text-align: left;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-color: #D6D5D4;
 }
+/* text fields: end */
+
 .btn--quanity {
   margin: 5px 0 0 0;
   width: 100%;
 }
+
+/* red buttons */
 .ThemeButton.CheckoutThemeButton.ShoppingCartCheckoutThemeButton,
 .ThemeButton.ContinueShoppingThemeButton.ShoppingCartContinueShoppingThemeButton,
 .ThemeButton.ShoppingCartClearCartThemeButton,
 .ThemeButton.ShoppingCartSaveCartThemeButton {
+  width: 100%;
   margin: 10px 0;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 18px;
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
   box-shadow: none;
   text-shadow: none;
+  font-weight: 300;
+  letter-spacing: .1em;
 }
+
+/* Buttons: end */
+
+
 .ThemeButton.ContinueShoppingThemeButton.ShoppingCartContinueShoppingThemeButton,
 .ThemeButton.ShoppingCartClearCartThemeButton,
 .ThemeButton.ShoppingCartSaveCartThemeButton {
@@ -1345,22 +1361,13 @@ input.ShoppingCartQtyTextbox {
   margin: 5px 0;
   width: 100%;
 }
-.row--tolal-price {
-  border-top: 1px solid #ddd;
-  padding: 10px 0;
-  font-weight: bold;
-  font-size: 18px;
-}
-.col--tolal-price {
-  padding: 0px;
-}
 
 
 /* Custom CSS: END */
 
-.CartPage { padding: 15px; }
+.CartPage {  }
 .CartLeftColumn { width: 140px; float: left; }
-.ShoppingCartPage { width: 100%; float: right; position: relative; }
+.ShoppingCartPage { }
 .CartLeft { margin: 0 260px 0 0; }
 .CartRight { width: 235px; float: right; }
 .ShoppingCartTable { width: 100%; background: #fff; }
@@ -2142,24 +2149,24 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
 
 /* [Default] */
 .blog__header {
-margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 .FeedItemLink {
-padding: 0px;
-font-size: 18px;
+  padding: 0px;
+  font-size: 18px;
 }
 .blog__article {
-padding: 10px 0;
-border-bottom: 1px solid #eee;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .blog__date {
-font-weight: normal;
-padding: 5px;
-letter-spacing: .1em;
+  font-weight: normal;
+  padding: 5px;
+  letter-spacing: .1em;
 }
 .blog__summary {
-margin: 5px 0 0 0;
+  margin: 5px 0 0 0;
 }
 /* [/Default] */
 
@@ -2220,8 +2227,8 @@ margin: 5px 0 0 0;
   margin: 0 0 10px;
 }
 .catlist__head {
-    font-weight: bold;
-    font-size: 16px;
+  font-weight: bold;
+  font-size: 16px;
 }
 /* [/Widget6696] */
 
@@ -2380,7 +2387,7 @@ margin: 5px 0 0 0;
 .AddressEditorZipCodePlus4Textbox { width: 50px; }
 .AddressBookEditor { padding: 2px 10px 2px 0; }
 .OnePageCheckoutShoppingCart td { padding: 5px; border-bottom: 1px solid #e5e5e5; }
-.ShoppingCartVariations td { padding: 0 0 0 20px; border: none; }
+.ShoppingCartVariations td {  }
 .OnePageCheckoutShoppingCart .ShoppingCartTotals { border: none; }
 /* [/Checkout] */
 
