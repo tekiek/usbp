@@ -1,0 +1,61 @@
+<ac:pagelayout id="FooterPage">
+  <div class="FooterTop pagewidth">
+    <ac:widgetarea id="FooterTopWidgets">
+</ac:widgetarea>
+  </div>
+  <div class="fullwrap">
+    <div class="inner pagewidth" style="min-height:400px;">
+      <div class="FooterLeft">
+        <ac:widgetarea id="FooterLeft">
+<ac:widget id="LINKGROUP4358" type="LinkGroup" linkgroupid="105" headertext="Useful Links"></ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="FooterCenter">
+        <ac:widgetarea id="FooterCenter">
+<ac:widget id="HTML4362" type="HTML" hidesnapin="True"><h3>Contact Us</h3>
+            <ul class="storeinfo">
+              <li><a href="tel:##STOREPHONE##">##STOREPHONE##</a></li>
+              <li><a href="mailto:##STOREEMAIL##">##STOREEMAIL##</a></li>
+            </ul></ac:widget>
+<ac:widget id="HTML4363" type="HTML"><h3>Stay in Touch</h3>
+            <ul class="social">
+              <li><a href="http://www.facebook.com/USBuildingProducts"><img src="/Shared/Themes/USBP [clone]/images/icofb_off.png" alt="Fan Us on Facebook"></a></li>
+              <li><a href="https://twitter.com/USBProducts"><img src="/Shared/Themes/USBP [clone]/images/icotw_off.png" alt="Follow Us on Twitter"></a></li>
+              <li><a href="http://feeds.feedburner.com/USBuildingProducts"><img src="/Shared/Themes/USBP [clone]/images/icorss_off.png" alt="Grab our RSS"></a></li>
+            </ul>
+            <script>
+              $(".social li a img").each(function(){
+                $(this).mouseover(function(){
+                  src = $(this).attr("src");
+                  $(this).attr("src", src.replace("_off","_on"));
+                });
+                $(this).mouseout(function(){
+                  src = $(this).attr("src");
+                  $(this).attr("src", src.replace("_on","_off"));
+                });
+              });
+            </script>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="FooterRight">
+        <ac:widgetarea id="FooterRight">
+<ac:widget id="HTML4360" type="HTML"><!-- (c) 2005, 2014. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal"> <script type="text/javascript" language="javascript">var ANS_customer_id="5ab69c1a-a5b3-426f-80fa-71ac51324f3a";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js"></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Transaction Processing</a> </div></ac:widget>
+</ac:widgetarea>
+      </div>
+      <ac:widgetarea id="FooterWidgets">
+</ac:widgetarea>
+      <div style="clear:both;position:absolute;bottom:15px;" class="pagewidth">
+        <p style="font-size: 10px; color: #999; text-align: center;">&copy; 2013-2014 US Building Products.  Wholly owned and operated by Mount Equity LLC. All Rights Reserved.</p>
+        ##POWEREDBYLINK##</div>      
+    </div>
+  </div>
+  
+   <!--ShareThis Share Buttons Left Side -->
+  <script type="text/javascript">stLight.options({publisher: "ae1c2bb5-66be-4399-ad35-3b6dcd59f4c2", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "ae1c2bb5-66be-4399-ad35-3b6dcd59f4c2", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "googleplus", "amazon_wishlist", "pinterest", "email", "sharethis"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+   <!-- END -->
+</ac:pagelayout>

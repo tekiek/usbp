@@ -1,0 +1,324 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="ProductLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="ProductLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="ProductRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="ProductRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="ProductDetailsPage" swatchimagewidth="30" hoveringoverthumbswapphoto="True" relatedthumbheight="100" showtotalforgroups="True" thumbmaxrows="5" swatchmaxcols="6" thumbheight="75" relatedthumbwidth="100" showswatchesforproductgroupvariants="True" swatchposition="Below" swatchimageheight="30" thumbwidth="75" productpicheight="250" resetpicafterhover="True" usetabs="True" showswatchnexttovariantoption="True" thumbmaxcols="2" resizerelatedthumb="True" manufacturerlogoheight="150">
+  <div style="width:100%; float:left;">
+    $$CATEGORYTRAIL$$
+  </div>
+  
+  <div style="width:100%; clear:all; float: left;" itemscope="" itemtype="http://data-vocabulary.org/Product">    
+    <div style="width:30%; float:left;">
+      <div style="float:left;">$$PHOTO$$<br>
+      </div>
+    </div>  
+    <div style="width:70%; float: left;">
+      <div style="width: 100%; border-bottom: 1px solid black; float: left; clear: all;">
+        <div>
+          <h1 itemprop="name" itemprop="itemreviewed" style="text-transform: uppercase;">##PRODUCTCUSTOMFIELD[LongName]##</h1>
+          <div itemprop="description" style="margin-top: -5px;"><span style="text-transform: uppercase;">##BULLETS##</span>&nbsp;&nbsp;<span style="font-size: 11px;">[<a href="#details" title="See All Product Details">see more details</a>]</span></div>
+          <div style="padding: 5px 0 10px 0; margin-left: -3px;">
+            <span class='st_fbrec_hcount' displaytext='Facebook Recommend'></span>
+            <span class='st_twitter_hcount' displaytext='Tweet'></span>
+            <span class='st_googleplus_hcount' displaytext='Google+'></span>
+            <span class='st_pinterest_hcount' displaytext='Pinterest'></span>
+            <span class='st_email_hcount' displaytext='Email'></span>
+            <span class='st_sharethis_hcount' displaytext='Share'></span>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; float: left; padding: 10px 0; border-bottom: 1px solid black;">
+        <div style="width: 42%; float: left;">
+          <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
+            <ac:visibilityarea id="PricingArea">
+              <meta itemprop="currency" content="USD">
+              <span itemprop="price" id="lblPrice" class="ProductPricing PriceToUpdate" style="font-weight: bold; font-size: 18px;">##PRICE##</span>
+              <meta itemprop="condition" content="new">
+              <meta itemprop="offerURL" content="##ITEMFULLURL##">
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="ReviewRatingArea">
+              <div class="ProductDetailsReviewDisplay">
+                <!--<div id="dvAverageReviewRatingStars" class="ProductDetailsReviewRatingStars"></div>-->
+                <div class="ProductDetailsReviewRatingCount">
+                  ##IF[ReviewCount!=0]##
+                  <div style="position: absolute; margin-left: 85px;">
+                    <a href="#reviews" title="See All Reviews">(<span itemprop="votes">##REVIEWCOUNT##</span> reviews)</a> | <a href="/store/WriteReview.aspx?ProductID=##ITEMID##" title="Write A Review for the ##MFGNAME## ##PRODUCTNAME##">Write Your Own!</a>
+                  </div>
+                  <div>$$AVERAGEREVIEWRATINGSTARS$$</div>
+                  ##ELSE##
+                  <a href="/store/WriteReview.aspx?ProductID=##ITEMID##" title="Write A Review for the ##MFGNAME## ##PRODUCTNAME##">Be the first to review this product</a>&raquo;
+                  ##ENDIF##
+                </div>
+              </div>
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="ItemNumberArea">
+              <div class="ProductDetailsItemNr" id="dvProductItemNr">
+                Item Number: $$ITEMNR$$
+              </div>
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="AvailabilityArea">
+              <div id="dvProductAvailability" class="ProductDetailsAvailability">
+                Manufacturer $$AVAILABILITY$$&nbsp;&nbsp;
+                <a href="/skylights/resources/shipping" target="_blank" title="Shipping & Delivery Information">
+                  <img src="/images/info.gif" style="height: 12px; width: 12px; vertical-align: baseline;" title="Shipping Information" alt="Shipping Information">
+                </a>
+              </div>
+            </ac:visibilityarea>
+            
+            <!-- snippet area -->
+            <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
+            <meta itemprop="category" content="##PRODUCTCUSTOMFIELD[GoogleProductCategory]##">
+            <meta itemprop="seller" content="www.USBuildingProducts.com">
+            <!-- ### -->
+            
+          </span>
+        </div>
+        <div style="width: 38%; float: left; padding-top: 10px;">      
+          <div class="ProductDetailsSpecifications">
+            <script>
+              var myDesc = "##TRIM[2]## ##LONGDESCRIPTION2## ##ENDTRIM##";
+              if(myDesc.length > 1)
+              {
+                document.write("<b>QUICK SPECS</b><br>");
+              }
+            </script>
+            ##LONGDESCRIPTION2##
+          </div>
+        </div>
+        <div style="width: 20%; float: right;">
+          <div class="ProductDetailsManufacturerName">
+            $$MFGLOGO$$
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; float: left; padding-top: 10px; border-bottom: 1px solid #ccc; display: table;">
+        <div style="width: 49%; display: table-cell;">
+          <ac:visibilityarea id="VariantArea">            
+            <div id="dvProductVariations" class="ProductDetailsVariations">
+              <ac:layoutarea id="Variant">
+                $$VARIANTGROUPOPENER$$
+                $$VARIANTGROUPNAME$$
+                $$VARIANTGROUPHEADER$$
+                $$VARIANTGROUPCONTROLS$$
+                <ac:visibilityarea id="VariantGroupSwatches">
+                  $$VARIANTGROUPSWATCHES$$
+                </ac:visibilityarea>
+                $$VARIANTGROUPFOOTER$$
+                $$VARIANTGROUPCLOSER$$
+              </ac:layoutarea>
+              <ac:layoutarea id="Personalization">
+                <div style="margin-top: 10px; font-weight: bold;">
+                  <div class="ProductDetailsVariations">
+                    $$PERSONALIZATIONQUESTION$$
+                    $$PERSONALIZATIONCONTROLS$$
+                  </div>
+                </div>
+              </ac:layoutarea>
+            </div>
+          </ac:visibilityarea>
+        </div>
+        
+        <div style="width: 49%; display: table-cell; padding: 0 0 5px 0; vertical-align: bottom;">
+          <ac:visibilityarea id="AddToCartArea">
+            <div style="text-align: right;">
+              <div id="dvProductQuantity" class="ProductDetailsQuantity">
+                <b>[<a href="javascript:__doPostBack('lnkUpdate','');" title="Update Price">Update Price</a>]</b><br>
+                $$QUANTITYLABEL$$&nbsp;$$QUANTITY$$
+              </div>
+              $$ADDTOCART$$<br>
+              <div style="padding-top: 5px;" class='st_amazon_wishlist_hcount' displaytext='Add to Amazon Wishlist'></div>
+            </div>
+          </ac:visibilityarea>
+        </div>
+      </div>
+      
+      <div style="width: 100%; float: left;">
+        <ac:visibilityarea id="QuantityDiscountsArea">
+          <div id="dvQuantityDiscounts" class="ProductQuantityDiscounts" style="clear: left;">
+            $$QUANTITYDISCOUNTS$$
+            ##VARIANTQUANTITYGRIDOF[]##
+          </div>
+        </ac:visibilityarea>
+      </div>
+    </div>
+    <!--<hr style="border: 0; height: 0; border-top: 1px solid #ccc;">-->
+  </div>
+  <div style="width: 100%; float: left">
+    <div style="clear:both;"></div>
+    <ac:visibilityarea id="VariantMatrixArea">
+      <div id="dvVariantMatrix" class="ProductDetailsVariantMatrix">
+        $$VARIANTMATRIXHELPTEXT$$
+        <table>
+          <tr>
+            <td>
+              $$VARIANTMATRIX$$
+              <div class="ProductDetailsVariantMatrixAddToCartButton">$$VARIANTMATRIXADDTOCART$$</div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ac:visibilityarea>
+    
+    <ac:visibilityarea id="ProductGroupArea">
+      <hr style="border: 0; height: 0; border-top: 1px solid #000; padding-top: 10px;">
+      <h3>ACCESSORIES & OPTIONS</h3>
+      <div id="dvProductGroupGrid">
+        <ac:visibilityarea id="ProductGroups">
+          <div id="divProductDisplay">
+            <table class="ProductGroup" cellpadding="0" cellspacing="0" width="100%">
+              <tr class="ProductGroupHeader">
+                <th id="thProductGroupDisplayThumb" width="15%"></th>
+                <th id="thProductGroupDisplayItemName" width="10%">ITEM</th>
+                <th id="thProductGroupDisplayDescription" width="20%">DESCRIPTION</th>
+                <th id="thProductGroupDisplayVariants" width="25%">OPTION</th>
+                <th id="thProductGroupDisplayVariantSwatch" width="10%">SWATCH</th>
+                <th id="thProductGroupDisplayPricing" width="10%">PRICE<br>PER UNIT</th>
+                <th id="thProductGroupDisplayQuantity" width="10%">QUANTITY<br>DESIRED</th>
+              </tr>
+              <ac:layoutarea id="ProductGroupDetail">
+                <tr class="ProductGroupItem">
+                  <td class="tdProductGroupDisplayThumb"><a href="##ITEMURL##"><img src="/resize/##ITEMPHOTOURL##&amp;bw=75&amp;lr=t" alt="##MFGNAME## ##ITEMNAME##" title="##MFGNAME## ##ITEMNAME##"></a><br>
+                    [<a href="##ITEMURL##" title="##MFGNAME## ##ITEMNAME##">more details</a>]</td>
+                  <td class="tdProductGroupDisplayItemName">##ITEMNAME##</td>
+                  <td class="tdProductGroupDisplayDescription" style="padding: 0 10px;">##SHORTDESCRIPTION##</td>
+                  <td class="tdProductGroupDisplayVariants">$$VARIANTS$$</td>
+                  <td class="tdProductGroupDisplayVariants" style="text-align: center;">##VARIANTPICMATRIX[groupname=Blind Color,maxcol=3,width=40]##$$VARIANTMATRIX$$</td>
+                  <td class="tdProductGroupDisplayPricing">$$PRICE$$</td>
+                  <td class="tdProductGroupDisplayQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
+                </tr>
+              </ac:layoutarea>
+              <ac:layoutarea id="ProductGroupDetailAlt">
+                <tr class="ProductGroupAlternatingItem">
+                  <td class="tdProductGroupDisplayThumb"><a href="##ITEMURL##"><img src="/resize/##ITEMPHOTOURL##&amp;bw=75&amp;lr=t" alt="##MFGNAME## ##ITEMNAME##" title="##MFGNAME## ##ITEMNAME##"></a><br>
+                    [<a href="##ITEMURL##" title="##MFGNAME## ##ITEMNAME##">more details</a>]</td>
+                  <td class="tdProductGroupDisplayAltItemName">##ITEMNAME##</td>
+                  <td class="tdProductGroupDisplayAltDescription" style="padding: 0 10px;">##SHORTDESCRIPTION##</td>
+                  <td class="tdProductGroupDisplayAltVariants">$$VARIANTS$$</td>
+                  <td class="tdProductGroupDisplayVariants" style="text-align: center;">##VARIANTPICMATRIX[groupname=Blind Color,maxcol=3,width=40]##</td>
+                  <td class="tdProductGroupDisplayAltPricing">$$PRICE$$</td>
+                  <td class="tdProductGroupDisplayAltQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
+                </tr>
+              </ac:layoutarea>
+              <tr class="ProductGroupFooter">
+                <td colspan="8">
+                  <ac:visibilityarea id="UpdateGroupPrice">
+                    <div class="ProductDetailsPricing">
+                      Total: $$PRODUCTGROUPTOTAL$$
+                    </div>
+                    <div class="ProductGroupUpdatePrice">
+                      [$$PRODUCTGROUPUPDATEPRICE$$]
+                    </div>
+                  </ac:visibilityarea>
+                </td>
+              </tr>
+            </table>
+            <ac:layoutarea id="ProductGroupVariant">
+              <!--$$VARIANTGROUPNAME$$ $$VARIANTGROUPHEADER$$ <br> $$VARIANTGROUPFOOTER$$-->
+              $$VARIANTGROUPCONTROLS$$
+            </ac:layoutarea>
+            
+            <br clear="all">
+            <div align="right" class="ProductGroupAddToCart">$$PRODUCTGROUPADDTOCARTBUTTON$$</div>
+          </div>
+        </ac:visibilityarea>
+      </div>
+    </ac:visibilityarea>
+    
+    <div style="clear:both;"></div>
+    <a name="details"></a>
+    <div class="ProductDetailsTabs">
+      $$DETAILS$$
+    </div>
+    <div class="MFGSnippet">
+      <span itemprop="brand">##MFGNAME##</span><br>
+      <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
+    </div>
+    
+    $$BOTTOMPRODUCTSPECIFICWIDGETAREA$$
+    <ac:widgetarea id="Bottom">
+<ac:widget id="CAROUSEL4666" type="Carousel" scrollby="4" repeatabletype="RelatedItems" rotatorstartdate="6/26/2014" displaycount="20" controlwidth="100%" headertext="RELATED PRODUCTS">
+        <ac:visibilityarea id="dvControl">    
+          $$HEADER$$
+          
+          <ac:layoutarea id="Layout">
+            $$GROUP$$
+          </ac:layoutarea>
+          
+          <ac:layoutarea id="Group">
+            $$ITEM$$
+          </ac:layoutarea>
+          
+          <ac:layoutarea id="Item">
+            <table style="width: 200px; margin-top: 10px; float: left;">
+              <tr>
+                <td valign="top" style="text-align: center; font-size: 16px; font-weight: bold;">$$PRODUCTNAME$$</td>
+              </tr>
+              <tr>
+                <td valign="top" style="text-align: center;">$$PHOTOWITHLINK$$</td>
+              </tr>
+              <tr>
+                <td valign="top" style="text-align: center;">
+                  Starting at ##PRICE##<br>
+                  <span style="font-size: 10px;">[<a href="##ITEMURL##" title="##MFGNAME## ##PRODUCTNAME##">more info</a>]
+                  </span></td>
+              </tr>
+            </table>
+          </ac:layoutarea>
+        </ac:visibilityarea>
+      </ac:widget>
+<ac:widget id="PRODUCTREVIEWSLISTING4665" type="ProductReviewsListing" enablemergecode="True" headertext="PRODUCT REVIEWS">
+        <ac:visibilityarea id="dvControl">
+          $$HEADER$$
+          $$ADMINHELP$$
+          
+          <ac:layoutarea id="Summary">
+            <ac:visibilityarea id="dvProductReviewSummary">
+              <div style="position: absolute; margin-left: 140px;">$$OVERALLRATING$$</div>
+              <div>Overall Customer Rating:</div>
+              <div>Customer Reviews: ##REVIEWCOUNT##</div>
+            </ac:visibilityarea>
+          </ac:layoutarea>
+          
+          <div style="padding-bottom: 10px;"><a href="/store/WriteReview.aspx?ProductID=##ITEMID##" title="Write a Review for the ##MFGNAME## ##PRODUCTNAME##">Write a Review for this Product</a>&raquo; | <a href="/store/ProductReviews.aspx?ProductID=##ITEMID##" title="Read all Reviews for the ##MFGNAME## ##PRODUCTNAME##">Read all Reviews for this Product</a>&raquo;</div>
+          
+          <div id="dvSummarySeperator" class="ControlLinkSeperator"></div>
+          
+          <div>
+            <ac:layoutarea id="Item">
+              <ac:visibilityarea id="dvControlItem">
+                <div style="width: 100%;">
+                  <span itemprop="summary">$$REVIEWTITLE$$</span>
+                  $$REVIEWRATINGS$$
+                  <meta itemprop="rating" content="##AVERAGERATING##">
+                  From <span itemprop="reviewer">$$AUTHORNAME$$</span> in $$AUTHORLOCATION$$, <span itemprop="dtreviewed">$$REVIEWDATE$$</span>
+                </div>
+                <div style="float: left; width: 70%;">
+                  <span itemprop="description">$$REVIEWBODY$$</span>
+                </div>
+                <div class="ProductReviewItemMeta">
+                  $$REVIEWPROS$$
+                </div>
+                <div class="ProductReviewItemMeta">
+                  $$REVIEWCONS$$
+                </div>
+              </ac:visibilityarea>
+            </ac:layoutarea>
+          </div>
+        </ac:visibilityarea>
+      </ac:widget>
+</ac:widgetarea>
+  </div>
+</ac:pagelayout>

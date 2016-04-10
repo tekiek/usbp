@@ -1,0 +1,409 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="ProductLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="ProductLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="ProductRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="ProductRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="ProductDetailsPage" hoveringoverthumbswapphoto="True" showtotalforgroups="True" thumbmaxrows="4" thumbheight="75" swatchposition="Below" swatchimageheight="15" thumbwidth="75" productpicheight="250" usetabs="True" showswatchnexttovariantoption="True" thumbmaxcols="4">
+  ##SET[isKit=##PRODUCTCUSTOMFIELD[isKit]##]##
+  ##SET[ThisCat=##CATID##]##
+  
+  $$CATEGORYTRAIL$$
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  $$TOPPRODUCTSPECIFICWIDGETAREA$$
+  
+  <ac:visibilityarea id="ReviewAddedMessage">
+    <div class="ProductReviewAddedMessage">$$REVIEWADDEDMESSAGE$$</div>
+  </ac:visibilityarea>
+  
+  <div class="ProductNameContainer">
+    <div class="leftProductName">
+      <h1 class="ProductDetailsProductName" itemprop="name">$$PRODUCTNAME$$</h1>
+    </div>
+    
+    <div class="rightProductName">
+      <ac:visibilityarea id="SocialBookmarksArea">
+        <div id="divSocialBookmarks" class="ProductDetailsSocialBookmarks">
+          ##SOCIALBOOKMARKS##
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  
+  <div style="clear:both; height: 15px;"></div>
+  
+  ##IF[isKit=TRUE]##
+  <div style="width: 100%;" itemscope="" itemtype="http://data-vocabulary.org/Product">
+    <div style="width: 50%; float: left; text-align: center;">
+      $$PHOTO$$
+    </div>
+    <div style="width: 50%; float: right;">
+      <div class="ProductDetailsTabs" style="margin: 0px;">
+        $$DETAILS$$
+      </div>
+      
+      <div style="width: 100%; float: left;">
+        <ac:visibilityarea id="VariantArea">            
+          <div id="dvProductVariations" class="ProductDetailsVariations">
+            <ac:layoutarea id="Variant">
+            $$VARIANTGROUPOPENER$$
+            $$VARIANTGROUPNAME$$
+            $$VARIANTGROUPHEADER$$
+            $$VARIANTGROUPCONTROLS$$
+            <ac:visibilityarea id="VariantGroupSwatches">
+              $$VARIANTGROUPSWATCHES$$
+            </ac:visibilityarea>
+            $$VARIANTGROUPFOOTER$$
+            $$VARIANTGROUPCLOSER$$
+          </ac:layoutarea>
+            <ac:layoutarea id="Personalization">
+            <div class="ProductDetailsVariations">
+              $$PERSONALIZATIONQUESTION$$
+              $$PERSONALIZATIONCONTROLS$$
+            </div>
+            </ac:layoutarea>
+          </div>
+        </ac:visibilityarea>
+      </div>
+    </div>
+    
+    <br clear="all">
+    <hr style="border: 0; height: 0; border-top: 1px solid #ccc;">
+    <ac:visibilityarea id="ProductGroupArea">
+      <h3>RAILING KIT CHOICES</h3>
+      <div id="dvProductGroupGrid">
+        <ac:visibilityarea id="ProductGroups">
+          <div id="divProductDisplay">
+            <table class="ProductGroup" cellpadding="0" cellspacing="0" width="100%">
+              <tr class="ProductGroupHeader">
+                <!--<th id="theProductGroupDisplayThumb"></th>
+<th id="thProductGroupDisplayItemNumber">Item #</th>-->
+                <th id="thProductGroupDisplayType" width="20%">Item</th>
+                <th id="thProductGroupDisplaySize" width="15%">Specifications</th>
+                <th id="thProductGroupDisplayDesc" width="15%">Additional<br>Information</th>
+                <th id="thProductGroupDisplayVariants" width="20%">Railing Color</th>
+                <th id="thProducTGroupDisplayVariants" width="10%">Swatch</th>
+                <th id="thProductGroupDisplayPricing" width="10%">Price<br>Per Unit</th>
+                <th id="thProductGroupDisplayQuantity" width="10%">Quantity<br>Desired</th>
+              </tr>
+              <ac:layoutarea id="ProductGroupDetail">
+                <tr class="ProductGroupItem">
+                  <!--<td><img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=50,lr=t]##"></td>
+<td class="tdProductGroupDisplayItemNumber">##ITEMNR##</td>-->
+                  <td class="tdProductGroupDisplayDescription">##SHORTDESCRIPTION##</td>
+                  <td class="tdProductGroupDisplaySize">##LONGDESCRIPTION2##</td>
+                  <td class="tdProductGroupDisplayDesc">##LONGDESCRIPTION1##</td>
+                  <td class="tdProductGroupDisplayVariants">$$VARIANTS$$</td>
+                  <td class="tdProductGroupDisplayVariants" style="text-align: center;">##VARIANTPICMATRIX[groupname=Vinyl Railing Color,maxcol=3,width=40]##</td>
+                  <td class="tdProductGroupDisplayPricing">$$PRICE$$</td>
+                  <td class="tdProductGroupDisplayQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
+                </tr>
+              </ac:layoutarea>
+              <ac:layoutarea id="ProductGroupDetailAlt">
+                <tr class="ProductGroupAlternatingItem">
+                  <!--<td><img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=50,bh=50,lr=t]##"></td>
+<td class="tdProductGroupDisplayAltItemNumber">##ITEMNR##</td>-->
+                  <td class="tdProductGroupDisplayAltDescription">##SHORTDESCRIPTION##</td>
+                  <td class="tdProductGroupDisplayAltSize">##LONGDESCRIPTION2##</td>
+                  <td class="tdProductGroupDisplayAltDesc">##LONGDESCRIPTION1##</td>
+                  <td class="tdProductGroupDisplayVariants">$$VARIANTS$$</td>
+                  <td class="tdProductGroupDisplayVariants">##VARIANTPICMATRIX[groupname=Vinyl Railing Color,maxcol=3,width=40]##</td>
+                  <td class="tdProductGroupDisplayAltPricing">$$PRICE$$</td>
+                  <td class="tdProductGroupDisplayAltQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
+                </tr>
+              </ac:layoutarea>
+              <tr class="ProductGroupFooter">
+                <td colspan="8">
+                  <ac:visibilityarea id="UpdateGroupPrice">
+                    <div class="ProductDetailsPricing">
+                      Total: $$PRODUCTGROUPTOTAL$$
+                    </div>
+                    <div class="ProductGroupUpdatePrice">
+                      [$$PRODUCTGROUPUPDATEPRICE$$]
+                    </div>
+                  </ac:visibilityarea>
+                </td>
+              </tr>
+            </table>
+            <ac:layoutarea id="ProductGroupVariant">
+              <!--$$VARIANTGROUPNAME$$ $$VARIANTGROUPHEADER$$ <br> $$VARIANTGROUPFOOTER$$-->
+              $$VARIANTGROUPCONTROLS$$
+            </ac:layoutarea>
+            
+            <br clear="all">
+            <div align="right" class="ProductGroupAddToCart">$$PRODUCTGROUPADDTOCARTBUTTON$$</div>
+          </div>
+        </ac:visibilityarea>
+      </div>
+    </ac:visibilityarea>
+  </div>
+  
+  ##ELSE##
+  
+  <div style="width:100%;" itemscope="" itemtype="http://data-vocabulary.org/Product">
+    <div style="width:40%; float:left;">
+      <div style="float:left;">$$PHOTO$$<br>
+      </div>
+      <br clear="all">
+      <ac:visibilityarea id="BulletsArea">
+        <div id="dvProductBullets" class="ProductDetailsBullets">
+          $$BULLETS$$
+        </div>
+      </ac:visibilityarea>
+    </div>
+    <div style="width:60%; float:left;">
+      <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
+        <ac:visibilityarea id="PricingArea">
+          <div class="ProductDetailsManufacturerName">
+            $$MFGLOGO$$
+          </div>
+          <div id="dvProductPricing" class="ProductDetailsPricing">
+            <meta itemprop="currency" content="USD">
+            <span id="lblPriceArea" class="ProductDetailsPriceArea">
+              <span id="lblPriceLabel" class="ProductDetailsPriceLabel">Our Price: </span>
+              <span id="lblPrice" class="ProductDetailsPrice PriceToUpdate" itemprop="price">##PRICE##</span>
+            </span>
+            <meta itemprop="condition" content="new">
+            <meta itemprop="offerURL" content="##ITEMFULLURL##">
+          </div>
+        </ac:visibilityarea>
+        
+        <ac:visibilityarea id="ItemNumberArea">
+          <div class="ProductDetailsItemNr" id="dvProductItemNr"><!--id="dvProductItemNr"$$ITEMNRLABEL$$-->
+            Item Number: $$ITEMNR$$
+          </div>
+        </ac:visibilityarea>
+        <ac:visibilityarea id="AvailabilityArea">
+          <div id="dvProductAvailability" class="ProductDetailsAvailability">
+            Manufacturer $$AVAILABILITY$$&nbsp;&nbsp;
+            <a href="/USBP [clone]/shipping" target="_blank">
+              <img src="/images/info.gif" style="height: 12px; width: 12px; vertical-align: baseline;">
+            </a>
+          </div>
+        </ac:visibilityarea>
+      </span>
+      
+      <!-- snippet area -->
+      <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
+      <meta itemprop="category" content="Hardware > Building Materials">
+      <meta itemprop="seller" content="www.USBuildingProducts.com">
+      <!-- ### -->
+      
+      <br clear="all">
+      <hr style="border: 0; height: 0; border-top: 1px solid #ccc;">
+      
+      <ac:visibilityarea id="VariantArea">
+        <div id="dvProductVariations" class="ProductDetailsVariations" style="width: 100%;">
+          <ac:layoutarea id="Variant">
+            $$VARIANTGROUPOPENER$$
+            $$VARIANTGROUPNAME$$
+            $$VARIANTGROUPHEADER$$
+            $$VARIANTGROUPCONTROLS$$
+            <ac:visibilityarea id="VariantGroupSwatches">
+              $$VARIANTGROUPSWATCHES$$
+            </ac:visibilityarea>
+            $$VARIANTGROUPFOOTER$$
+            $$VARIANTGROUPCLOSER$$
+          </ac:layoutarea>
+          <div style="margin-top: 10px; font-weight: bold;"><ac:layoutarea id="Personalization">
+            <div class="ProductDetailsVariations">
+              $$PERSONALIZATIONQUESTION$$
+              $$PERSONALIZATIONCONTROLS$$
+            </div>
+            </ac:layoutarea>
+          </div>
+          <ac:visibilityarea id="DetailedConfiguration">
+            <div style="color: #3984C5; font-size: 16px; font-weight: bold; float:left;">ACCESSORIES</div>
+            <div style="color: black; font-size: 10px; float: left; font-weight: bold; padding-top: 5px;">&nbsp;&nbsp;[optional]</div>
+            <br clear="left">
+            <!--<a href="##ITEMRAWURL##&config=true"></a>-->
+            <a href="#" onclick="showOptions();">View blinds, sun screening choices, and accessories for this product&#187;</a>
+            <script type="text/javascript">
+              function showOptions()
+              {
+                var url = "?config=true";
+                var e = document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5"); //1 = glass type
+                if(e)
+                {
+                  var glassID = e.options[e.selectedIndex].value;
+                  if(glassID != "None")
+                  {
+                    url += "&glassID="+glassID;
+                  }
+                }
+                
+                var e = document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6"); //2 = flashing
+                if(e)
+                {
+                  var flashID = e.options[e.selectedIndex].value;
+                  if(flashID != "None")
+                  {
+                    url += "&flashID="+flashID;
+                  }
+                }
+                
+                var e = document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20"); //3 = combi
+                if(e)
+                {
+                  var combiID = e.options[e.selectedIndex].value;
+                  if(combiID != "None")
+                  {
+                    url += "&combiID="+combiID;
+                  }
+                }
+                //alert(url);
+                window.location.href = url;
+              }
+            </script>
+            <hr style="border: 0; height: 0; border-top: 1px solid #ccc;">
+          </ac:visibilityarea>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              var blnConfig = "##QUERYSTRING[config]##";
+              if(blnConfig == "true")
+              {
+                //loop through drop downs and highlight user's previous selections
+                var e = document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5"); //1 = glass type
+                if(e)
+                {
+                  for (var i=0; i<e.options.length; i++)
+                  {
+                    if (e.options[i].value == "##QUERYSTRING[glassID]##")
+                    {
+                      e.options[i].selected = true;
+                      break;
+                    }
+                  }
+                }
+                var e = document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6"); //2 = flashing type
+                if(e)
+                {
+                  for (var i=0; i<e.options.length; i++)
+                  {
+                    if (e.options[i].value == "##QUERYSTRING[flashID]##")
+                    {
+                      e.options[i].selected = true;
+                      break;
+                    }
+                  }
+                }
+                var e = document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20"); //3 = combi type
+                if(e)
+                {
+                  for (var i=0; i<e.options.length; i++)
+                  {
+                    if (e.options[i].value == "##QUERYSTRING[combiID]##")
+                    {
+                      e.options[i].selected = true;
+                      break;
+                    }
+                  }
+                }
+                $('#ProductVariations_NonInventoryVariantGroup1').change();
+              }
+            });
+          </script>
+        </div>
+      </ac:visibilityarea>
+      
+      <ac:visibilityarea id="AddToCartArea">
+        <div id="dvProductQuantity" class="ProductDetailsQuantity" style="padding-top:5px;">
+          <!--$$UPDATELINK$$&#187;-->
+          <b><a href="javascript:__doPostBack('lnkUpdate','');">Update Price</a>&#187;</b><br>
+          $$QUANTITYLABEL$$
+          $$QUANTITY$$
+          $$ADDTOCART$$
+          <!--$$ADDTOWISHLIST$$-->
+        </div>
+      </ac:visibilityarea>
+    </div>
+    
+    <div style="width: 100%; float: left">
+      <div style="clear:both;"></div>
+      <div class="ProductDetailsTabs">
+        $$DETAILS$$
+      </div>
+      <div class="MFGSnippet">
+        <span itemprop="brand">##MFGNAME##</span><br>
+        <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
+      </div>
+      <div id="showVariantArea" style="display: none;">
+        <ac:visibilityarea id="QuantityDiscountsArea"><div id="dvQuantityDiscounts" class="ProductQuantityDiscounts">
+          $$QUANTITYDISCOUNTS$$
+          ##VARIANTQUANTITYGRIDOF[]##
+          </div>
+        </ac:visibilityarea>
+      </div>
+      <script>
+        var strCat = "##ROOTCATNAME##";
+        if(strCat != "Moulding & Trim")
+        {
+          document.getElementById('showVariantArea').style.display = "block";
+        }
+      </script>
+      <ac:visibilityarea id="VariantMatrixArea">
+        <div id="dvVariantMatrix" class="ProductDetailsVariantMatrix">
+          $$VARIANTMATRIXHELPTEXT$$
+          <table>
+            <tr>
+              <td>
+                $$VARIANTMATRIX$$
+                <div class="ProductDetailsVariantMatrixAddToCartButton">$$VARIANTMATRIXADDTOCART$$</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  ##ENDIF##
+  
+  <div style="clear:both; height: 25px;"></div>
+  
+  <ac:widgetarea id="Bottom">
+<ac:widget id="CAROUSEL4405" type="Carousel" scrollby="4" repeatabletype="RelatedItems" rotatorstartdate="1/25/2014" displaycount="20" headertext="Related Products">
+      <ac:visibilityarea id="dvControl">
+        $$HEADER$$
+        <ac:layoutarea id="Item">
+          <ac:visibilityarea id="dvControlItem">
+            <table style="width: 200px; height: 225px;">
+              <tr>
+                <td valign="top" style="text-align: center; height: 150px; padding-top: 5px;">$$PHOTOWITHLINK$$</td>
+              </tr>
+              <tr>
+                <td valign="top" style="text-align: center; font-weight: bold; padding: 0px 20px 0px 20px; height: 50px;">$$PRODUCTNAME$$</td>
+              </tr>
+              <tr>
+                <td valign="top" style="text-align: center; height: 100px; padding: 0 10px 0 10px;">
+                  <script>
+                    var strCat = "##ROOTCATNAME##";
+                    if(strCat != "Moulding & Trim")
+                    {
+                      document.write("##PRICE##");
+                    }
+                    else
+                    {
+                      document.write("##SHORTDESCRIPTION##");
+                    }
+                  </script>
+                </td>
+              </tr>
+            </table>
+          </ac:visibilityarea>
+        </ac:layoutarea>
+      </ac:visibilityarea>
+    </ac:widget>
+</ac:widgetarea>
+  $$BOTTOMPRODUCTSPECIFICWIDGETAREA$$
+  
+</ac:pagelayout>

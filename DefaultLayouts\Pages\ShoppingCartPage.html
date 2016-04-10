@@ -1,0 +1,397 @@
+<ac:pagelayout id="ShoppingCartPage" productpictureheight="150" productpicturewidth="72">
+  <div class="CartPage">
+    <div class="CartLeftColumn">
+      <ac:widgetarea id="Left">
+</ac:widgetarea>
+    </div>
+    <div class="ShoppingCartPage">
+      <ac:layoutarea id="LastItemAdded">
+        <style>
+          .CartRight { margin-top:-100px; }
+        </style>
+        <div class="LastItemAdded">
+          <div style="margin:10px;">
+            <div class="ShoppingCartThumbnail">
+              ##ITEMTHUMBNAIL##
+            </div>
+            <div style="margin-left:100px;">
+              <strong>Just Added</strong><br>
+              ##ITEMNAME##
+            </div>
+          </div>
+        </div>
+      </ac:layoutarea>
+      <ac:widgetarea id="Right">
+<ac:widget id="LARGESHOPPINGCART4252" type="LargeShoppingCart">
+          <ac:visibilityarea id="MessageControlsArea">
+            <div class="CartMessages">
+              <div id="dvMessageControls">
+                $$MESSAGE$$
+                $$SHIPPINGNOTICE$$
+                $$ERRORTEXT$$
+              </div>
+              <div class="ShoppingCartError">
+                $$ECERROR$$
+              </div>
+            </div>
+          </ac:visibilityarea>
+          <div style="position:relative;">
+            <div class="CartRight">
+              $$SAVEDCARTNOTIFICATION$$
+              <ac:visibilityarea id="SubtotalArea">
+                <div class="SubTotal">
+                  Subtotal
+                  <div class="LineItemPrice">$$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$</div>
+                  <div style="clear:right"></div>
+                </div>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="DiscountArea">
+                <div class="Discounts">
+                  $$DISCOUNTLABEL$$
+                  $$DISCOUNTSTRING$$
+                  <div class="LineItemPrice">-$$DISCOUNTTOTALDOLLARS$$$$DISCOUNTTOTALCENTS$$</div>
+                  <div style="clear:right"></div>
+                </div>
+              </ac:visibilityarea>
+              <ac:visibilityarea id="GiftCertificatesArea">
+                <div class="GiftCertificates">
+                  <p>The following gift certificates will be applied at checkout:</p>
+                  <ac:layoutarea id="ShopCartGiftCertificate">
+                    <div class="GiftCertificate">
+                      $$GIFTCERTIFICATECODE$$ $$GIFTCERTIFICATEREMOVEBUTTON$$
+                      <div class="LineItemPrice">$$GIFTCERTIFICATEAMOUNT$$</div>
+                      <div style="clear:right"></div>
+                    </div>
+                  </ac:layoutarea>
+                </div>
+              </ac:visibilityarea>
+              <div class="ShoppingCartTotalsArea">
+                <table class="ShoppingCartTotalsTable">
+                  <tr>
+                    <td colspan="2" style="padding: 0 5px;">
+                      <b>IMPORTANT:</b> Shipping on all Ferche products, as well as oversized Fairway products (10ft and above), will be calculated after the order is submitted.  We will <u><b>not</b></u> charge your card for shipping until we contact you with the final cost.  Not all of our carriers and freight partners have integrated online shipping systems, so we will find the lowest delivery rates for your order.</td>
+                  </tr>
+                  <!--<ac:visibilityarea id="ShippingControlsArea">
+<tr>
+<td colspan="2">
+<div id="dvShippingControls">
+<ac:visibilityarea id="CalculateShippingFormArea">
+<div id="dvCalculateShippingForm"><br>
+<div class="ShippingCalcLabel">
+$$SHIPPINGCALCULATORLABEL$$
+</div>
+$$SHIPPINGCALCULATIONERROR$$
+<ac:visibilityarea id="CitySelectArea">
+<div id="dvCitySelect" class="ShippingCalcField">
+<span class="ShippingCalcFieldLabel">
+$$CITYLABEL$$
+</span>
+<span>
+$$CITYTEXTBOX$$
+</span>
+</div>
+</ac:visibilityarea>
+
+<ac:visibilityarea id="StateSelectArea">
+<div id="dvStateSelect" class="ShippingCalcField">
+<span class="ShippingCalcFieldLabel">
+$$STATELABEL$$
+</span>
+<span>
+$$STATEDROPDOWN$$
+</span>
+</div>
+</ac:visibilityarea>
+
+<ac:visibilityarea id="PostalEntryArea">
+<div id="dvPostalEntry" class="ShippingCalcField">
+<span class="ShippingCalcFieldLabel">
+$$POSTALCODELABEL$$
+</span>
+<span>
+$$POSTALCODETEXTBOX$$
+</span>
+</div>
+</ac:visibilityarea>
+
+<div class="ShippingCalcField">
+<span class="ShippingCalcFieldLabel">
+$$COUNTRYLABEL$$
+</span>
+<span>
+$$COUNTRYDROPDOWN$$
+$$SETSHIPTOBUTTON$$
+</span>
+</div>
+</div>
+</ac:visibilityarea>
+<ac:visibilityarea id="ShippingMethodArea">
+<div id="dvShippingMethod">
+<br>
+Select Shipping Method:
+<div class="ShippingSelect">
+$$SHIPPINGMETHODDROPDOWN$$
+$$SHIPPINGMETHODSELECTBUTTON$$
+</div>
+$$SHIPPINGADDITIONALINFORMATION2$$
+</div>
+</ac:visibilityarea>
+</div>
+</td>
+</tr>
+</ac:visibilityarea>
+<ac:visibilityarea id="InlineCalculateShippingFormArea">
+<tr>
+<td colspan="2">
+<div id="dvInlineCalculateShippingForm">
+<ac:visibilityarea id="InlinePostalCodeArea"> 
+<div>$$INLINEPOSTALCODELABEL$$</div>       
+<div id="dvInlinePostalcode">
+$$INLINEPOSTALCODETEXTBOX$$
+$$INLINESETSHIPTOBUTTON$$
+$$SHIPPINGADDITIONALINFORMATION$$
+</div>
+</ac:visibilityarea>
+</div>
+</td>
+</tr>
+</ac:visibilityarea> 
+<ac:visibilityarea id="CouponCodeArea">
+<tr>
+<td>
+<div id="dvCouponCode" class="ShoppingCartCouponCode">
+<h3><span class="expand">+</span> $$COUPONCODELABEL$$ </h3>
+<div class="CouponMsg">Click to Enter a Coupon Code.</div>
+<div class="CouponEntry">
+$$COUPONCODETEXTBOX$$
+$$ADDCOUPONCODEBUTTON$$
+</div>
+<script>
+$(".ShoppingCartCouponCode h3").click(function() { $(".CouponEntry").slideToggle(); })
+</script>
+</div>
+</td>
+</tr>
+</ac:visibilityarea>-->
+                </table>
+                
+                <!--                <div>
+<ac:visibilityarea id="TaxArea">
+
+<div class="TaxArea">
+Tax
+<div class="LineItemPrice">$$TAXTOTALDOLLARS$$$$TAXTOTALCENTS$$</div>
+<div style="clear:right"></div>
+</div>
+
+</ac:visibilityarea>
+<ac:visibilityarea id="ShippingArea">
+<div class="ShippingCost">
+<ac:visibilityarea id="ShippingLabelArea">
+$$SHIPPINGLABEL$$
+$$SHIPPINGDESCRIPTION$$
+<div class="ShoppingCartShippingInfo">$$SHIPPINGINFO$$</div>
+</ac:visibilityarea>
+
+<div class="LineItemPrice">$$SHIPPINGTOTALDOLLARS$$$$SHIPPINGTOTALCENTS$$</div>
+<div style="clear:right"></div>
+
+</div>
+</ac:visibilityarea>
+
+<ac:visibilityarea id="AdditionalFeesArea">
+<div class="AdditionalFees">
+$$ADDITIONALFEESLABEL$$
+<div class="LineItemPrice">$$ADDITIONALFEESTOTALDOLLARS$$$$ADDITIONALFEESTOTALCENTS$$</div>
+<div style="clear:right"></div>
+</div>
+</ac:visibilityarea>
+<ac:visibilityarea id="HandlingArea">
+<div class="Handling Fee">
+Handling Fee
+<div class="LineItemPrice">$$HANDLINGTOTALDOLLARS$$$$HANDLINGTOTALCENTS$$</div>
+<div style="clear:right"></div>
+</div>
+</ac:visibilityarea>
+                <ac:visibilityarea id="ShippingErrorArea">
+                  <div class="ErrorText">Shipping Error:
+                    $$SHIPPINGERROR$$
+                  </div>
+                </ac:visibilityarea>
+                <ac:visibilityarea id="TotalArea">
+                  <div class="OrderTotal">
+                    <strong>Estimated Total</strong>
+                    <div class="LineItemPrice">
+                      $$TOTALDOLLARS$$$$TOTALCENTS$$
+                      
+                      <ac:visibilityarea id="TotalInPointsArea">
+                        <div class="PointsTotal"><div>-or-</div><div>($$TOTALINPOINTS$$ ##REWARDPOINTSLABEL##)</div></div>
+                      </ac:visibilityarea>
+                    </div></div>
+                  <div style="clear:right"></div>
+                </ac:visibilityarea></div>
+              -->
+              
+              <div>
+                $$CHECKOUTBUTTON$$
+              </div>
+              
+              <div class="PayWith">
+                <strong>Pay With</strong>
+                <img src="/images/payments/credit_cards.gif" alt="Mastercard, Visa, AMEX, Discover Accepted"><br><br>
+                <img src="/images/payments/paypal.gif" alt="Paypal Accepted"><br>
+                $$BILLMELATERBANNER4253$$
+                <!-- (c) 2005, 2014. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal" style="margin: auto;"> <script type="text/javascript" language="javascript">var ANS_customer_id="5ab69c1a-a5b3-426f-80fa-71ac51324f3a";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js"></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Transaction Processing</a> </div>
+              </div>
+            </div>
+            <div class="ShoppingCartLeftBottom">
+              <ac:visibilityarea id="BottomControlsArea">
+              </ac:visibilityarea>
+            </div>
+          </div>
+          <div class="CartLeft">
+            <table id="tblCart" class="ShoppingCartTable">
+              <tr>
+                <td class="ShoppingCartHeader ShoppingCartProductDescriptionHeader">Product Description</td>
+                <td class="ShoppingCartHeader ShoppingCartSpacer">&nbsp;</td>
+                <!--<ac:visibilityarea id="ShippingCodeHeaderArea"><td class="ShoppingCartHeader">Shipping Code</td> </ac:visibilityarea>-->
+                <ac:visibilityarea id="PurchasedQtyHeaderArea"><td class="ShoppingCartHeader">Purchased</td></ac:visibilityarea>
+                <td class="ShoppingCartHeader ShoppingCartUnitPriceHeader">Unit Price</td>
+                <td class="ShoppingCartHeader ShoppingCartQuantityHeader">Quantity</td>
+                <td class="ShoppingCartHeader ShoppingCartTotalHeader">Total</td>
+              </tr>
+              <ac:visibilityarea id="SelectAllArea">
+                <tr id="trSelectAll">
+                  <td class="ShoppingCart" colspan="4">
+                    <script type="text/javascript">
+                      $(function () {
+                        $('#chkSelectAll').click(function () {
+                          var chkval = $(this).attr('checked');
+                          $('.dvChkSelect input:checkbox').attr('checked', chkval);
+                        });
+                      });
+                    </script>
+                    <div class="ShoppingHTML17865"><input type="checkbox" id="chkSelectAll"><a>Select/Deselect All</a></div>
+                  </td>
+                </tr>
+              </ac:visibilityarea>
+              <ac:layoutarea id="ShopCartItem">
+                <tr>
+                  <td class="ShoppingCart">
+                    <div class="ShoppingCartChildBranch">
+                      $$CHILDBRANCHIMAGE$$
+                    </div>
+                    <div class="dvChkSelect">
+                      $$SELECTCHECKBOX$$
+                    </div>                  
+                    <div class="ProductInfo">
+                      <div style="float: left; padding: 7px 10px 0 0;">
+                        <script>
+                          var myChild = '$$CHILDBRANCHIMAGE$$';
+                          if(myChild != "")
+                          {
+                            document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">');
+                          }
+                          else
+                          {
+                            var myID = '##ITEMID##';
+                            if(myID.length < 10)
+                            {
+                              document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">');
+                            }
+                          }
+                        </script> 
+                      </div>
+                      <div class="ItemName"><b>$$ITEMNAME$$</b></div>
+                      <!--<div class="CallForShipping"></div>-->
+                      <!--<div class="ItemNumber">$$ITEMNR$$</div>-->
+                      <div class="Variants">$$VARIANTS$$</div>
+                      <div class="Personalizations">$$PERSONALIZE$$</div>
+                      <div style="clear:both">
+                        $$MOVETOWISHLISTBUTTON$$
+                        $$MOVETOCARTBUTTON$$
+                      </div>
+                    </div></td>
+                  <td class="ShoppingCartSpacer"></td>
+                  <!--<ac:visibilityarea id="ShippingCodeArea"><td align="center" class="ShoppingCart">$$SHIPPINGCODE$$</td></ac:visibilityarea>-->
+                  <ac:visibilityarea id="PurchasedQuantityArea"><td align="center" class="ShoppingCart" nowrap="">$$PURCHASEDQUANTITYTEXTBOX$$</td></ac:visibilityarea>
+                  
+                  <td class="ShoppingCartPrice ShoppingCart" nowrap="">
+                    <div class="CartBorder">
+                      <div class="CartItemPriceArea">
+                        <div>
+                          <div><del>$$ITEMORIGINALPRICEDOLLARS$$$$ITEMORIGINALPRICECENTS$$</del></div> 
+                          <div>$$ITEMPRICEDOLLARS$$$$ITEMPRICECENTS$$ $$UNITS$$</div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td align="center" class="ShoppingCart ShoppingCartQuantity" nowrap="">
+                    <div class="CartBorder">
+                      <div class="CartUpdateItemArea">
+                        <div>
+                          $$QUANTITYTEXTBOX$$
+                          <div class="UpdateButton">$$UPDATEBUTTON$$ / $$REMOVEFROMCARTLINK$$</div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="ShoppingCartPrice ShoppingCart" nowrap="">
+                    <div class="CartBorder">
+                      <div class="CartItemTotalArea">
+                        <div>
+                          <div><del>$$ITEMORIGINALTOTALDOLLARS$$$$ITEMORIGINALTOTALCENTS$$</del></div>
+                          <div>$$ITEMTOTALDOLLARS$$$$ITEMTOTALCENTS$$</div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </ac:layoutarea>
+            </table>
+            <ac:visibilityarea id="SubtotalArea">
+              <div class="UnderCartSubTotal">
+                
+                Subtotal
+                
+                $$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$
+              </div>
+            </ac:visibilityarea>
+            <ac:visibilityarea id="ButtonControlsArea">
+              <div id="dvButtonControls" class="ShoppingCartButtons">
+                <div>
+                  $$COUPONERROR$$
+                </div>
+                <div>
+                  $$CONTINUESHOPPINGBUTTON$$
+                  <!--$$UPDATECARTBUTTON$$-->
+                  
+                  $$CLEARCARTBUTTON$$
+                  $$SAVECARTBUTTON$$
+                  <div class="EmailCartButton ThemeButtonLink">$$EMAILCART$$</div>
+                </div>
+              </div>
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="PointsEarnedArea">
+              <div class="ShoppingCartCustomMessage RewardPointsEarned">
+                <h3>You will earn <em>$$REWARDPOINTSEARNED$$</em> ##REWARDPOINTSLABEL##!</h3>
+              </div>
+            </ac:visibilityarea>
+            $$CUSTOMMESSAGE$$
+            
+            <div style="clear:both"></div>
+          </div></div></ac:widget>
+<ac:widget id="BILLMELATERBANNER4253" type="BillMeLaterBanner" bannertype="BillMeLater" enablemergecode="True" billmelaterbannersize="150x100">
+          
+        </ac:widget>
+</ac:widgetarea>
+      
+      <ac:widget id="HTML3117" type="HTML"><div style="clear:both"></div></ac:widget>
+      
+      
+      <div style="float:left;width:650px;margin:0 20px;">$$EMPTYCARTMESSAGE$$
+        $$CONTINUESHOPPINGBUTTON$$
+      </div>
+      <div style="clear:both"></div>  
+    </div></div></ac:pagelayout>

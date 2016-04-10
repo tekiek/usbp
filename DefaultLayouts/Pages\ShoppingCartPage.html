@@ -1,0 +1,232 @@
+<ac:pagelayout id="ShoppingCartPage" productpictureheight="150" productpicturewidth="72">
+  <div class="CartPage" style="overflow:hidden;">
+    <div class="CartLeftColumn">
+      <ac:widgetarea id="Left">
+</ac:widgetarea>
+    </div>
+
+    <!-- Page Wrapper -->
+    <div class="ShoppingCartPage row">
+      
+      <ac:widgetarea id="Right">
+<ac:widget id="LARGESHOPPINGCART4487" type="LargeShoppingCart">
+
+          <!-- Cart Messages -->
+          <ac:visibilityarea id="MessageControlsArea">
+            <div class="CartMessages">
+              <div id="dvMessageControls">
+                $$MESSAGE$$
+                $$SHIPPINGNOTICE$$
+                $$ERRORTEXT$$
+              </div>
+              <div class="ShoppingCartError">
+                $$ECERROR$$
+              </div>
+            </div>
+          </ac:visibilityarea>
+          <!-- Cart Messages: End -->
+
+          <!-- Rail Wrapper -->
+          <div style="position:relative;">
+
+            <!-- Left Rail -->
+            <div class="col-md-8">
+
+              <!-- Shopping Cart Table -->
+              <div class="row cart--row__header">
+                <div class="col-md-6">Product</div>
+                <div class="col-md-2">Unit Price</div>
+                <div class="col-md-2">Quantity</div>
+                <div class="col-md-2">Total</div>
+              </div>
+
+              <ac:layoutarea id="ShopCartItem">
+                <div class="row item--rows">
+
+                  <!-- Item Details | Info -->
+                  <div class="col-md-6 item--rows__cols">
+                    <div class="media">
+                      <div class="media-left">
+                        <script>var myChild="$$CHILDBRANCHIMAGE$$";if(""!=myChild)document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">');else{var myID="##ITEMID##";myID.length<10&&document.write('<img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=72,bh=150,lr=t]##" title="##MFGNAME## ##ITEMNAME##">')}</script> 
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <div class="ItemName"><b>$$ITEMNAME$$</b></div>
+                        </h4>
+                        <div class="Variants">$$VARIANTS$$</div>
+                        <div class="Personalizations">$$PERSONALIZE$$</div>
+                        <div style="clear:both">
+                          $$MOVETOWISHLISTBUTTON$$
+                          $$MOVETOCARTBUTTON$$
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item Details | Info: END -->
+
+                  <!-- Item Details: Price -->
+                  <div class="col-md-2">
+                    <div>
+                      <del>
+                        $$ITEMORIGINALPRICEDOLLARS$$$$ITEMORIGINALPRICECENTS$$
+                      </del>
+                    </div> 
+                    <div>$$ITEMPRICEDOLLARS$$$$ITEMPRICECENTS$$ $$UNITS$$</div>
+                  </div>
+                  <!-- Item Details: Price: END -->
+
+                  <!-- Item Details: Quanity -->
+                  <div class="col-md-2">
+                    <div class="CartUpdateItemArea">
+                      <div>
+                        $$QUANTITYTEXTBOX$$
+                        <div class="UpdateButton">
+                          <div class="btn--quanity btn btn-default btn-xs">$$UPDATEBUTTON$$</div>
+                          <div class="btn--quanity btn btn-default btn-xs">$$REMOVEFROMCARTLINK$$</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item Details: Quanity: END -->
+
+                  <div class="col-md-2">
+                    <!-- Item Details: Price -->
+                    <div>
+                      <del>
+                        $$ITEMORIGINALTOTALDOLLARS$$$$ITEMORIGINALTOTALCENTS$$
+                      </del>
+                    </div>
+                    <div>$$ITEMTOTALDOLLARS$$$$ITEMTOTALCENTS$$</div>
+                    <!-- Item Details: Price: END -->
+                  </div>
+                </div>
+
+              </ac:layoutarea>
+
+              <!-- Total Price -->
+              <div class="row row--tolal-price">
+                <div class="col-md-10"> </div>
+                <div class="col-md-2 col--tolal-price">
+                  <ac:visibilityarea id="SubtotalArea">
+                    $$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$
+                  </ac:visibilityarea>
+                </div>
+              </div>
+              <!-- Total Price: END -->
+
+              <!-- Checkout Button -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div>
+                    $$CHECKOUTBUTTON$$
+                  </div>
+                </div>
+              </div>
+              <!-- Checkout Button: END -->
+
+            </div>
+            <!-- Left Rail: END -->
+
+            <!-- Right Rail -->
+            <div class="col-md-4">
+              $$SAVEDCARTNOTIFICATION$$
+
+              <!-- Pay With -->
+              <div class="PayWith">
+                <strong>Pay With</strong>
+                <img src="/images/payments/credit_cards.gif" alt="Mastercard, Visa, AMEX, Discover Accepted">
+                <br><br>
+                <img src="/images/payments/paypal.gif" alt="Paypal Accepted">
+                <br>
+                $$BILLMELATERBANNER4488$$
+                <!-- (c) 2005, 2014. Authorize.Net is a registered trademark of CyberSource Corporation --> <div class="AuthorizeNetSeal" style="margin: auto;"> <script type="text/javascript" language="javascript">var ANS_customer_id="5ab69c1a-a5b3-426f-80fa-71ac51324f3a";</script> <script type="text/javascript" language="javascript" src="//verify.authorize.net/anetseal/seal.js"></script> <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Transaction Processing</a> </div>
+              </div>
+              <!-- Pay With -->
+
+              <!-- Action Buttons -->
+              <div class="row">
+                <div class="col-md-12">
+                  <ac:visibilityarea id="ButtonControlsArea">
+                    <div id="dvButtonControls" class="ShoppingCartButtons">
+                      <div>
+                        $$COUPONERROR$$
+                      </div>
+                      <div>
+                        $$CONTINUESHOPPINGBUTTON$$
+                        $$CLEARCARTBUTTON$$
+                        $$SAVECARTBUTTON$$
+                        <div class="EmailCartButton ThemeButtonLink">$$EMAILCART$$</div>
+                      </div>
+                    </div>
+                  </ac:visibilityarea>
+                </div>
+              </div>
+              <!-- Action Buttons: END -->
+
+              <!-- Discounts -->
+              <ac:visibilityarea id="DiscountArea">
+                <div class="Discounts">
+                  $$DISCOUNTLABEL$$
+                  $$DISCOUNTSTRING$$
+                  <div class="LineItemPrice">-$$DISCOUNTTOTALDOLLARS$$$$DISCOUNTTOTALCENTS$$</div>
+                  <div style="clear:right"></div>
+                </div>
+              </ac:visibilityarea>
+              <!-- Discounts: END -->
+
+              <!-- Gift Certificates -->
+              <ac:visibilityarea id="GiftCertificatesArea">
+                <div class="GiftCertificates">
+                  <p>The following gift certificates will be applied at checkout:</p>
+                  <ac:layoutarea id="ShopCartGiftCertificate">
+                    <div class="GiftCertificate">
+                      $$GIFTCERTIFICATECODE$$ $$GIFTCERTIFICATEREMOVEBUTTON$$
+                      <div class="LineItemPrice">$$GIFTCERTIFICATEAMOUNT$$</div>
+                      <div style="clear:right"></div>
+                    </div>
+                  </ac:layoutarea>
+                </div>
+              </ac:visibilityarea>
+              <!-- Gift Certificates: END -->
+
+              <!-- Shopping Cart Details -->
+              <div class="ShoppingCartTotalsArea">
+
+                <!-- Shipping Details -->
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <b>IMPORTANT:</b> Shipping on all Ferche products, as well as oversized Fairway products (10ft and above), will be calculated after the order is submitted.  We will <u><b>not</b></u> charge your card for shipping until we contact you with the final cost.  Not all of our carriers and freight partners have integrated online shipping systems, so we will find the lowest delivery rates for your order.
+                  </div>
+                </div>
+                <!-- Shipping Details: END -->
+
+              </div>
+              <!-- Shopping Cart Details: END -->
+
+              <div class="ShoppingCartLeftBottom">
+                <ac:visibilityarea id="BottomControlsArea">
+                </ac:visibilityarea>
+              </div>
+
+            </div>
+            <!-- Right Rail: END -->
+
+          </div>
+          <!-- Rail Wrapper: END -->
+        </ac:widget>
+<ac:widget id="BILLMELATERBANNER4488" type="BillMeLaterBanner" bannertype="BillMeLater" enablemergecode="True" billmelaterbannersize="150x100">
+        </ac:widget>
+</ac:widgetarea>
+
+      <ac:widget id="HTML5672" type="HTML">
+        <div style="clear:both"></div>
+      </ac:widget>
+
+      <div style="width:650px;margin:0 20px;">
+        $$EMPTYCARTMESSAGE$$
+        $$CONTINUESHOPPINGBUTTON$$
+      </div>
+      <div style="clear:both"></div>  
+    </div>
+  </div>
+</ac:pagelayout>

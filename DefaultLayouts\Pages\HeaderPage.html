@@ -1,0 +1,232 @@
+<ac:pagelayout id="HeaderPage">
+  <div style="width: 100%; bottom: 0; position: fixed; text-align: center; background: #F3D69A; z-index: 25; padding: 1px 0;">
+    <table width="100%">
+      <tr valign="bottom" style="font-size: 10px; font-weight: bold; font-family: verdana; vertical-align: middle;">
+        <td width="33%"><img src="/images/flag.png" width="20" height="20" align="absmiddle" style="margin-top: -2px;"> All Products Made in the USA</td>
+        <td width="33%"><img src="/images/telephone_black.png" width="20" height="20" align="absmiddle" style="margin-top: -2px;"> <a href="tel:1-800-284-5194" style="text-decoration: none;">1-800-284-5194</a></td>
+        <td width="33%"><img src="/images/mail.png" width="20" height="20" align="absmiddle" style="margin-top: -2px;"> <a href="mailto:support@usbuildingproudcts.com" style="text-decoration: none;">support@usbuildingproudcts.com</a></td>
+      </tr>
+    </table>
+  </div>
+  <div class="inner pagewidth">
+    <div class="LayoutTopTop">
+      <ac:widgetarea id="TopHeaderWidgets">
+</ac:widgetarea>
+    </div>
+    <div class="LayoutTopMiddle">
+      <div class="LayoutTopLeft">
+        <img src="/images/usbp_wood.gif" alt="US Building Products">
+        <a href="/" title="US Building Products">
+          <div class="HeaderHome"></div>
+        </a>
+      </div>
+      <div class="LayoutTopRight">
+        <div style="float: right;">
+          ##SEARCHBOX[autocomplete=true]##
+        </div>
+        <div style="clear: both; margin-top: 74px;">
+          ##IF[LoggedIn]##
+          <a title="Logout" href="/store/logout.aspx">
+            <div style="width: 108px; text-align: center; float: left;">
+              Logout
+            </div>
+          </a>
+          ##ELSE##
+          <a title="Login" href="/store/login.aspx">
+            <div style="width: 108px; text-align: center; float: left;">
+              Login
+            </div>
+          </a>
+          ##ENDIF##
+          
+          <div style="width: 11px; float: left;">&nbsp;</div>
+          <a title="My Account" href="/store/myaccount.aspx">
+            <div style="width: 108px; text-align: center; float: left;">
+              Account
+            </div>
+          </a>
+          
+          <div style="width: 11px; float: left;">&nbsp;</div>      
+          <a title="View Shopping Cart" href="/store/shopcart.aspx">
+            <div style="width: 108px; text-align: center; float: left; margin-top: -10px;">
+              View Cart<br>##CARTITEMSCOUNT## items
+            </div>
+          </a>
+          
+          <div style="width: 11px; float: left;">&nbsp;</div>
+          <a title="Checkout" href="/store/checkout.aspx">
+            <div style="width: 108px; text-align: center; float: left;">
+              Checkout
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="LayoutTopBottom">
+      <div id="leftRibbon"></div>
+      <div id="rightRibbon"></div>
+      <div class="inner">
+        <ac:widgetarea id="BottomHeaderWidgets">
+<ac:widget id="HTML4340" type="HTML" hidesnapin="True">
+            ##SEARCHBOX[autocomplete=true]##
+          </ac:widget>
+<ac:widget id="LINKGROUP4341" type="LinkGroup" displayorientation="Horizontal" linkgroupid="86"></ac:widget>
+<ac:widget id="LINKGROUP4342" type="LinkGroup" displayorientation="Horizontal" enablemergecode="True" linkgroupid="112"></ac:widget>
+<ac:widget id="LINKGROUP4343" type="LinkGroup" displayorientation="Horizontal" enablemergecode="True" linkgroupid="132"></ac:widget>
+<ac:widget id="HTML4344" type="HTML">
+            <div id="MouldingNav" style="display: none; z-index: 10;">$$LINKGROUP4343$$</div>
+            <div id="SkylightNav" style="display: none; z-index: 10;">$$LINKGROUP4342$$</div>
+            <div id="VinylNav" style="display: none; z-index: 10;">$$LINKGROUP4345$$</div>
+            <div id="PCANav" style="display: none; z-index: 10;">$$LINKGROUP4346$$</div>
+            <div id="HomeNav" style="display: none; z-index: 10;">$$HTML4347$$</div>
+            
+            <script>
+              var strMyCat = "##ROOTCATNAME##";
+              if(strMyCat == "##ROOTCATNAME##")
+              {
+                var strPageID = "##QUERYSTRING[PAGEID]##";
+                
+                if(strPageID == "")
+                {
+                  strPageID = "##MFGRAWURL##";
+                  
+                  var intPageID = strPageID.indexOf("=");
+                  var intContent = strPageID.substring(intPageID+1);
+                  
+                  switch (intContent)
+                  {
+                    case "16":
+                      strMyCat = "Aluminum Screen Doors";
+                      break;
+                    case "14":
+                      strMyCat = "Skylights";
+                      break;
+                    case "13":
+                      strMyCat = "Vinyl Railings";
+                      break;
+                    case "12":
+                      strMyCat = "Moulding & Trim";
+                      break;
+                  }
+                }
+                else
+                {
+                  var intPageID = strPageID.indexOf("=");
+                  var intContent = strPageID.substring(intPageID+1);
+                  
+                  var intMoulding = new Array(44, 43, 42, 41);
+                  var intSkylights = new Array(72, 73, 74, 75, 76, 77, 78);
+                  var intVinyl = new Array();
+                  var intPCA = new Array(59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70, 71);
+                  
+                  for (var i = 0; i < intMoulding.length; i++)
+                  {
+                    if(intContent == intMoulding[i])
+                    {
+                      strMyCat = "Moulding & Trim";
+                    }
+                  }
+                  for (var i = 0; i < intSkylights.length; i++)
+                  {
+                    if(intContent == intSkylights[i])
+                    {
+                      strMyCat = "Skylights";
+                    }
+                  }
+                  for (var i = 0; i < intVinyl.length; i++)
+                  {
+                    if(intContent == intVinyl[i])
+                    {
+                      strMyCat = "Vinyl Railings";
+                    }
+                  }
+                  
+                  for (var i = 0; i < intPCA.length; i++)
+                  {
+                    if(intContent == intPCA[i])
+                    {
+                      strMyCat = "Aluminum Screen Doors";
+                    }
+                  }
+                }
+              }
+              
+              switch (strMyCat)
+              {
+                case "Moulding & Trim":
+                  document.getElementById('MouldingNav').style.display = "block";
+                  break;
+                case "Skylights":
+                  document.getElementById('SkylightNav').style.display = "block";
+                  break;
+                case "Vinyl Railings":
+                  document.getElementById('VinylNav').style.display = "block";
+                  break;
+                case "Aluminum Screen Doors":
+                  document.getElementById('PCANav').style.display = "block";
+                  break;
+                default:
+                  document.getElementById('HomeNav').style.display = "block";
+                  break;   
+              }
+            </script>  
+          </ac:widget>
+<ac:widget id="LINKGROUP4345" type="LinkGroup" displayorientation="Horizontal" enablemergecode="True" linkgroupid="244"></ac:widget>
+<ac:widget id="LINKGROUP4346" type="LinkGroup" displayorientation="Horizontal" enablemergecode="True" linkgroupid="260"></ac:widget>
+<ac:widget id="HTML4347" type="HTML" enablemergecode="True">
+            <div style="width:90%; background: transparent; margin-left: auto; margin-right: auto; text-align: center; padding-top: 10px;">
+              <div style="width: 33%; color: red; font-weight: bold; font-size: 15px; float: left;">PLACE YOUR ORDER TODAY</div>
+              <div style="width: 33%; font-weight: bold; font-size: 16px; float: left;">
+                <a style="color: red; text-decoration: none;" href="tel:1-800-284-5194">1-800-284-5194</a>
+              </div>
+              <div style="width: 33%; color: red; font-weight: bold; font-size: 15px; float: left;">ALL PRODUCTS MADE IN THE USA</div>
+            </div>
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+    </div>
+    <div class="FloatingSideBar">
+      <div class="top">
+      </div>
+      <div class="middle">
+        <ac:widgetarea id="FloatingSideBar">
+<ac:widget id="PRODUCTDISPLAY4349" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" featureditemsdisplaythumbonseparateline="False" repeatcount="1" repeatabletype="RecentlyViewedItems" productpicturewidth="125" displaycount="1" headertext="Recently Viewed" productlistid="1" categoryid="0" productpictureheight="125">
+            <ac:visibilityarea id="dvControl">
+              $$HEADER$$
+              $$ADMINHELP$$
+              <ac:layoutarea id="Item">
+                <ac:visibilityarea id="dvControlItem">      
+                  <div><a href="##ITEMURL##" title="##MFGNAME## ##ITEMNAME##"><img src="/resize/##ITEMPHOTOURL##&amp;bw=150&amp;lr=t" alt="##MFGNAME## ##ITEMNAME##" title="##MFGNAME## ##ITEMNAME##"></a></div>
+                  <div>
+                    <a href="##ITEMURL##" title="##MFGNAME## ##ITEMNAME##">##MFGNAME## ##ITEMNAME##</a>
+                  </div>
+                  <div>
+                  </div>
+                </ac:visibilityarea>
+              </ac:layoutarea>
+            </ac:visibilityarea>
+          </ac:widget>
+<ac:widget id="HTML4350" type="HTML" hidesnapin="True">
+            <div class="quotes">
+              <blockquote><p>They did a wonderful job and I am very pleased!<cite>Mrs. A.</cite></p></blockquote>
+              <blockquote><p>We are thrilled to death with the job they did. Everything is clean and neat and perfect!<cite>David Thorne</cite></p></blockquote>
+            </div>
+            <div class="ControlHeader">##TELLAFRIEND##</div>
+          </ac:widget>
+<ac:widget id="CATEGORYNAVIGATIONLINKS4351" type="CategoryNavigationLinks" rootcategorybehavior="-999" headertext="Our Catalog">
+            
+          </ac:widget>
+<ac:widget id="CATEGORYDROPDOWNFILTER4352" type="CategoryDropDownFilter" numcategorylevels="3" rootcategoryid="134" hidesnapin="True" headertext="Quick Product Finder">
+            
+          </ac:widget>
+<ac:widget id="MANUFACTURERNAVIGATIONLINKS4353" type="ManufacturerNavigationLinks" hidesnapin="True" headertext="Our Brands">
+            
+          </ac:widget>
+</ac:widgetarea>
+      </div>
+      <div class="bottom">
+      </div>
+    </div>
+  </div>
+</ac:pagelayout>

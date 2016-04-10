@@ -1,0 +1,181 @@
+<ac:pagelayout id="HeaderPage">  
+
+  <!-- Begin Header -->
+  <header class="global_header">
+    <div>
+
+      <!-- logo: start -->
+      <h1 class="logo hidden-xs hidden-sm">
+        <a href="/">
+          <img width="220" height="86" alt="US Building Products" title="US Building Products" src="/Shared/Themes/USBPDev/images/logo.png">
+        </a>
+      </h1>
+      <!-- logo: end -->
+
+      <section>
+
+        <!-- header actions: start -->
+        <nav class="header_nav">
+          <ul>
+            <li>
+              ##IF[LoggedIn]##
+              <a title="Logout" href="/store/logout.aspx">
+                Logout
+              </a>
+              ##ELSE##
+              <a title="Login" href="/store/login.aspx">
+                Login
+              </a>
+              ##ENDIF##
+            </li>
+            <li>
+              <a href="/store/myaccount.aspx">Account</a>
+            </li>
+            <li>
+              <a href="/store/shopcart.aspx">View Cart</a>
+            </li>
+            <li>
+              <a href="/store/checkout.aspx">Checkout</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- header actions: end -->
+
+        <!-- search: start -->
+        <search class="search_form">
+          <input type="text" class="SearchBoxStyle SearchBox1 AutocompleteSearchBox" name="txtRedirectSearchBox" id="txtRedirectSearchBox" placeholder="Search">
+          <input type="image" name='btnSearchBox' id='btnSearchBox' class="SearchBox1 SearchImageStyle" src="/Shared/Themes/USBPDev/images/button.png" width="14" height="22" alt="Search" title="Search">
+        </search>
+        <!-- search: end -->
+
+
+        <!-- social navigation -->
+        <nav class="social_nav">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/usbuildingproducts" target="_blank">
+                <img width="31" height="31" alt="Facebook" title="Facebook" src="/Shared/Themes/USBPDev/images/facebook.png">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/USBProducts" target="_blank">
+                <img width="31" height="31" alt="Twitter" title="Twitter" src="/Shared/Themes/USBPDev/images/twitter.png">
+              </a>
+            </li>
+            <li>
+              <a href="http://feeds.feedburner.com/USBuildingProducts" target="_blank">
+                <img width="31" height="31" alt="Blog" title="Blog" src="/Shared/Themes/USBPDev/images/blog.png">
+              </a>
+            </li>
+            <li>
+              <a href="tel:8002845194">(800) 284-5194</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- social navigation: end -->
+
+      </section>
+
+
+      <!-- primary navigation -->
+      <style>
+
+      </style>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+          <!-- Menu: mobile controls -->
+          <div class="navbar-header hidden-sm hidden-md hidden-lg">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Menu</a>
+          </div>
+          <!-- Menu: mobile controls: end -->
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+              <!-- Menu: molding -->
+              <li class="dropdown">
+                <a href="/moulding" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Moulding & Trim <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/baseboard">Baseboard Moulding</a></li>
+                  <li><a href="/casing">Door/Window Casing</a></li>
+                  <li><a href="/crown">Crown Moulding</a></li>
+                  <li><a href="/chairrail">Chairrail Moulding</a></li>
+                  <li><a href="/mantel">Mantel Moulding</a></li>
+                  <li><a href="/panel">Panel Moulding</a></li>
+                  <li><a href="/corner">Corner Moulding</a></li>
+                  <li><a href="/dentil">Dentil Moulding</a></li>
+                  <li><a href="/decorator">Decorator Series</a></li>
+                  <li><a href="/classic">Classic Series</a></li>
+                  <li><a href="/wood">All About Wood</a></li>
+                </ul>
+              </li>
+
+              <!-- Menu: Vinyl Railings -->
+              <li class="dropdown">
+                <a href="/vinyl-railings" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Vinyl Railings <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/vinyl-railings/standard-series">Standard Series</a></li>
+                  <li><a href="/vinyl-railings/contour-series">Contour Series</a></li>
+                  <li><a href="/vinyl-railings/grand-view-series">Grand View Series</a></li>
+                  <li><a href="/vinyl-railings/accessories">Accessories</a></li>
+                </ul>
+              </li>
+
+              <!-- Menu: Skylights -->
+              <li class="dropdown">
+                <a href="/skylights" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skylights <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/skylights/residential">Residential Skylights</a></li>
+                  <li><a href="/skylights/residential/curb-mounted">Curb Mounted</a></li>
+                  <li><a href="/skylights/residential/deck-mounted">Deck Mounted</a></li>
+                  <li><a href="/skylights/residential/tubular">Tubular Skylights</a></li>
+                  <li><a href="/skylights/architectural-series">Architectural Series</a></li>
+                  <li><a href="/skylights/architectural-series/pyramids">Pyramids</a></li>
+                  <li><a href="/skylights/accessories">Parts &amp; Accessories</a></li>
+                  <li><a href="/skylights/accessories/skylights">Skylights</a></li>
+                  <li><a href="/skylights/accessories/blinds">Blinds</a></li>
+                  <li><a href="/skylights/accessories/flashing">Flashing &amp; Installation</a></li>
+                  <li><a href="/skylights/accessories/tubular-skylights">Tubular Skylights</a></li>
+                  <li><a href="/skylights/accessories/replacement-parts">Replacement Parts</a></li>
+                  <li><a href="/skylights/accessories/replacement-parts/glass">Replacement Glass</a></li>
+                  <li><a href="/skylights/accessories/replacement-parts/domes">Replacement Domes</a></li>
+                  <li><a href="/skylights/resources">Resources &amp; Information</a></li>
+                </ul>
+              </li>
+
+              <!-- Menu: Aluminum Screen Doors -->
+              <li class="dropdown">
+                <a href="/aluminum-screen-doors" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Aluminum Screen Doors <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/aluminum-screen-doors/popular-models">Popular Models</a></li>
+                  <li><a href="/aluminum-screen-doors">All Models</a></li>
+                  <li><a href="/aluminum-screen-doors/accessories">Parts &amp; Accessories</a></li>
+                  <li><a href="/aluminum-screen-doors/resources">Resources &amp; Information</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+
+    </div>
+
+
+
+
+
+  </header>
+
+  <!-- End Header -->
+
+
+</ac:pagelayout>

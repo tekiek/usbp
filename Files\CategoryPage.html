@@ -1,0 +1,148 @@
+<ac:pagelayout id="CategoryPage" enlargepicture="True" resizeproductthumb="True" productpicwidth="200" productsperrow="2" sizeproportionally="True" pagingtype="NumberedPageLinks" displaysortbox="True" pagesize="20">
+  <!-- Page: Category -->
+
+  <!-- Content wrapper -->
+  <div class="content--category">
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb category--breadcrumb hidden-xs hidden-sm">
+      $$CATEGORYTRAIL$$
+    </div>
+    <!-- breadcrumb: end -->
+
+    <!-- category header -->
+    <div class="category--header page-header">
+      <h1>$$CATEGORYNAME$$</h1> 
+      <small>$$CATEGORYHEADER$$</small>
+    </div>
+    <!-- category header: end -->
+
+    <!-- categories -->
+    <div class="categories">
+      <div class="categories--row row">
+        <ac:layoutarea id="ChildCategoriesList">
+
+          <!-- categories col -->
+          <div class="categories--col col-md-6">
+            <div class="media">
+
+              <!-- categories col: image -->
+              <div class="media-left media-top">
+                <div class="categories--thumbWrapper">
+                  $$CATEGORYTHUMBNAIL$$
+                </div>
+              </div>
+              <!-- categories col: image: end -->
+
+              <!-- categories col: info -->
+              <div class="media-body">
+                <h4 class="categories--title media-heading">
+                  <div>$$CATEGORYLINK$$</div>
+                </h4>
+                $$CATEGORYSHORTDESCRIPTION$$
+              </div>
+              <!-- categories col: info: end -->
+
+            </div>
+          </div>
+          <!-- categories col: end -->
+
+        </ac:layoutarea>
+      </div>
+    </div>
+    <!-- categories: end -->
+
+    <!-- ???? -->
+    $$TOPCATEGORYSPECIFICWIDGETAREA$$
+    $$TOPATTRIBUTESPECIFICWIDGETAREA$$
+
+    <div>$$CATEGORYIMAGE$$</div>
+    <div>$$EXTERNALCONTENTAREA$$</div>
+    <!-- ???? -->
+
+    <!-- product nav -->
+    <ac:visibilityarea id="TopNavigationArea">
+      <div class="row category--nav">
+
+        <!-- Items Per Page -->
+        <div class="category--nav__col col-sm-5">
+          <div class="input-group">
+            <span class="input-group-addon"><strong>Items Per Page</strong></span>
+            <div class="form-control">$$SHOWBYPAGESIZE$$</div>
+          </div>
+        </div>
+        <!-- Items Per Page: End -->
+
+        <div class="col-sm-2"></div>
+
+        <!-- Sort Items -->
+        <div class="category--nav__col col-sm-5">
+          <div class="input-group">
+            <span class="input-group-addon"><strong>Sort Items</strong></span>
+            <div class="form-control">$$SORTBYDROPDOWN$$</div>
+          </div>
+        </div>
+        <!-- Sort Items: End -->
+
+      </div>   
+    </ac:visibilityarea> 
+    <!-- product nav -->
+
+
+
+    <div class="products">
+      <ac:layoutarea id="ProductList">
+
+        <!-- products -->
+        <div class="products--row CategoryProductRow">
+
+          <div class="media">
+            <div class="media-left media-top">
+              <div class="products--thumb">
+                $$PRODUCTTHUMBNAIL$$
+              </div>
+            </div>
+            <div class="media-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h2 class="media-heading products--title">
+                    $$PRODUCTLINK$$
+                  </h2>
+                  <div class="product--description">
+                    ##LONGDESCRIPTION2##
+                  </div>
+                </div>
+                <div class="col-sm-6 xhidden-xs">
+                  <div class="products--price lead"><h2>$$PRICE$$</h2></div>
+                  <a class="products--moreInfo btn btn-success" href="##ITEMURL##">More Info</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- products: end -->
+
+      </ac:layoutarea>
+
+      <!-- bottom nav -->
+      <ac:visibilityarea id="BottomNavigationArea">
+        <div id="dvNavBottom" class="nav--bottom">
+          <nav class=" navbar navbar-default">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">$$PRODUCTCOUNTBOTTOM$$</a>
+            </div>
+            <ul class="navbar-right nav--bottom__right">
+              <li>$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</li>
+            </ul>
+          </nav>
+        </div>
+      </ac:visibilityarea>
+      <!-- bottom nav: end -->
+
+    </div>
+
+
+  </div>
+  <!-- Content wrapper: end -->
+</ac:pagelayout>

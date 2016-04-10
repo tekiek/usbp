@@ -1,0 +1,103 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="ManufacturerLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="ManufacturerLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="ManufacturerRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="ManufacturerRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="ManufacturerPage" resizeproductthumb="True" productpicwidth="200" productsperrow="4" sizeproportionally="True" layoutstyle="Horizontal" pagingtype="NumberedPageLinks" productpicheight="150" displaysortbox="True" pagesize="20">
+  
+  <div class="ProductNameContainer">
+    <div class="leftProductName">
+      <span class="ProductDetailsProductName"><span style="text-transform: uppercase;">$$MANUFACTURERNAME$$</span></span>
+    </div>
+    
+    <div class="rightProductName">
+      <ac:visibilityarea id="SocialBookmarksArea">
+        <div id="divSocialBookmarks" class="ProductDetailsSocialBookmarks">
+          ##SOCIALBOOKMARKS##
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  $$TOPMANUFACTURERSPECIFICWIDGETAREA$$
+  
+  <div style="clear:both"></div>   
+  
+  <div style="width: 100%; padding: 15px 0;">
+    <div style="float: left; padding-right: 10px;">
+      <img src="##MFGLOGO##" alt="##MFGNAME##">
+    </div>
+    <div style="">$$MANUFACTURERDESCRIPTION$$</div>
+  </div> 
+  
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="zzz">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+        <span class="CategoryPageNumberPerPage">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+        $$SHOWBYPAGESIZE$$
+        <div style="clear:both"></div>       
+      </div>        
+    </div>
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+        $$PRODUCTCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>  
+  
+  <ac:layoutarea id="ProductList">
+    <div class="CategoryProductRowP">
+      <script>
+        var test = "##PRODUCTCUSTOMFIELD[isHot]##";
+        if(test == "True")
+        {
+          document.write('<div style="position: absolute; bottom: -7px; left: -1px; z-index: 10;"><img src="/images/pca/hot.gif" ALT="BEST SELLER!"></div>'); 
+        }
+      </script>
+      <div class="CategoryItemP">
+        <div class="CategoryItemNameP">$$PRODUCTLINK$$</div>
+        <div class="CategoryProductThumbnailAreaP">
+          <div class="CategoryProductThumbnailP">
+            $$PRODUCTTHUMBNAIL$$
+          </div>
+        </div>
+        <div class="CategoryProductMfgNameP">##MFGNAME##</div>
+        <div class="CategoryProductDescriptionP">##SHORTDESCRIPTION##</div>
+        <div class="CategoryPriceTabP">
+          <div class="CategoryItemPriceP">Starting at ##PRICE##</div>
+        </div>
+        <div class="CategoryMoreInfoP">
+          <a href="##ITEMURL##">[more info...]</a>
+        </div>
+      </div>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$PRODUCTCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  
+  $$BOTTOMMANUFACTURERSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

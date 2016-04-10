@@ -1,0 +1,121 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="CategoryLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="CategoryLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="CategoryRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="CategoryRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="CategoryPage" layoutstyle="Horizontal" displaysortbox="True" showitemnumbers="False" productsperrow="4" pagesize="20" sizeproportionally="True" pagingtype="NumberedPageLinks">
+  ##SET[ThisCat=##CATID##]## 
+  
+  $$CATEGORYTRAIL$$
+  
+  <div class="ProductNameContainer">
+    <div class="leftProductName">
+      <span class="ProductDetailsProductName">$$CATEGORYNAME$$</span>
+    </div>
+    
+    <div class="rightProductName">
+      <ac:visibilityarea id="SocialBookmarksArea">
+        <div id="divSocialBookmarks" class="ProductDetailsSocialBookmarks">
+          ##SOCIALBOOKMARKS##
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  <div>$$CATEGORYHEADER$$</div>
+  $$TOPCATEGORYSPECIFICWIDGETAREA$$
+  $$TOPATTRIBUTESPECIFICWIDGETAREA$$
+  <div>$$CATEGORYIMAGE$$</div>
+  <div>$$EXTERNALCONTENTAREA$$</div>
+  <div style="WIDTH: 100%;">
+    <ac:layoutarea id="ChildCategoriesList">
+      <div class="CategoryChildCategoriesV">
+        <div class="CategoryCategoryThumbnailV">
+          $$CATEGORYTHUMBNAIL$$
+        </div>
+        <div class="CategoryChildCategoriesLinkV">
+          $$CATEGORYLINK$$
+        </div>
+        <div class="CategoryChildCategoriesShortDescV">
+          $$CATEGORYSHORTDESCRIPTION$$
+        </div>
+      </div>
+    </ac:layoutarea>
+    <div style="CLEAR: both"></div>
+  </div>
+  <br>
+  <div style="clear:both"></div>
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="zzz">
+      <div class="CategoryPageNavigationV">
+        <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+        <span class="CategoryPageNumberPerPageV">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+        $$SHOWBYPAGESIZE$$
+        <div style="clear:both"></div>       
+      </div>        
+    </div>
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigationV">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+        $$PRODUCTCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="ProductList">
+    <div class="CategoryProductRowV">
+      <div class="CategoryProductNameLinkV" style="padding-right: 5px; padding-left: 5px;">$$PRODUCTLINK$$</div>
+      <div class="CategoryProductThumbnailAreaV">
+        $$PRODUCTTHUMBNAIL$$
+      </div>   
+      <div class="CategoryProductDetailsV" style="padding: 0px 5px;">
+        <span class="CategoryProductMfgNameV" style="font-weight: bold; text-transform: uppercase;">$$MANUFACTURERNAME$$</span><br>
+        <div class="CategoryProductPricingAreaV">
+          ##IF[ThisCat=76]##
+          <span style="text-decoration: line-through;">$$RETAILPRICE$$</span><br>
+          $$PRICE$$<br>
+          <span class="CategoryProductMoreInfoLinkV">$$MOREINFOLINK$$</span>
+          <ac:visibilityarea id="AddToCartArea">
+            <div class="CategoryProductAddToCartV">
+              <!--$$QUANTITYBOX$$-->
+              $$ADDTOCARTBUTTON$$
+            </div>
+          </ac:visibilityarea>
+          ##ELSE##
+          $$SHORTDESCRIPTION$$<br>
+          Starting at ##PRICE##<br>
+          <span class="CategoryProductMoreInfoLinkV">$$MOREINFOLINK$$</span>
+          ##ENDIF##
+        </div>  
+      </div>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigationV">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$PRODUCTCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  
+  <!--<div>$$CATEGORYFOOTER$$</div>-->
+  $$BOTTOMATTRIBUTESPECIFICWIDGETAREA$$
+  $$BOTTOMCATEGORYSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

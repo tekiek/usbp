@@ -1,0 +1,56 @@
+<!-- Reference the theme's stylesheet -->
+<link rel="stylesheet" type="text/css" href="##FILEPATHVERSIONED[/shared/themes/USBP [clone]/CSS/style.css]##">
+<style>
+  @media all and (max-width:1520px) and (min-width:1410px){
+    .pagewidth {position:relative;left:-40px;}
+  }
+  @media all and (max-width:1410px) and (min-width:1320px){
+    .pagewidth {position:relative;left:-90px;}
+  }
+  @media all and (max-width:1320px) and (min-width:1280px){
+    .pagewidth {position:relative;left:-125px;}
+  }
+  @media all and (max-width:1279px){
+    .FloatingSideBar {display:none;}
+  }
+</style>
+
+<link rel="shortcut icon" href="/images/favicon.ico">
+
+<script>
+  $(function(){
+    $(".LayoutMiddle").css("min-height",$(".FloatingSideBar").height())
+  });
+</script>
+<!--[if IE 9]>
+<style>.HorizontalNavItem a {line-height:30px;}</style>
+<![endif]-->
+
+<style>
+  .ui-autocomplete { z-index: 10 !important; }
+</style>
+
+<script>
+  $(function(){
+    if($.browser && $.browser.msie && $.browser.version < 9){
+      var $selects = $("select");
+      
+      $selects.each(function(){
+        var ow = $(this).outerWidth();
+        $(this).data("origWidth", ow);
+      }).bind("mouseenter", function(){
+        $(this).width("auto");
+      }).bind("blur change mouseleave", function(){
+        var ow = $(this).data("origWidth");
+        $(this).width(ow);
+      });
+    }   
+  });
+</script>
+
+<!-- ShareThis -->
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+<script type="text/javascript">stLight.options({publisher: "ae1c2bb5-66be-4399-ad35-3b6dcd59f4c2", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<!-- END -->

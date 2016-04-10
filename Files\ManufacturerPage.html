@@ -1,0 +1,148 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="ManufacturerLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="ManufacturerLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="ManufacturerRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="ManufacturerRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="ManufacturerPage" resizeproductthumb="True" productpicwidth="150" productsperrow="4" sizeproportionally="True" layoutstyle="Horizontal" pagingtype="NumberedPageLinks" productpicheight="150" displaysortbox="True" pagesize="20">
+  
+  <div class="ProductNameContainer">
+    <div class="leftProductName">
+      <span class="ProductDetailsProductName"><span style="text-transform: uppercase;">$$MANUFACTURERNAME$$</span></span>
+    </div>
+    
+    <div class="rightProductName">
+      <ac:visibilityarea id="SocialBookmarksArea">
+        <div id="divSocialBookmarks" class="ProductDetailsSocialBookmarks">
+          ##SOCIALBOOKMARKS##
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  $$TOPMANUFACTURERSPECIFICWIDGETAREA$$
+  
+  <div style="clear:both"></div>   
+  
+  <div style="width: 100%; padding: 15px 0;">
+    <div style="float: right; padding-left: 10px;">
+      <img src="##MFGLOGO##" alt="##MFGNAME##">
+    </div>
+    <div style="">$$MANUFACTURERDESCRIPTION$$</div>
+  </div> 
+  
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="zzz">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+        <span class="CategoryPageNumberPerPage">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+        $$SHOWBYPAGESIZE$$
+        <div style="clear:both"></div>       
+      </div>        
+    </div>
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+        $$PRODUCTCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>  
+  
+  ##SET[myBrand=##MFGNAME##]##
+  
+  <ac:layoutarea id="ProductList">
+    ##IF[myBrand=Fairway]##
+    <div class="CategoryProductRowF">
+      <div class="CategoryItemF">
+        <div class="CategoryItemNameF">$$PRODUCTLINK$$</div>
+        <div class="CategoryProductThumbnailAreaF">
+          <div class="CategoryProductThumbnailF">
+            $$PRODUCTTHUMBNAIL$$
+          </div>
+        </div>
+        <div class="CategoryProductMfgNameF">##MFGNAME##</div>
+        <div class="CategoryProductDescriptionF">##SHORTDESCRIPTION##</div>
+        <div class="CategoryPriceTabF">
+          <div class="CategoryItemPriceF">Starting at ##PRICE##</div>
+        </div>
+        <div class="CategoryMoreInfoF">
+          <a href="##ITEMURL##">[more info...]</a>
+        </div>
+      </div>
+    </div>
+    ##ENDIF##
+    ##IF[myBrand=PCA Products]##
+    <div class="CategoryProductRowP">
+      <script>
+        var test = "##PRODUCTCUSTOMFIELD[isHot]##";
+        if(test == "TRUE")
+        {
+          document.write('<div style="position: absolute; bottom: -8px; left: -1px; z-index: 10;"><img src="/images/pca/hot.gif" ALT="BEST SELLER!"></div>'); 
+        }
+      </script>
+      <div class="CategoryItemP">
+        <div class="CategoryItemNameP">$$PRODUCTLINK$$</div>
+        <div class="CategoryProductThumbnailAreaP">
+          <div class="CategoryProductThumbnailP">
+            $$PRODUCTTHUMBNAIL$$
+          </div>
+        </div>
+        <div class="CategoryProductMfgNameP">##MFGNAME##</div>
+        <div class="CategoryProductDescriptionP">##SHORTDESCRIPTION##</div>
+        <div class="CategoryPriceTabP">
+          <div class="CategoryItemPriceP">Starting at ##PRICE##</div>
+        </div>
+        <div class="CategoryMoreInfoP">
+          <a href="##ITEMURL##">[more info...]</a>
+        </div>
+      </div>
+    </div>
+    ##ENDIF##
+    ##IF[myBrand=Ferche]##
+    <div class="CategoryProductRow">
+      <div class="CategoryItem">
+        <div class="CategoryItemName">$$PRODUCTLINK$$</div>
+        <div class="CategoryProductThumbnailArea">
+          <div class="CategoryProductThumbnail">
+            $$PRODUCTTHUMBNAIL$$
+          </div>
+        </div>
+        <div class="CategoryPriceTab">
+          <div class="CategoryItemInformation">
+            <div class="CategoryMoreInfo">
+              <span class="CategoryProductMfgName" style="font-weight: bold; text-transform: uppercase;">##MFGNAME##</span><br>
+              Moulding Size: ##LONGDESCRIPTION2##<br>
+              <a href="##ITEMURL##">[more info...]</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    ##ENDIF##
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$PRODUCTCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  
+  $$BOTTOMMANUFACTURERSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

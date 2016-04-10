@@ -1,0 +1,170 @@
+<ac:templateoverridearea id="HeaderAddonArea">
+  <div style="position:relative;">
+    <ac:widgetarea id="HomePageHeaderWidgets">
+<ac:widget id="HTML4209" type="HTML" hidesnapin="True">
+        <div style="margin:40px 0 0 10px;">
+          <a href="/">Shop all watches now <img src="/shared/themes/USBP [clone]/images/greenarrow.png" alt="now"></a>
+          <a href="/">Shop all accessories now <img src="/shared/themes/USBP [clone]/images/greenarrow.png" alt="now"></a>
+          <a href="/">Shop our top picks now <img src="/shared/themes/USBP [clone]/images/greenarrow.png" alt="now"></a>
+        </div>
+      </ac:widget>
+<ac:widget id="SLIDESHOW4210" type="Slideshow" slidewidth="918px" slideheight="268px" pause="6000">
+<ul>
+<li id='slide_4'>
+<a href='/skylights' class='predefined_slide_item' target=''>
+<img alt='Wasco Residential & Architectural Skylights' title='Wasco Residential & Architectural Skylights' src='/images/wasco/Banner_ResArch_Final.jpg'>
+</a>
+</li>
+<li id='slide_2'>
+<a href='/vinyl-railings' class='predefined_slide_item' target=''>
+<img alt='Fairway Vinyl Railing Systems' title='Fairway Vinyl Railing Systems' src='/images/fairway/Banner_Fairway_Final.jpg'>
+</a>
+</li>
+<li id='slide_1'>
+<a href='/aluminum-screen-doors/popular-models' class='predefined_slide_item' target=''>
+<img alt='PCA Products Aluminum Screen Doors' title='PCA Products Aluminum Screen Doors' src='/images/pca/Banner_PCA_Final.jpg'>
+</a>
+</li>
+<li id='slide_3'>
+<a href='/crown' class='predefined_slide_item' target=''>
+<img alt='Ferche Crown Moulding' title='Ferche Crown Moulding' src='/images/banner/Banner_Crown_Final.jpg'>
+</a>
+</li>
+</ul>
+</ac:widget>
+</ac:widgetarea>
+  </div>
+  <style>
+    .LayoutMiddle { top:-80px }
+  </style>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="PageHeadTags">
+  <link rel="canonical" href="http://##DOMAINNAME##/">
+</ac:templateoverridearea>
+<ac:pagelayout id="DefaultPage" pagetitle="Home Improvement Direct to Your Door | US Building Products">
+  <ac:widgetarea id="Top">
+<ac:widget id="HTML4212" type="HTML">      <h1>US Building Products</h1>
+      <p>US Building Products is your premiere online retailer of Ferche Hardwood Moulding &amp; Trim, Fairway Vinyl Railing Systems, PCA Products Aluminum Screen Doors, and Wasco Skylights.  We carry the entire Ferche line, including the Ferche Decorator Series, Ferche Classics, and standard Ferche Moulding and Trim.</p>
+      <p>Utilize our shopping cart to purchase directly through our website or call our professional sales team to assist you with custom orders @ 1-800-284-5194. We have high-quality products for your next home improvement project. All of our manufacturers are located right here in the USA and we strive to deliver you great product at an even better price. We guarantee it.</p></ac:widget>
+<ac:widget id="CATEGORYQUICKLIST4213" type="CategoryQuickList" showmorelink="False" subcategoryoverridelist=" | | |123, 124, 125" subcategorycount="5|5|5|5" rootcategorylist="148|131|157|122" listsperline="2" enablemergecode="True" controlwidth="100%" headertext="FEATURED FERCHE MOULDING &amp; TRIM">
+      <ac:visibilityarea id="dvControl">
+        $$HEADER$$
+        $$ADMINHELP$$
+        <ac:layoutarea id="QuickList">
+          <div class="CategoryQuickListIndividualContainer">
+            <a class="CategoryQuickListRootCategory" href="##CATURL##">##CATNAME##</a>
+            <a class="CategoryQuickListRootImage" href="##CATURL##">$$ROOTCATEGORYIMAGE$$</a>
+            $$SUBCATEGORIES$$
+          </div>
+        </ac:layoutarea>
+        <ac:layoutarea id="SubCategory">
+          <a class="CategoryQuickListSubCategory" href="##CATURL##">##CATNAME## $$CATPRODUCTCOUNT$$</a> 
+        </ac:layoutarea>
+      </ac:visibilityarea>
+    </ac:widget>
+<ac:widget id="HTML4214" type="HTML"><div style="width: 100%; float: left; height: 100%;">
+      <div style="width: 100%; float: left; padding-bottom: 30px;">
+        $$CAROUSEL4217$$
+      </div>
+      <div style="width: 48%; float: left; padding-bottom: 30px;">
+        $$CATEGORYQUICKLIST4213$$
+        $$CATEGORYQUICKLIST4216$$
+      </div>
+      <div style="width: 4%; float: left;"></div>
+      <div style="width: 48%; float: right;">
+        $$HTML4219$$
+      </div>
+      </div>
+      <div style="width: 100%; float: left;">
+        $$PRODUCTDISPLAY4215$$
+        $$RSSFEEDREADER4218$$
+      </div></ac:widget>
+<ac:widget id="PRODUCTDISPLAY4215" type="ProductDisplay" featureditemsbuymorelink="False" displaybycategoryonly="False" redirecttocheckoutonaddtocart="False" repeatabletype="FeaturedItems" hidesnapin="True" enablemergecode="True" controlwidth="100%" headertext="FEATURED FERCHE PLINTH AND CORNER BLOCKS" categoryid="0">
+      <ac:visibilityarea id="dvControl">
+        $$HEADER$$
+        $$ADMINHELP$$
+        <ac:layoutarea id="Item">
+          <ac:visibilityarea id="dvControlItem">			
+            <table width="100%">
+              <tr>
+                <td valign="top" align="center">
+                  <div class="FeaturedItemsDetails">
+                    <a href="##ITEMURL##" title="##MFGNAME## ##PRODUCTNAME##">$$PRODUCTNAME$$</a></div>
+                  <div style="height: 105px;">$$PHOTOWITHLINK$$</div>
+                </td>
+                
+                <!-- DISPLAYIMAGEONNEWLINE -->
+                
+                <td style="padding:5px" valign="bottom">
+                  <hr class="FeaturedItemsPriceHR">
+                  <div class="FeaturedItemsPriceAlignment" style="text-align: center;">
+                    <div class="PriceLabels">
+                      Starting at $$PRICE$$<br>
+                      <a href="##ITEMURL##" title="##MFGNAME## ##PRODUCTNAME##">[more info]</a>
+                    </div>
+                  </div>
+                  <hr class="FeaturedItemsBuyMoreLinkHR"> 
+                </td> 
+              </tr> 
+            </table> 
+          </ac:visibilityarea>
+        </ac:layoutarea>
+      </ac:visibilityarea>
+    </ac:widget>
+<ac:widget id="CATEGORYQUICKLIST4216" type="CategoryQuickList" showmorelink="False" subcategoryoverridelist=" | | | " subcategorycount="0|0|0|0" rootcategorylist="169|170|176|183" listsperline="2" enablemergecode="True" headertext="FEATURED VINYL RAILINGS">
+      <ac:visibilityarea id="dvControl">
+        $$HEADER$$
+        $$ADMINHELP$$
+        <ac:layoutarea id="QuickList">
+          <div class="CategoryQuickListIndividualContainer">
+            <a class="CategoryQuickListRootCategory" href="##CATURL##">##CATNAME##</a>
+            <a class="CategoryQuickListRootImage" href="##CATURL##"><img src="##CATICON##"></a>
+            $$SUBCATEGORIES$$
+          </div>
+        </ac:layoutarea>
+        <ac:layoutarea id="SubCategory">
+          <a class="CategoryQuickListSubCategory" href="##CATURL##">##CATNAME## $$CATPRODUCTCOUNT$$</a> 
+        </ac:layoutarea>
+      </ac:visibilityarea>
+    </ac:widget>
+<ac:widget id="CAROUSEL4217" type="Carousel" scrollby="4" repeatabletype="ProductList" rotatorstartdate="8/9/2013" productpicturewidth="150" displaycount="100" enlargeproductthumb="True" enablemergecode="True" controlwidth="100%" headertext="POPULAR ALUMINUM SCREEN DOORS" productlistid="1" productpictureheight="150">
+  <ac:visibilityarea id="dvControl">
+    $$HEADER$$
+    <ac:layoutarea id="Item">
+      <ac:visibilityarea id="dvControlItem">
+        <table style="width: 200px; margin-top: 10px;">
+          <tr>
+            <td valign="top" style="text-align: center; font-size: 18px; font-weight: bold;">$$PRODUCTNAME$$</td>
+          </tr>
+          <tr>
+            <td valign="top" style="text-align: center;">$$PHOTOWITHLINK$$</td>
+          </tr>
+          <tr>
+            <td valign="top" style="text-align: center;">
+              Starting at $$PRICE$$<br>
+              <span style="font-size: 10px;">[<a href="##ITEMURL##" title="##MFGNAME## ##PRODUCTNAME##">more info</a>]
+            </span></td>
+          </tr>
+        </table>
+      </ac:visibilityarea>
+    </ac:layoutarea>
+  </ac:visibilityarea>
+</ac:widget>
+<ac:widget id="RSSFEEDREADER4218" type="RSSFeedReader" feedurl="http://blog.usbuildingproducts.com/feed" numberofarticlestodisplay="3" enablemergecode="True" headertext="RECENT BLOG POSTS">
+  <ac:visibilityarea id="dvControl">
+    <a href="http://blog.usbuildingproducts.com" title="US BUILDING PRODUCTS BLOG" target="_blank" style="text-decoration: none; color: white;">$$HEADER$$</a>
+    <ac:layoutarea id="Item">
+      <ac:visibilityarea id="dvControlItem">
+        <div class="FeedItemTitle"><b><a href="$$ITEMLINK$$" class="FeedItemLink" target="_blank" title="$$ITEMTITLE$$">$$ITEMTITLE$$</a></b> ($$ITEMDATE$$)</div>
+        <div class="FeedItemSummary"><img src="/images/rss.png" alt="RSS" align="left">##TRIM[225]##$$ITEMSUMMARY$$...##ENDTRIM## <a href="$$ITEMLINK$$" class="FeedItemLink" target="_blank" title="$$ITEMTITLE$$">[read more]</a></div>
+      </ac:visibilityarea>
+    </ac:layoutarea>
+  </ac:visibilityarea>  
+</ac:widget>
+<ac:widget id="HTML4219" type="HTML" enablemergecode="True"><a class="twitter-timeline" href="https://twitter.com/USBProducts" data-widget-id="488038819946455041">Tweets by @USBProducts</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></ac:widget>
+</ac:widgetarea>
+  $$HOMEPAGECONTENT$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>

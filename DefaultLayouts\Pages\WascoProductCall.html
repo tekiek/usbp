@@ -1,0 +1,106 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="ProductLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="ProductLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="ProductRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="ProductRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="ProductDetailsPage" hoveringoverthumbswapphoto="True" showtotalforgroups="True" thumbmaxrows="5" thumbheight="75" swatchposition="Below" swatchimageheight="15" thumbwidth="75" productpicheight="250" resetpicafterhover="True" usetabs="True" showswatchnexttovariantoption="True" thumbmaxcols="2" resizerelatedthumb="True" manufacturerlogoheight="150">
+  <div style="width:100%; float:left;">
+    $$CATEGORYTRAIL$$
+  </div>
+  
+  <div style="width:100%; clear:all; float: left;" itemscope="" itemtype="http://data-vocabulary.org/Product">    
+    <div style="width:30%; float:left;">
+      <div style="float:left;">$$PHOTO$$<br>
+      </div>
+    </div>  
+    <div style="width:70%; float: left;">
+      <div style="width: 100%; border-bottom: 1px solid black; float: left; clear: all;">
+        <div>
+          <h1 itemprop="name" itemprop="itemreviewed" style="text-transform: uppercase;">##PRODUCTCUSTOMFIELD[LongName]##</h1>
+          <div itemprop="description" style="margin-top: -5px;"><span style="text-transform: uppercase;">##BULLETS##</span>&nbsp;&nbsp;<span style="font-size: 11px;">[<a href="#details" title="See All Product Details">see more details</a>]</span></div>
+          <div style="padding: 5px 0 10px 0; margin-left: -3px;">
+            <span class='st_fbrec_hcount' displaytext='Facebook Recommend'></span>
+            <span class='st_twitter_hcount' displaytext='Tweet'></span>
+            <span class='st_googleplus_hcount' displaytext='Google+'></span>
+            <span class='st_pinterest_hcount' displaytext='Pinterest'></span>
+            <span class='st_email_hcount' displaytext='Email'></span>
+            <span class='st_sharethis_hcount' displaytext='Share'></span>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; float: left; padding: 10px 0; border-bottom: 1px solid black;">
+        <div style="width: 42%; float: left;">
+          <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
+            <ac:visibilityarea id="PricingArea">
+              <meta itemprop="currency" content="USD">
+              <span itemprop="price" id="lblPrice" class="ProductPricing PriceToUpdate" style="font-weight: bold; font-size: 18px;">Starting at ##PRICE##<br>Call for Price</span>
+              <meta itemprop="condition" content="new">
+              <meta itemprop="offerURL" content="##ITEMFULLURL##">
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="ItemNumberArea">
+              <div class="ProductDetailsItemNr" id="dvProductItemNr">
+                Item Number: $$ITEMNR$$
+              </div>
+            </ac:visibilityarea>
+            
+            <ac:visibilityarea id="AvailabilityArea">
+              <div id="dvProductAvailability" class="ProductDetailsAvailability">
+                Manufacturer Availability: Special Order<br>
+                <a href="/USBP [clone]/contact" target="_blank" title="Contact Us"><span itemprop="availability" content="in_stock">Contact Us for Lead Time</span></a>&raquo;
+              </div>
+            </ac:visibilityarea>
+            
+            <!-- snippet area -->
+            <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
+            <meta itemprop="category" content="##PRODUCTCUSTOMFIELD[GoogleProductCategory]##">
+            <meta itemprop="seller" content="www.USBuildingProducts.com">
+            <!-- ### -->
+            
+          </span>
+        </div>
+        <div style="width: 38%; float: left; padding-top: 10px;">      
+          <div class="ProductDetailsSpecifications">
+            <script>
+              var myDesc = "##TRIM[2]## ##LONGDESCRIPTION2## ##ENDTRIM##";
+              if(myDesc.length > 1)
+              {
+                document.write("<b>QUICK SPECS</b><br>");
+              }
+            </script>
+            ##LONGDESCRIPTION2##
+          </div>
+        </div>
+        <div style="width: 20%; float: right;">
+          <div class="ProductDetailsManufacturerName">
+            $$MFGLOGO$$
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="width: 100%; float: left">   
+    <div style="clear:both;"></div>
+    <a name="details"></a>
+    <div class="ProductDetailsTabs">
+      $$DETAILS$$
+    </div>
+    <div class="MFGSnippet">
+      <span itemprop="brand">##MFGNAME##</span><br>
+      <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
+    </div>
+    
+    $$BOTTOMPRODUCTSPECIFICWIDGETAREA$$
+    <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+  </div>  
+</ac:pagelayout>

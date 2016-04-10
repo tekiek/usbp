@@ -1,0 +1,125 @@
+<ac:templateoverridearea id="LeftColumn">
+  <ac:widgetarea id="CategoryLeftTop">
+</ac:widgetarea>
+  $$LEFTCOLUMN$$
+  <ac:widgetarea id="CategoryLeftBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:templateoverridearea id="RightColumn">
+  <ac:widgetarea id="CategoryRightTop">
+</ac:widgetarea>
+  $$RIGHTCOLUMN$$
+  <ac:widgetarea id="CategoryRightBottom">
+</ac:widgetarea>
+</ac:templateoverridearea>
+<ac:pagelayout id="CategoryPage" resizeproductthumb="True" productsperrow="4" sizeproportionally="True" layoutstyle="Horizontal" pagingtype="NumberedPageLinks" displaysortbox="True" pagesize="20">
+  
+  <div style="width: 100%;">
+    <div class="leftProductName">
+      $$CATEGORYTRAIL$$
+    </div>
+    
+    <div class="rightProductName">
+      <ac:visibilityarea id="SocialBookmarksArea">
+        <div id="divSocialBookmarks" class="ProductDetailsSocialBookmarks">
+          ##SOCIALBOOKMARKS##
+        </div>
+      </ac:visibilityarea>
+    </div>
+  </div>
+  
+  <br clear="all">
+  
+  <div class="ProductNameContainer">
+    <div class="leftProductNamePCA">
+      <h1 class="ProductDetailsProductName">$$CATEGORYFOOTER$$</h1>
+    </div>
+  </div>
+  
+  <ac:widgetarea id="Top">
+</ac:widgetarea>
+  <div style="padding: 10px 0;">$$CATEGORYHEADER$$</div>
+  $$TOPCATEGORYSPECIFICWIDGETAREA$$
+  $$TOPATTRIBUTESPECIFICWIDGETAREA$$
+  
+  <div>$$CATEGORYIMAGE$$</div>
+  <div>$$EXTERNALCONTENTAREA$$</div>
+  
+  <div style="width: 100%;">
+    <ac:layoutarea id="ChildCategoriesList">
+      <div class="CategoryChildCategoriesW">
+        <div class="CategoryCategoryThumbnailW">
+          $$CATEGORYTHUMBNAIL$$
+        </div>
+        <div class="CategoryChildCategoriesLinkW">
+          $$CATEGORYLINK$$
+        </div>
+        <div class="CategoryChildCategoriesShortDescW">
+          $$CATEGORYSHORTDESCRIPTION$$
+        </div>
+      </div>
+    </ac:layoutarea>
+    <div style="CLEAR: both"></div>
+  </div>
+  
+  <ac:visibilityarea id="TopNavigationArea">
+    <div id="zzz">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$SORTBYDROPDOWN$$</div>
+        <span class="CategoryPageNumberPerPage">$$NUMBERPERPAGEDROPDOWNLABEL$$</span>
+        $$SHOWBYPAGESIZE$$
+        <div style="clear:both"></div>       
+      </div>        
+    </div>
+    <div id="dvNavTop">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONTOP$$</div>
+        $$PRODUCTCOUNTTOP$$
+        <div style="clear:both"></div>
+      </div>      
+    </div>    
+  </ac:visibilityarea>
+  
+  <ac:layoutarea id="ProductList">
+    <div class="CategoryProductRowW">
+      <script>
+        var test = "##PRODUCTCUSTOMFIELD[isHot]##";
+        if(test == "TRUE")
+        {
+          document.write('<div style="position: absolute; bottom: -8px; left: -1px; z-index: 10;"><img src="/images/pca/hot.gif" ALT="BEST SELLER!"></div>'); 
+        }
+      </script>
+      <div class="CategoryItemW">
+        <div class="CategoryItemNameW">$$PRODUCTLINK$$</div>
+        <div class="CategoryProductThumbnailAreaW">
+          <div class="CategoryProductThumbnailW">
+            $$PRODUCTTHUMBNAIL$$
+          </div>
+        </div>
+        <div class="CategoryProductMfgNameW">##MFGNAME##</div>
+        <div class="CategoryProductDescriptionW">##SHORTDESCRIPTION##</div>
+        <div class="CategoryPriceTabW">
+          <div class="CategoryItemPriceW">Starting at ##PRICE##</div>
+        </div>
+        <div class="CategoryMoreInfoW">
+          <a href="##ITEMURL##">[more info...]</a>
+        </div>
+      </div>
+    </div>
+  </ac:layoutarea>
+  
+  <ac:visibilityarea id="BottomNavigationArea">
+    <div id="dvNavBottom">
+      <div class="CategoryPageNavigation">
+        <div style="float:right;">$$PRODUCTLISTPAGENAVIGATIONBOTTOM$$</div>
+        $$PRODUCTCOUNTBOTTOM$$
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </ac:visibilityarea>
+  
+  $$BOTTOMATTRIBUTESPECIFICWIDGETAREA$$
+  $$BOTTOMCATEGORYSPECIFICWIDGETAREA$$
+  <ac:widgetarea id="Bottom">
+</ac:widgetarea>
+</ac:pagelayout>
