@@ -1,26 +1,22 @@
 <ac:templateoverridearea id="LeftColumn">
   <ac:widgetarea id="ProductLeftTop">
-</ac:widgetarea>
+  </ac:widgetarea>
   $$LEFTCOLUMN$$
   <ac:widgetarea id="ProductLeftBottom">
-</ac:widgetarea>
+  </ac:widgetarea>
 </ac:templateoverridearea>
 <ac:templateoverridearea id="RightColumn">
   <ac:widgetarea id="ProductRightTop">
-</ac:widgetarea>
+  </ac:widgetarea>
   $$RIGHTCOLUMN$$
   <ac:widgetarea id="ProductRightBottom">
-</ac:widgetarea>
+  </ac:widgetarea>
 </ac:templateoverridearea>
 <ac:pagelayout id="ProductDetailsPage" swatchimagewidth="30" hoveringoverthumbswapphoto="True" showtotalforgroups="True" thumbmaxrows="4" thumbheight="75" swatchposition="Below" swatchimageheight="30" thumbwidth="75" productpicheight="250" showswatchnexttovariantoption="True" thumbmaxcols="4" showitemnumbers="False">
-
-
   <!-- Page: Product Details  -->
 
   ##SET[isKit=##PRODUCTCUSTOMFIELD[isKit]##]##
   ##SET[ThisCat=##CATID##]##
-
-
 
   <!-- breadcrumb  -->
   <div class="breadcrumb pdetails--breadcrumb hidden-xs hidden-sm">
@@ -28,9 +24,8 @@
   </div>
   <!-- breadcrumb: end  -->
 
-  <!-- HEADER  -->
   <!-- Product Header  -->
-  <div class="row pdetails--header xs-pt3 xs-pb3 xs-m0 xs-mt3 xs-border-top xs-border-bottom">
+  <div class="row pdetails--header xs-pt3 xs-pb3 md-m0 xs-m3 xs-mt3 xs-border-top xs-border-bottom">
 
     <!-- LEFT Col -->
     <!-- Product Header: Name -->
@@ -43,8 +38,8 @@
     <!-- RIGHT Col -->
     <div class="col-md-6 lg-border-left lg-pl5">
       <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
-
         <ac:visibilityarea id="PricingArea">
+
           <!-- Product Header: Logo -->
           <div class="ProductDetailsManufacturerName">
             $$MFGLOGO$$
@@ -66,8 +61,8 @@
           </h2>
         </ac:visibilityarea>
 
+        <!-- Product Header: Item Number -->
         <span class="text-muted">
-          <!-- Product Header: Item Number -->
           <ac:visibilityarea id="ItemNumberArea">
             <div class="ProductDetailsItemNr" id="dvProductItemNr">
               ##SET[pdItemNum=##ITEMNR##]##
@@ -99,16 +94,15 @@
   ##IF[isKit=]##
   <!-- No Kit  -->
 
-
   <!-- Product Details  -->
-  <div class="pdetails--details" itemscope="" itemtype="http://data-vocabulary.org/Product">
+  <div class="pdetails--details xs-mt5 xs-mb3" itemscope="" itemtype="http://data-vocabulary.org/Product">
 
     <div class="row">
 
       <!-- LEFT BAR -->
       <!-- Product Details: Photos  -->
       <div class="col-md-6">
-        <div class="lg-border rounded lg-p3">
+        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           $$PHOTO$$
         </div>
       </div>
@@ -117,7 +111,7 @@
       <!-- RIGHT BAR -->
       <!-- Product Details: Options  -->
       <div class="col-md-6 pdetails--options">
-        <div class="lg-border rounded xs-p3">
+        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
           <meta itemprop="category" content="Hardware > Building Materials">
           <meta itemprop="seller" content="www.USBuildingProducts.com">
@@ -171,9 +165,7 @@
 
               </div>
             </ac:visibilityarea>
-
-            <!-- Product Details: Quanity  -->
-            <div id="dvProductQuantity" class="ProductDetailsQuantity">
+            <div id="dvProductQuantity" class="ProductDetailsQuantity xs-pt3 xs-border-top">
               <span><b>Price (per item): </b></span>
               <span id="lblPrice" class="ProductDetailsPrice PriceToUpdate" itemprop="price">
                 ##PRICE##
@@ -193,7 +185,7 @@
 
   <!-- Product Details: Tab  -->
   <div class="xs-hide md-block md-mt5">
-    <div class="ProductDetailsTabs">
+    <div class="ProductDetailsTabs xs-border md-p3 rounded md-mt5 md-mb5">
       $$DETAILS$$
     </div>
     <div class="MFGSnippet">
@@ -209,13 +201,13 @@
 
   <!-- KIT PRODUCTS -->
 
-  <div class="pdetails--details">
+  <div class="pdetails--details xs-mt5 xs-mb3">
     <div class="row">
 
       <!-- LEFT BAR -->
       <!-- Product Details: Photos  -->
       <div class="col-md-6">
-        <div class="lg-border rounded lg-p3">
+        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           $$PHOTO$$
         </div>
       </div>
@@ -224,7 +216,7 @@
       <!-- Right BAR -->
       <!-- Product Details: Options  -->
       <div class="col-md-6 pdetails--options ">
-        <div class="lg-border rounded xs-p3">
+        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           $$DETAILS$$
         </div>
       </div>
@@ -242,7 +234,7 @@
 
             <!-- Table -->
             <div class="pgroup--wrapper xs-mt5 xs-mb3 clearfix">
-              <table class="table--mobile table table-striped table-hover md-border rounded">
+              <table class="table--mobile table table-striped sm-border rounded">
 
                 <!-- Table Header -->
                 <thead>
@@ -252,7 +244,7 @@
                     <th id="thProductGroupDisplaySize">Dimensions</th>
                     <th id="thProductGroupDisplayDesc" width="20%">Additional<br>Information</th>
                     <th id="thProductGroupDisplayVariants" width="20%">Wood Type/<br>Species</th>
-                    <th id="thProductGroupDisplayPricing">Price<br>Per Unit</th>
+                    <th id="thProductGroupDisplayPricing">Price Per Unit</th>
                     <th id="thProductGroupDisplayQuantity">Quantity<br>Desired</th>
                   </tr>
                 </thead>
@@ -306,7 +298,7 @@
             </ac:layoutarea>
 
             <!-- Add to cart -->
-            <div align="right" class="ProductGroupAddToCart xs-mb3">
+            <div align="right" class="ProductGroupAddToCart xs-m2 md-m0 md-mb3">
               $$PRODUCTGROUPADDTOCARTBUTTON$$
             </div>
             <!-- Add to cart: end -->

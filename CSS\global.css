@@ -687,57 +687,28 @@ header .navbar .dropdown-menu>li>a {
     border-radius: 5px;
     border: 1px solid #ddd;
   }
+
+  .table--mobile.table-striped>tbody>tr:nth-of-type(odd),
+  .table--mobile.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: #f9f9f9 !important;
+  }
 }
 
-    /* PRODUCT GROUP */
+/* PRODUCT GROUP */
 
-    .pgroup--wrapper .ProductGroupFooter,
-    .pgroup--wrapper .ProductGroupFooter a,
-    .pgroup--wrapper .ProductDetailsPricing {
-      color: black !important;
-      text-align: right;
-    }
+@media only screen and (max-width: 760px) {
+  .pgroup--wrapper td:before { font-weight: 500; }
+  .pgroup--wrapper td:nth-of-type(1):before { content: "Item #"; }
+  .pgroup--wrapper td:nth-of-type(2):before { content: "Item"; }
+  .pgroup--wrapper td:nth-of-type(3):before { content: "Dimensions"; }
+  .pgroup--wrapper td:nth-of-type(4):before { content: "Details"; }
+  .pgroup--wrapper td:nth-of-type(5):before { content: "Type"; }
+  .pgroup--wrapper td:nth-of-type(6):before { content: "Price"; }
+  .pgroup--wrapper td:nth-of-type(7):before { content: "Quantity"; }
 
-    #btnProductGroupAddToCartButton {
-      width: 100%;
-      color: #fff;
-      background-color: #d9534f;
-      border-color: #d43f3a;
-      box-shadow: none;
-      text-shadow: none;
-      max-width: 300px;
-    }
+  .pgroup--wrapper .ProductGroupFooter td:before { 
+    content: " "; 
+  }
+}
 
-    .pgroup--wrapper>.table>tbody>tr>td, 
-    .pgroup--wrapper>.table>tbody>tr>th, 
-    .pgroup--wrapper>.table>tfoot>tr>td, 
-    .pgroup--wrapper>.table>tfoot>tr>th, 
-    .pgroup--wrapper>.table>thead>tr>td, 
-    .pgroup--wrapper>.table>thead>tr>th {
-      white-space: normal !important;
-      text-align: left !important;
-    }
-
-    .pgroup--wrapper .table tr select,
-    .pgroup--wrapper .table tr input {
-      width: 100%;
-      border-radius: 3px;
-      font-size: 14px;
-    }
-
-    @media only screen and (max-width: 760px) {
-      .pgroup--wrapper td:before { font-weight: 500; }
-      .pgroup--wrapper td:nth-of-type(1):before { content: "Item #"; }
-      .pgroup--wrapper td:nth-of-type(2):before { content: "Item"; }
-      .pgroup--wrapper td:nth-of-type(3):before { content: "Dimensions"; }
-      .pgroup--wrapper td:nth-of-type(4):before { content: "Details"; }
-      .pgroup--wrapper td:nth-of-type(5):before { content: "Type"; }
-      .pgroup--wrapper td:nth-of-type(6):before { content: "Price"; }
-      .pgroup--wrapper td:nth-of-type(7):before { content: "Quantity"; }
-
-      .pgroup--wrapper .ProductGroupFooter td:before { 
-        content: " "; 
-      }
-    }
-
-    /* PRODUCT GROUP: End */
+/* PRODUCT GROUP: End */
