@@ -1,225 +1,26 @@
 <ac:templateoverridearea id="LeftColumn">
   <ac:widgetarea id="ProductLeftTop">
-  </ac:widgetarea>
+</ac:widgetarea>
   $$LEFTCOLUMN$$
   <ac:widgetarea id="ProductLeftBottom">
-  </ac:widgetarea>
+</ac:widgetarea>
 </ac:templateoverridearea>
 <ac:templateoverridearea id="RightColumn">
   <ac:widgetarea id="ProductRightTop">
-  </ac:widgetarea>
+</ac:widgetarea>
   $$RIGHTCOLUMN$$
   <ac:widgetarea id="ProductRightBottom">
-  </ac:widgetarea>
+</ac:widgetarea>
 </ac:templateoverridearea>
 <ac:pagelayout id="ProductDetailsPage" swatchimagewidth="30" hoveringoverthumbswapphoto="True" showtotalforgroups="True" thumbmaxrows="4" thumbheight="75" swatchposition="Below" swatchimageheight="30" thumbwidth="75" productpicheight="250" showswatchnexttovariantoption="True" thumbmaxcols="4" showitemnumbers="False">
+
 
   <!-- Page: Product Details  -->
 
   ##SET[isKit=##PRODUCTCUSTOMFIELD[isKit]##]##
   ##SET[ThisCat=##CATID##]##
 
-  <style>
-    .pdetails--header {
-      margin: 20px 0;
-    }
 
-    .border--round {
-      border: 1px solid #D6D5D4 !important;
-      border-radius: 5px !important;
-    }
-    .margin--0 {
-      margin: 0px !important;
-    }
-
-    .padding--0 {
-      margin: 0px !important;
-    }
-
-    .pdetails--breadcrumb .ProductDetailsCategoryTrail {
-      margin: 0px;
-    }
-
-    .pdetails--header h2,
-    .pdetails--header .ProductDetailsPricing,
-    .ProductDetailsVariations h2 {
-      font-size: 24px !important;
-      font-weight: normal !important;
-    }
-
-    @media screen and (max-width: 750px) {
-      .pdetails--header__price {
-        border-left: 0px !important;
-      }
-
-      .ProductDetailsPhotoArea {
-        border: 0px !important;
-      }
-
-      .pdetails--options {
-        margin: 0 20px !important;
-      }
-
-      .ProductDetailsTabs {
-        border: 0px !important;
-      }
-
-      .ProductDetailsTabs table {
-        width: 100% !important;
-      }
-
-      .ProductDetailsTabs ximg {
-        width: 100% !important;
-      }
-    }
-
-  </style>
-
-  <style>
-    .pgroup--wrapper .ProductGroupFooter,
-    .pgroup--wrapper .ProductGroupFooter a,
-    .pgroup--wrapper .ProductDetailsPricing {
-      color: black !important;
-      text-align: right;
-    }
-
-    .pgroup--wrapper .ProductGroupAddToCart {
-      margin: 10px;
-    }
-
-    .pgroup--wrapper #btnProductGroupAddToCartButton {
-      width: 100%;
-      color: #fff;
-      background-color: #d9534f;
-      border-color: #d43f3a;
-      box-shadow: none;
-      text-shadow: none;
-      max-width: 300px;
-    }
-
-
-    .pgroup--wrapper .table-striped>tbody>tr:nth-of-type(even) {
-      background-color: #fff;
-    }
-
-    .pgroup--wrapper {
-      margin: 20px 0;
-      clear: both;
-      float: none;
-    }
-
-    .pgroup--wrapper.table-responsive>.table>tbody>tr>td, 
-    .pgroup--wrapper.table-responsive>.table>tbody>tr>th, 
-    .pgroup--wrapper.table-responsive>.table>tfoot>tr>td, 
-    .pgroup--wrapper.table-responsive>.table>tfoot>tr>th, 
-    .pgroup--wrapper.table-responsive>.table>thead>tr>td, 
-    .pgroup--wrapper.table-responsive>.table>thead>tr>th {
-      white-space: normal !important;
-      text-align: left !important;
-    }
-
-    .pgroup--wrapper .table tr select,
-    .pgroup--wrapper .table tr input {
-      width: 100%;
-      border-radius: 3px;
-      font-size: 14px;
-    }
-
-    /*
-    Max width before this PARTICULAR table gets nasty
-    This query will take effect for any screen smaller than 760px
-    and also iPads specifically.
-    */
-    @media only screen and (max-width: 760px) {
-
-      .pgroup--wrapper .pdetails--details {
-        margin: 10px;
-      }
-
-      /* Force table to not be like tables anymore */
-      .table--mobile table, 
-      .table--mobile thead, 
-      .table--mobile tbody, 
-      .table--mobile th, 
-      .table--mobile td, 
-      .table--mobile tr {
-        display: block;
-      }
-
-      /* Hide table headers (but not display: none;, for accessibility) */
-      .table--mobile thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-      }
-
-
-      .table--mobile td {
-        /* Behave  like a "row" */
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 35% !important;
-      }
-
-      .table--mobile td:before {
-        /* Now like a table header */
-        position: absolute;
-        /* Top/left values mimic padding */
-        top: 6px;
-        left: 6px;
-        width: 35%;
-        padding-right: 10px;
-        white-space: nowrap;
-        text-align: left;
-      }
-
-      /*
-      Label the data
-      */
-      .pgroup--wrapper  td:before { font-weight: 500; }
-      .pgroup--wrapper td:nth-of-type(1):before { content: "Item #"; }
-      .pgroup--wrapper td:nth-of-type(2):before { content: "Item"; }
-      .pgroup--wrapper td:nth-of-type(3):before { content: "Dimensions"; }
-      .pgroup--wrapper td:nth-of-type(4):before { content: "Details"; }
-      .pgroup--wrapper td:nth-of-type(5):before { content: "Type"; }
-      .pgroup--wrapper td:nth-of-type(6):before { content: "Price"; }
-      .pgroup--wrapper td:nth-of-type(7):before { content: "Quantity"; }
-
-
-
-
-
-      .table--mobile>tbody>tr>td, 
-      .table--mobile>tbody>tr>th, 
-      .table--mobile>tfoot>tr>td, 
-      .table--mobile>tfoot>tr>th, 
-      .table--mobile>thead>tr>td, 
-      .table--mobile>thead>tr>th {
-        border-top: 0px !important;
-      }
-
-
-
-      .table--mobile tr {
-        margin: 10px 0;
-        border-radius: 5px;
-        border: 1px solid #ddd;
-      }
-
-      .table-responsive {
-        border: 0px !important;
-        padding: 0 10px !important;
-      }
-
-      .pgroup--wrapper .ProductGroupFooter {
-        border: 0px;
-      }
-      .pgroup--wrapper .ProductGroupFooter td:before { 
-        content: " "; 
-      }
-    }
-  </style>
 
   <!-- breadcrumb  -->
   <div class="breadcrumb pdetails--breadcrumb hidden-xs hidden-sm">
@@ -229,7 +30,7 @@
 
   <!-- HEADER  -->
   <!-- Product Header  -->
-  <div class="row pdetails--header">
+  <div class="row pdetails--header xs-pt3 xs-pb3 xs-m0 xs-mt3 xs-border-top xs-border-bottom">
 
     <!-- LEFT Col -->
     <!-- Product Header: Name -->
@@ -240,7 +41,7 @@
     <!-- LEFT Col: END -->
 
     <!-- RIGHT Col -->
-    <div class="col-md-6 pdetails--header__price">
+    <div class="col-md-6 lg-border-left lg-pl5">
       <span itemprop="offerDetails" itemscope="" itemtype="http://data-vocabulary.org/Offer">
 
         <ac:visibilityarea id="PricingArea">
@@ -250,7 +51,7 @@
           </div>
 
           <!-- Product Header: Price -->
-          <h2 style="margin: 0 0 10px 0;">
+          <h2 class="xs-mb2">
             <div id="dvProductPricing" class="ProductDetailsPricing">
               <meta itemprop="currency" content="USD">
               <span id="lblPriceArea" class="ProductDetailsPriceArea">
@@ -296,96 +97,102 @@
   <!-- HEADER: END -->
 
   ##IF[isKit=]##
+  <!-- No Kit  -->
+
 
   <!-- Product Details  -->
-  <div class="pdetails--details margin--0" itemscope="" itemtype="http://data-vocabulary.org/Product">
+  <div class="pdetails--details" itemscope="" itemtype="http://data-vocabulary.org/Product">
 
-    <div class="row margin--0">
+    <div class="row">
 
       <!-- LEFT BAR -->
       <!-- Product Details: Photos  -->
-      <div class="col-md-6 padding--0">
-        $$PHOTO$$
+      <div class="col-md-6">
+        <div class="lg-border rounded lg-p3">
+          $$PHOTO$$
+        </div>
       </div>
       <!-- LEFT BAR: END -->
 
       <!-- RIGHT BAR -->
       <!-- Product Details: Options  -->
-      <div class="col-md-6 padding--0 pdetails--options border--round">
-        <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
-        <meta itemprop="category" content="Hardware > Building Materials">
-        <meta itemprop="seller" content="www.USBuildingProducts.com">
-        <ac:visibilityarea id="AddToCartArea">
+      <div class="col-md-6 pdetails--options">
+        <div class="lg-border rounded xs-p3">
+          <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
+          <meta itemprop="category" content="Hardware > Building Materials">
+          <meta itemprop="seller" content="www.USBuildingProducts.com">
+          <ac:visibilityarea id="AddToCartArea">
 
-          <ac:visibilityarea id="VariantArea">
-            <div id="dvProductVariations" class="ProductDetailsVariations">
+            <ac:visibilityarea id="VariantArea">
+              <div id="dvProductVariations" class="ProductDetailsVariations">
 
-              <!-- Product: Options -->
-              <ac:layoutarea id="Variant">
-                $$VARIANTGROUPOPENER$$
-                $$VARIANTGROUPNAME$$
-                $$VARIANTGROUPHEADER$$
-                $$VARIANTGROUPCONTROLS$$
-                <ac:visibilityarea id="VariantGroupSwatches">
-                  $$VARIANTGROUPSWATCHES$$
-                </ac:visibilityarea>
-                $$VARIANTGROUPFOOTER$$
-                $$VARIANTGROUPCLOSER$$
-              </ac:layoutarea>
-              <!-- Product: Options: END -->
-
-              <!-- Product: Personalization -->
-              <div>
-                <ac:layoutarea id="Personalization">
-                  <div class="ProductDetailsVariations">
-                    $$PERSONALIZATIONQUESTION$$
-                    $$PERSONALIZATIONCONTROLS$$
-                  </div>
+                <!-- Product: Options -->
+                <ac:layoutarea id="Variant">
+                  $$VARIANTGROUPOPENER$$
+                  $$VARIANTGROUPNAME$$
+                  $$VARIANTGROUPHEADER$$
+                  $$VARIANTGROUPCONTROLS$$
+                  <ac:visibilityarea id="VariantGroupSwatches">
+                    $$VARIANTGROUPSWATCHES$$
+                  </ac:visibilityarea>
+                  $$VARIANTGROUPFOOTER$$
+                  $$VARIANTGROUPCLOSER$$
                 </ac:layoutarea>
-              </div>
-              <!-- Product: Personalization: END -->
+                <!-- Product: Options: END -->
 
-              <!-- Product: DetailedConfiguration -->
-              <ac:visibilityarea id="DetailedConfiguration">
-                <div class="pdetails--accessories--label">ACCESSORIES</div>
-                <div class="pdetails--accessories--optional">&nbsp;&nbsp;[optional]</div>
-                <br clear="left">
-                <a href="#" onclick="showOptions();">View blinds, sun screening choices, and accessories for this product&#187;</a>
+                <!-- Product: Personalization -->
+                <div>
+                  <ac:layoutarea id="Personalization">
+                    <div class="ProductDetailsVariations">
+                      $$PERSONALIZATIONQUESTION$$
+                      $$PERSONALIZATIONCONTROLS$$
+                    </div>
+                  </ac:layoutarea>
+                </div>
+                <!-- Product: Personalization: END -->
+
+                <!-- Product: DetailedConfiguration -->
+                <ac:visibilityarea id="DetailedConfiguration">
+                  <div class="pdetails--accessories--label">ACCESSORIES</div>
+                  <div class="pdetails--accessories--optional">&nbsp;&nbsp;[optional]</div>
+                  <br clear="left">
+                  <a href="#" onclick="showOptions();">View blinds, sun screening choices, and accessories for this product&#187;</a>
+                  <script type="text/javascript">
+                    function showOptions(){var t="?config=true",n=document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5");if(n){var a=n.options[n.selectedIndex].value;"None"!=a&&(t+="&glassID="+a)}var n=document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6");if(n){var e=n.options[n.selectedIndex].value;"None"!=e&&(t+="&flashID="+e)}var n=document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20");if(n){var o=n.options[n.selectedIndex].value;"None"!=o&&(t+="&combiID="+o)}window.location.href=t}
+                  </script>
+                </ac:visibilityarea>
+                <!-- Product: DetailedConfiguration: END -->
+
+                <!-- ???? -->
                 <script type="text/javascript">
-                  function showOptions(){var t="?config=true",n=document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5");if(n){var a=n.options[n.selectedIndex].value;"None"!=a&&(t+="&glassID="+a)}var n=document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6");if(n){var e=n.options[n.selectedIndex].value;"None"!=e&&(t+="&flashID="+e)}var n=document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20");if(n){var o=n.options[n.selectedIndex].value;"None"!=o&&(t+="&combiID="+o)}window.location.href=t}
+                  $(document).ready(function(){var t="##QUERYSTRING[config]##";if("true"==t){var n=document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[glassID]##"==n.options[o].value){n.options[o].selected=!0;break}var n=document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[flashID]##"==n.options[o].value){n.options[o].selected=!0;break}var n=document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[combiID]##"==n.options[o].value){n.options[o].selected=!0;break}$("#ProductVariations_NonInventoryVariantGroup1").change()}});
                 </script>
-              </ac:visibilityarea>
-              <!-- Product: DetailedConfiguration: END -->
+                <!-- ???? -->
 
-              <!-- ???? -->
-              <script type="text/javascript">
-                $(document).ready(function(){var t="##QUERYSTRING[config]##";if("true"==t){var n=document.getElementById("ctlVariants_rpVariants_ctl00_ProductVariations_NonInventoryVariantGroup_132_5");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[glassID]##"==n.options[o].value){n.options[o].selected=!0;break}var n=document.getElementById("ctlVariants_rpVariants_ctl01_ProductVariations_NonInventoryVariantGroup_132_6");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[flashID]##"==n.options[o].value){n.options[o].selected=!0;break}var n=document.getElementById("ctlVariants_rpVariants_ctl02_ProductVariations_NonInventoryVariantGroup_132_20");if(n)for(var o=0;o<n.options.length;o++)if("##QUERYSTRING[combiID]##"==n.options[o].value){n.options[o].selected=!0;break}$("#ProductVariations_NonInventoryVariantGroup1").change()}});
-              </script>
-              <!-- ???? -->
+              </div>
+            </ac:visibilityarea>
 
+            <!-- Product Details: Quanity  -->
+            <div id="dvProductQuantity" class="ProductDetailsQuantity">
+              <span><b>Price (per item): </b></span>
+              <span id="lblPrice" class="ProductDetailsPrice PriceToUpdate" itemprop="price">
+                ##PRICE##
+              </span>
+              <br>
+              $$QUANTITYLABEL$$
+              $$QUANTITY$$
+              $$ADDTOCART$$
+              <!--$$ADDTOWISHLIST$$-->
             </div>
           </ac:visibilityarea>
-
-          <!-- Product Details: Quanity  -->
-          <div id="dvProductQuantity" class="ProductDetailsQuantity">
-            <span><b>Price (per item): </b></span>
-            <span id="lblPrice" class="ProductDetailsPrice PriceToUpdate" itemprop="price">
-              ##PRICE##
-            </span>
-            <br>
-            $$QUANTITYLABEL$$
-            $$QUANTITY$$
-            $$ADDTOCART$$
-            <!--$$ADDTOWISHLIST$$-->
-          </div>
-        </ac:visibilityarea>
+        </div>
       </div>
       <!-- RIGHT BAR:END -->
     </div>
   </div>
 
   <!-- Product Details: Tab  -->
-  <div>
+  <div class="xs-hide md-block md-mt5">
     <div class="ProductDetailsTabs">
       $$DETAILS$$
     </div>
@@ -393,53 +200,33 @@
       <span itemprop="brand">##MFGNAME##</span><br>
       <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
     </div>
-    <div id="showVariantArea" style="display: none;">
 
-      <ac:visibilityarea id="QuantityDiscountsArea">
-        <div id="dvQuantityDiscounts" class="ProductQuantityDiscounts">
-          $$QUANTITYDISCOUNTS$$
-          ##VARIANTQUANTITYGRIDOF[]##
-        </div>
-      </ac:visibilityarea>
-    </div>
-    <script>
-      var strCat = "##ROOTCATNAME##";
-      if(strCat != "Moulding & Trim") {
-        document.getElementById('showVariantArea').style.display = "block";
-      }
-    </script>
-    <ac:visibilityarea id="VariantMatrixArea">
-      <div id="dvVariantMatrix" class="ProductDetailsVariantMatrix">
-        $$VARIANTMATRIXHELPTEXT$$
-        <table>
-          <tr>
-            <td>
-              $$VARIANTMATRIX$$
-              <div class="ProductDetailsVariantMatrixAddToCartButton">$$VARIANTMATRIXADDTOCART$$</div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </ac:visibilityarea>
   </div>
   <!-- Product Details: Tab: END  -->
 
+
   ##ELSE##
 
+  <!-- KIT PRODUCTS -->
+
   <div class="pdetails--details">
-    <div class="row margin--0 padding--0">
+    <div class="row">
 
       <!-- LEFT BAR -->
       <!-- Product Details: Photos  -->
       <div class="col-md-6">
-        $$PHOTO$$
+        <div class="lg-border rounded lg-p3">
+          $$PHOTO$$
+        </div>
       </div>
       <!-- LEFT BAR: END -->
 
       <!-- Right BAR -->
-      <!-- Product Details: Photos  -->
-      <div class="col-md-6 padding--0 border--round pdetails--options">
-        $$DETAILS$$
+      <!-- Product Details: Options  -->
+      <div class="col-md-6 pdetails--options ">
+        <div class="lg-border rounded xs-p3">
+          $$DETAILS$$
+        </div>
       </div>
       <!-- Right BAR: END -->
 
@@ -447,24 +234,19 @@
   </div>
 
 
-  <div style="width: 100%; float: left;">
+  <div class="clearfix">
     <ac:visibilityarea id="ProductGroupArea">
       <div id="dvProductGroupGrid">
         <ac:visibilityarea id="ProductGroups">
           <div id="divProductDisplay">
 
-
-
-            <div style="clear: both; float: none;"></div>
-
-
             <!-- Table -->
-            <div class="pgroup--wrapper table-responsive">
-              <table class="table--mobile table table-striped table-hover">
+            <div class="pgroup--wrapper xs-mt5 xs-mb3 clearfix">
+              <table class="table--mobile table table-striped table-hover md-border rounded">
 
                 <!-- Table Header -->
                 <thead>
-                  <tr class="">
+                  <tr class="fill-green-lighter">
                     <th id="thProductGroupDisplayItemNumber">Item #</th>
                     <th id="thProductGroupDisplayType">Type</th>
                     <th id="thProductGroupDisplaySize">Dimensions</th>
@@ -479,7 +261,7 @@
                 <!-- Table Body -->
                 <tbody>
                   <ac:layoutarea id="ProductGroupDetail">
-                    <tr class="ProductGroupItem">
+                    <tr class="ProductGroupItem xs-m2">
                       <td class="tdProductGroupDisplayItemNumber">##ITEMNR##</td>
                       <td class="tdProductGroupDisplayDescription">##SHORTDESCRIPTION##</td>
                       <td class="tdProductGroupDisplaySize">##LONGDESCRIPTION2##</td>
@@ -490,8 +272,7 @@
                     </tr>
                   </ac:layoutarea>
                   <ac:layoutarea id="ProductGroupDetailAlt">
-                    <tr class="ProductGroupAlternatingItem">
-                      <!--<td><img src="##IMAGERESIZER[path=##ITEMPHOTOURL##,bw=50,bh=50,lr=t]##"></td>-->
+                    <tr class="ProductGroupAlternatingItem xs-m2">
                       <td class="tdProductGroupDisplayAltItemNumber">##ITEMNR##</td>
                       <td class="tdProductGroupDisplayAltDescription">##SHORTDESCRIPTION##</td>
                       <td class="tdProductGroupDisplayAltSize">##LONGDESCRIPTION2##</td>
@@ -501,7 +282,7 @@
                       <td class="tdProductGroupDisplayAltQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
                     </tr>
                   </ac:layoutarea>
-                  <tr class="ProductGroupFooter">
+                  <tr class="ProductGroupFooter xs-m2">
                     <td colspan="8">
                       <ac:visibilityarea id="UpdateGroupPrice">
                         <div class="ProductDetailsPricing">
@@ -525,7 +306,7 @@
             </ac:layoutarea>
 
             <!-- Add to cart -->
-            <div align="right" class="ProductGroupAddToCart">
+            <div align="right" class="ProductGroupAddToCart xs-mb3">
               $$PRODUCTGROUPADDTOCARTBUTTON$$
             </div>
             <!-- Add to cart: end -->
@@ -535,40 +316,11 @@
       </div>
     </ac:visibilityarea>
   </div>
-
+  <!-- KIT PRODUCTS: END -->
 
 
   ##ENDIF##
 
-  <div style="clear:both; height: 25px;"></div>
-
-  <ac:widgetarea id="Bottom">
-    <ac:widget id="CAROUSEL4483" type="Carousel" scrollby="4" repeatabletype="RelatedItems" rotatorstartdate="1/25/2014" displaycount="20" headertext="Related Products">
-      <ac:visibilityarea id="dvControl">
-        $$HEADER$$
-        <ac:layoutarea id="Item">
-          <ac:visibilityarea id="dvControlItem">
-            <table style="width: 200px; height: 225px;">
-              <tr>
-                <td valign="top" style="text-align: center; height: 150px; padding-top: 5px;">$$PHOTOWITHLINK$$</td>
-              </tr>
-              <tr>
-                <td valign="top" style="text-align: center; font-weight: bold; padding: 0px 20px 0px 20px; height: 50px;">$$PRODUCTNAME$$</td>
-              </tr>
-              <tr>
-                <td valign="top" style="text-align: center; height: 100px; padding: 0 10px 0 10px;">
-                  <script>
-                    var strCat="##ROOTCATNAME##";"Moulding & Trim"!=strCat?document.write("##PRICE##"):document.write("##SHORTDESCRIPTION##");
-                  </script>
-                </td>
-              </tr>
-            </table>
-          </ac:visibilityarea>
-        </ac:layoutarea>
-      </ac:visibilityarea>
-    </ac:widget>
-  </ac:widgetarea>
-
-  $$BOTTOMPRODUCTSPECIFICWIDGETAREA$$
+  <div class="clearfix xs-m3"> </div>
 
 </ac:pagelayout>
