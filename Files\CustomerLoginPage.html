@@ -1,56 +1,46 @@
 <ac:pagelayout id="CustomerLoginPage">
   <ac:widgetarea id="Top">
 </ac:widgetarea>
+  <!-- Page: customer login -->
+  
   $$CHECKOUTPROGRESS$$
-  <br>
-  <div class="CheckOutHeader">$$PAGEHEADER$$</div>
-  <br>
-  <div>
-    $$LOGINHEADER$$
-    <br>
-    <br>
-    <div class="LoginLeftSide">
-      <div class="inner">
-        <div class="CheckOutSubHeader">$$NEWCUSTOMERHEADER$$</div>
-        <br>
-        <br>
-        <div class="CheckOutText">$$NEWCUSTOMERLABEL$$</div>
-        <br>
-        <br>
-        <div class="button">
-          $$NEWCUSTOMERBUTTON$$
+
+  <div class="xs-mt3 xs-mb3 xs-pt3 xs-pb3 xs-mr1 xs-ml1 md-ml0 md-mr0">
+
+    <div class="text-1">$$EXISTINGCUSTOMERLABEL$$</div>
+
+    <div id="panLogin" class="xs-border xs-p2 xs-mt3 xs-mb3 rounded">
+
+      <div class="xs-mb3">
+        <div class="">
+          $$EMAILADDRESSLABEL$$
         </div>
-        <br>
-        <br>
-      </div>
-    </div>
-    <div id="panLogin" class="LoginRightSide">
-      <div class="inner">
-        <div class="CheckOutSubHeader">$$EXISTINGCUSTOMERHEADER$$</div>
-        <br>
-        <br>
-        <div class="CheckOutText">$$EXISTINGCUSTOMERLABEL$$</div>
-        <div>
+        <div class="xs-mt1">
           $$EMAILADDRESSBOX$$
+        </div>
+      </div>
+
+      <div class="xs-mb3">
+        <div class="">
+          $$PASSWORDLABEL$$
+        </div>
+        <div class="xs-mt1">
           $$PASSWORDBOX$$
         </div>
-        <div>
-          <div class="LoginFieldDesc">$$EMAILADDRESSLABEL$$</div>
-          <div class="LoginFieldDesc">$$PASSWORDLABEL$$</div>
-        </div>
-        <div class="ForgotPassLink">
-          $$FORGOTPASSWORDLINK$$
-        </div>
-        
-        <div class="button">
-          $$LOGINBUTTON$$
-          <div>$$ERRORTEXT$$</div>
-        </div>
       </div>
+
+      <div class="xs-mb3 link-blue">
+        $$FORGOTPASSWORDLINK$$
+      </div>
+
+      <div class="xs-mt2">
+        $$LOGINBUTTON$$
+        <div>$$ERRORTEXT$$</div>
+      </div>
+
     </div>
-    
-    <div style="CLEAR:both"></div>
   </div>
+
   <ac:widgetarea id="Bottom">
 </ac:widgetarea>
 </ac:pagelayout>

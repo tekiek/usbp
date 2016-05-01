@@ -1,174 +1,324 @@
 <ac:pagelayout id="OnePageCheckOutPage" showvalidationinline="True">
-  
+
+  <!-- page: OnePageCheckOutPage -->
+
   <ac:widgetarea id="Top">
 </ac:widgetarea>
-  
+
   $$ERRORTEXT$$
-  
-  $$ADDRESSAREA$$
-  <table width="100%">
-    <tbody>
-      $$REGISTRATION$$
-      <tr>
-        $$CUSTOMCUSTOMERFIELDS$$
-        $$CUSTOMORDERFIELDS$$
-      </tr>
-      <tr>
-        <td colspan="2">
-          $$SHIPPINGAREA$$
-          $$PAYMENTAREA$$
-        </td>
-      </tr>
-      <tr class="CheckoutPageTable" style="padding-top: 10px;">
-        <td>
-          <h4>Shipping Method Explanation</h4>         
-          <p>
-            Shipping on all Ferche products, as well as oversized Fairway products (10ft and above), will be calculated after the order is submitted.  We will <u><b>not</b></u> charge your card for shipping until we contact you with the final cost.  Not all of our carriers and freight partners have integrated online shipping systems, so we will find the lowest delivery rates for your order.
-          </td>
-      </tr>
-      <tr>
-        <td colspan="2" align="center">
-          <!--Begin Order Comments-->
-          $$PUBLICORDERCOMMENTS$$
-          <!--End Order Comments-->
-          <!--Begin Gifting-->
-          $$ORDERGIFTING$$
-          <!--End Gifting-->
-        </td>
-      </tr>$$MAILINGLIST$$
-      <tr>
-        <td colspan="2" align="center">
-          <div class="CheckOutSubHeader">
-            $$CHECKOUTSTEPCOUNTER11$$.
-            <!--Confirm &amp; Place Your Order-->$$CONFIRMORDERTEXT$$</div>
-          <br>
-          <ac:layoutarea id="OnePageCheckOutCartArea">
-            <table width="100%" class="ShoppingCart OnePageCheckoutShoppingCart">
-              <tr>
-                <td class="ShoppingCartHeader">Product Description</td>
-                <td class="ShoppingCartHeader ShoppingCartHeaderText">Qty</td>
-                <td class="ShoppingCartHeader ShoppingCartHeaderText">Each</td>
-                <td class="ShoppingCartHeader ShoppingCartHeaderText">Total</td>
-              </tr>
-              $$CARTITEMS$$                
-              <tr id="trSubtotal">
-                <td colspan="3" class="ShoppingCartTotals">$$SUBTOTALTEXT$$</td>
-                <td class="ShoppingCartPrice">$$SUBTOTAL$$</td>
-              </tr>
-              <ac:visibilityarea id="PointsEarnedArea">
-                <tr id="trPointsEarned">
-                  <td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">##REWARDPOINTSLABEL## Earned</td>
-                  <td class="ShoppingCartPrice">$$REWARDPOINTSEARNED$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="ShippingArea">
-                <tr id="trShipping">
-                  <td colspan="3" class="ShoppingCartTotals">
-                    $$SHIPPINGTEXT$$
-                    $$SHIPPINGINFO$$
-                  </td>
-                  <td class="ShoppingCartPrice">$$SHIPPING$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="HandlingArea">
-                <tr id="trHandling">
-                  <td colspan="3" class="ShoppingCartTotals">$$HANDLINGTEXT$$</td>
-                  <td class="ShoppingCartPrice">$$HANDLING$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="DiscountArea">
-                <tr id="trDiscount">
-                  <td colspan="3" class="ShoppingCartTotals">
-                    $$DISCOUNTTEXT$$
-                    $$DISCOUNTINFO$$
-                  </td>
-                  <td class="ShoppingCartPrice">$$DISCOUNT$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="TaxArea">
-                <tr id="trTax">
-                  <td colspan="3" class="ShoppingCartTotals">$$TAXTEXT$$</td>
-                  <td class="ShoppingCartPrice">$$TAX$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="AdditionalFeesArea">
-                <tr id="trAdditionalFees">
-                  <td colspan="3" class="ShoppingCartTotals">$$ADDITIONALFEESTEXT$$</td>
-                  <td class="ShoppingCartPrice">$$ADDITIONALFEES$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="TotalArea">
-                <tr id="trTotal">
-                  <td colspan="3" class="ShoppingCartTotals">$$TOTALTEXT$$</td>
-                  <td class="ShoppingCartPrice">$$TOTAL$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="TotalInPointsArea">
-                <tr id="trTotalInPoints">
-                  <td colspan="3" class="ShoppingCartTotals"><b>Total in ##REWARDPOINTSLABEL##</b></td>
-                  <td class="ShoppingCartPrice">$$TOTALINPOINTS$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="AppliedPointsArea">
-                <tr id="trAppliedPointsTotal">
-                  <td colspan="3" class="ShoppingCartTotals"><b>Applied ##REWARDPOINTSLABEL##</b></td>
-                  <td class="ShoppingCartPrice">$$APPLIEDPOINTSTOTAL$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="AppliedPaymentsArea">
-                <tr id="trAppliedPaymentsTotal">
-                  <td colspan="3" class="ShoppingCartTotals"><b>Applied Payments</b></td>
-                  <td class="ShoppingCartPrice">$$APPLIEDPAYMENTSTOTAL$$</td>
-                </tr>
-              </ac:visibilityarea>
-              <ac:visibilityarea id="AdjustedTotalArea">
-                <tr id="trAdjustedTotal">
-                  <td colspan="3" class="ShoppingCartTotals"><b>Adjusted Total</b></td>
-                  <td class="ShoppingCartPrice">$$ADJUSTEDTOTAL$$</td>
-                </tr>
-              </ac:visibilityarea>
-            </table>
-          </ac:layoutarea>
-          <ac:layoutarea id="OnePageCheckOutItem">
+
+  <style>
+    .check__address>table>tbody>tr:nth-child(3)>td {
+      width: 100%;
+      display: block;
+    }
+
+    #onepagecheckout a {
+      color: #07e !important;
+    }
+
+    .check__address .CheckOutText p {
+      margin: 0px !important;
+    }
+
+    .check__address .CheckOutHeader,
+    .check__address #ShippingInformationArea,
+    .CheckOutSubHeader {
+      border-bottom: 1px solid #ddd;
+      padding: 0 0 10px;
+      color: #517fa4;
+      text-align: left;
+    }
+
+    .check__address #rblSameAsBillingAddress tr td {
+      padding: 10px 0;
+    }
+
+
+
+    .check__address .ErrorText.alert.alert-danger {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0px;
+      margin: 0px;
+      min-height: 0px;
+      color: #e32 !important;
+    }
+    .check__address input.field-has-error {
+      border-color: #e32 !important;
+    }
+
+    .check__address .AddressBookEditor tr td:nth-child(2) {
+      width: 70% !important;
+    }
+
+    .checkout--table2 .CustomFieldInput {
+      width: 50% !important;
+    }
+
+    .check__address .AddressBookEditor tr td {
+      padding: 2px 10px !important;
+    }
+
+    .AddressBookEditor>tbody>tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+      border-top: 1px solid #D6D5D4 !important;
+      border-bottom: 1px solid #D6D5D4 !important;
+    }
+
+    #ShippingDropDownArea {
+      padding: 0px;
+      margin: 20px 0;
+    }
+
+
+    td.ShoppingCartHeader,
+    #trSubtotal,
+    #trTotal {
+      padding: 10px; 
+      background-color: #f9f9f9;
+      font-weight: 500;
+    }
+
+    #lnkShopCart {
+      display: none;
+    }
+
+    .checkout--table1 .CheckOutText {
+      margin: 10px 0 0;
+      font-size: 16px;
+    }
+
+
+    @media only screen and (max-width: 760px) {
+      .PaymentMethodArea {
+        width: 100%;
+      }
+
+      .ShippingMethodArea {
+        width: 100%;
+      }
+    }
+
+  </style>
+
+  <div id="onepagecheckout">
+
+    <!-- content wrapper -->
+    <div class="rounded md-border xs-p2 md-p3 xs-m0 xs-mt4 md-mt5 xs-mb5">
+
+      <!-- address -->
+      <div class="checkout--table1  check__address">
+        $$ADDRESSAREA$$
+      </div>
+      <!-- address: end -->
+
+      <div class="checkout--table2 check__address">
+        <table>
+          <tbody>
+
+            <!-- password -->
+            $$REGISTRATION$$
+            <!-- password: end -->
+
+            <!-- res/commerical -->
+            <tr>
+              $$CUSTOMCUSTOMERFIELDS$$
+              $$CUSTOMORDERFIELDS$$
+            </tr>
+            <!-- res/commerical: end -->
+
+            <!-- ship area -->
             <tr>
               <td>
-                $$ITEMNAME$$
-                $$ITEMNR$$
-                $$VARIANTS$$
-                $$PERSONALIZE$$
+                $$SHIPPINGAREA$$
+                $$PAYMENTAREA$$
               </td>
-              <td align="center">$$QUANTITY$$</td>
-              <td align="center">$$PRICE$$</td>
-              <td align="center">$$SUBTOTAL$$</td>
             </tr>
-          </ac:layoutarea>
-          <div>$$UPDATECARTLINK$$&raquo;</div>
-          <table width="100%">
-            <tbody>
-              <tr>
-                <td align="right" colspan="2">
-                  <br>
-                  $$PLACEORDERBUTTON$$
+            <!-- ship area: end -->
+
+            <!-- ship calculation details -->
+            <tr class="CheckoutPageTable">
+              <td class="xs-pt3">
+                <h4>Shipping Method Explanation</h4>         
+                <p>
+                  Shipping on all Ferche products, as well as oversized Fairway products (10ft and above), will be calculated after the order is submitted.  We will <u><b>not</b></u> charge your card for shipping until we contact you with the final cost.  Not all of our carriers and freight partners have integrated online shipping systems, so we will find the lowest delivery rates for your order.
                 </td>
-              </tr>
-            </tbody>
-          </table>
-          <ac:widgetarea id="Bottom">
+            </tr>
+            <!-- ship calculation details: end -->
+
+            <!-- comment -->
+            <tr>
+              <td>
+                $$PUBLICORDERCOMMENTS$$
+                $$ORDERGIFTING$$
+              </td>
+            </tr>
+            <!-- comment: end -->
+
+            <!-- confirm order -->
+            <tr>
+              <td colspan="2" align="center">
+
+                <!-- confirm order header -->
+                <div class="CheckOutSubHeader">
+                  $$CHECKOUTSTEPCOUNTER11$$.
+                  $$CONFIRMORDERTEXT$$
+                </div>
+                <!-- confirm order header: end -->
+
+                <!-- confirm order cart -->
+                <ac:layoutarea id="OnePageCheckOutCartArea">
+                  <table width="100%" class="table ShoppingCart OnePageCheckoutShoppingCart">
+                    <tbody>
+                      <!-- cart headers -->
+                      <tr>
+                        <td class="ShoppingCartHeader">Product Description</td>
+                        <td class="ShoppingCartHeader ShoppingCartHeaderText">Qty</td>
+                        <td class="ShoppingCartHeader ShoppingCartHeaderText">Each</td>
+                        <td class="ShoppingCartHeader ShoppingCartHeaderText">Total</td>
+                      </tr>
+                      <!-- cart headers: end -->
+
+                      <!-- cart items -->
+                      $$CARTITEMS$$
+                      <!-- cart items: end -->
+
+                      <!-- cart subtotal -->
+                      <tr id="trSubtotal">
+                        <td colspan="3" class="ShoppingCartTotals">$$SUBTOTALTEXT$$</td>
+                        <td class="ShoppingCartPrice">$$SUBTOTAL$$</td>
+                      </tr>
+                      <!-- cart subtotal: end -->
+                      
+                      <ac:visibilityarea id="PointsEarnedArea">
+                        <tr id="trPointsEarned">
+                          <td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals">##REWARDPOINTSLABEL## Earned</td>
+                          <td class="ShoppingCartPrice">$$REWARDPOINTSEARNED$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="ShippingArea">
+                        <tr id="trShipping">
+                          <td colspan="3" class="ShoppingCartTotals">
+                            $$SHIPPINGTEXT$$
+                            $$SHIPPINGINFO$$
+                          </td>
+                          <td class="ShoppingCartPrice">$$SHIPPING$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="HandlingArea">
+                        <tr id="trHandling">
+                          <td colspan="3" class="ShoppingCartTotals">$$HANDLINGTEXT$$</td>
+                          <td class="ShoppingCartPrice">$$HANDLING$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="DiscountArea">
+                        <tr id="trDiscount">
+                          <td colspan="3" class="ShoppingCartTotals">
+                            $$DISCOUNTTEXT$$
+                            $$DISCOUNTINFO$$
+                          </td>
+                          <td class="ShoppingCartPrice">$$DISCOUNT$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="TaxArea">
+                        <tr id="trTax">
+                          <td colspan="3" class="ShoppingCartTotals">$$TAXTEXT$$</td>
+                          <td class="ShoppingCartPrice">$$TAX$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="AdditionalFeesArea">
+                        <tr id="trAdditionalFees">
+                          <td colspan="3" class="ShoppingCartTotals">$$ADDITIONALFEESTEXT$$</td>
+                          <td class="ShoppingCartPrice">$$ADDITIONALFEES$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="TotalArea">
+                        <tr id="trTotal">
+                          <td colspan="3" class="ShoppingCartTotals">$$TOTALTEXT$$</td>
+                          <td class="ShoppingCartPrice">$$TOTAL$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="TotalInPointsArea">
+                        <tr id="trTotalInPoints">
+                          <td colspan="3" class="ShoppingCartTotals"><b>Total in ##REWARDPOINTSLABEL##</b></td>
+                          <td class="ShoppingCartPrice">$$TOTALINPOINTS$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="AppliedPointsArea">
+                        <tr id="trAppliedPointsTotal">
+                          <td colspan="3" class="ShoppingCartTotals"><b>Applied ##REWARDPOINTSLABEL##</b></td>
+                          <td class="ShoppingCartPrice">$$APPLIEDPOINTSTOTAL$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="AppliedPaymentsArea">
+                        <tr id="trAppliedPaymentsTotal">
+                          <td colspan="3" class="ShoppingCartTotals"><b>Applied Payments</b></td>
+                          <td class="ShoppingCartPrice">$$APPLIEDPAYMENTSTOTAL$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                      <ac:visibilityarea id="AdjustedTotalArea">
+                        <tr id="trAdjustedTotal">
+                          <td colspan="3" class="ShoppingCartTotals"><b>Adjusted Total</b></td>
+                          <td class="ShoppingCartPrice">$$ADJUSTEDTOTAL$$</td>
+                        </tr>
+                      </ac:visibilityarea>
+                    </tbody>
+                  </table>
+                </ac:layoutarea>
+                <!-- confirm order cart: end -->
+
+
+
+                <ac:layoutarea id="OnePageCheckOutItem">
+                  <tr>
+                    <td>
+                      $$ITEMNAME$$
+                      $$ITEMNR$$
+                      $$VARIANTS$$
+                      $$PERSONALIZE$$
+                    </td>
+                    <td align="center">$$QUANTITY$$</td>
+                    <td align="center">$$PRICE$$</td>
+                    <td align="center">$$SUBTOTAL$$</td>
+                  </tr>
+                </ac:layoutarea>
+                <div>$$UPDATECARTLINK$$&raquo;</div>
+                <table width="100%">
+                  <tbody>
+                    <tr>
+                      <td align="right" colspan="2">
+                        <br>
+                        $$PLACEORDERBUTTON$$
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ac:widgetarea id="Bottom">
 </ac:widgetarea>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <div style="DISPLAY:none;FLOAT:right;WIDTH:250px">
-    <div class="CheckOutSubHeader"><!--Order Totals-->$$TOTALSHEADERTEXT$$</div>
-    <div class="CheckOutText"><!--<b>Subtotal:</b>-->$$SUBTOTALTEXT$$
-      $$SUBTOTAL$$</div>
-    $$SHIPPING$$
-    $$HANDLING$$
-    $$DISCOUNT$$
-    $$TAX$$
-    $$TOTAL$$
+              </td>
+            </tr>
+            <!-- confirm order: end -->
+
+          </tbody>
+        </table>
+      </div>
+
+      <div style="DISPLAY:none;FLOAT:right;WIDTH:250px">
+        <div class="CheckOutSubHeader"><!--Order Totals-->$$TOTALSHEADERTEXT$$</div>
+        <div class="CheckOutText"><!--<b>Subtotal:</b>-->$$SUBTOTALTEXT$$
+          $$SUBTOTAL$$</div>
+        $$SHIPPING$$
+        $$HANDLING$$
+        $$DISCOUNT$$
+        $$TAX$$
+        $$TOTAL$$
+      </div>
+
+
+      <!-- content wrapper: end -->
+    </div>  
+
   </div>
-  
 </ac:pagelayout>

@@ -234,18 +234,31 @@
 
             <!-- Table -->
             <div class="pgroup--wrapper xs-mt5 xs-mb3 clearfix">
-              <table class="table--mobile table table-striped sm-border rounded">
+              <table class="table--mobile table sm-border rounded">
 
                 <!-- Table Header -->
                 <thead>
-                  <tr class="fill-green-lighter">
-                    <th id="thProductGroupDisplayItemNumber">Item #</th>
-                    <th id="thProductGroupDisplayType">Type</th>
-                    <th id="thProductGroupDisplaySize">Dimensions</th>
-                    <th id="thProductGroupDisplayDesc" width="20%">Additional<br>Information</th>
-                    <th id="thProductGroupDisplayVariants" width="20%">Wood Type/<br>Species</th>
-                    <th id="thProductGroupDisplayPricing">Price Per Unit</th>
-                    <th id="thProductGroupDisplayQuantity">Quantity<br>Desired</th>
+                  <tr class="fill-gray-lighter">
+                    <th id="thProductGroupDisplayItemNumber">
+                      Item #
+                    </th>
+                    <th id="thProductGroupDisplayType xs-text-center">
+                      Type</th>
+                    <th id="thProductGroupDisplaySize xs-text-center">
+                      Dimensions
+                    </th>
+                    <th id="thProductGroupDisplayDesc xs-text-center">
+                      Description
+                    </th>
+                    <th id="thProductGroupDisplayVariants xs-text-center">
+                      Type
+                    </th>
+                    <th id="thProductGroupDisplayPricing xs-text-center">
+                      Price
+                    </th>
+                    <th id="thProductGroupDisplayQuantity xs-text-right">
+                      Quantity
+                    </th>
                   </tr>
                 </thead>
                 <!-- Table Header: end -->
@@ -253,18 +266,20 @@
                 <!-- Table Body -->
                 <tbody>
                   <ac:layoutarea id="ProductGroupDetail">
-                    <tr class="ProductGroupItem xs-m2">
+                    <tr class="ProductGroupItem xs-m2 text-gray-lighter">
                       <td class="tdProductGroupDisplayItemNumber">##ITEMNR##</td>
                       <td class="tdProductGroupDisplayDescription">##SHORTDESCRIPTION##</td>
                       <td class="tdProductGroupDisplaySize">##LONGDESCRIPTION2##</td>
                       <td class="tdProductGroupDisplayDesc">##LONGDESCRIPTION1##</td>
                       <td class="tdProductGroupDisplayVariants">$$VARIANTS$$</td>
-                      <td class="tdProductGroupDisplayPricing">$$PRICE$$</td>
+                      <td class="tdProductGroupDisplayPricing">
+                        $$PRICE$$
+                      </td>
                       <td class="tdProductGroupDisplayQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
                     </tr>
                   </ac:layoutarea>
                   <ac:layoutarea id="ProductGroupDetailAlt">
-                    <tr class="ProductGroupAlternatingItem xs-m2">
+                    <tr class="ProductGroupAlternatingItem xs-m2 text-gray-lighter">
                       <td class="tdProductGroupDisplayAltItemNumber">##ITEMNR##</td>
                       <td class="tdProductGroupDisplayAltDescription">##SHORTDESCRIPTION##</td>
                       <td class="tdProductGroupDisplayAltSize">##LONGDESCRIPTION2##</td>
@@ -274,7 +289,7 @@
                       <td class="tdProductGroupDisplayAltQuantity">$$QUANTITY$$$$ADDTOCART$$</td>
                     </tr>
                   </ac:layoutarea>
-                  <tr class="ProductGroupFooter xs-m2">
+                  <tr class="ProductGroupFooter xs-m2 fill-gray-lighter">
                     <td colspan="8">
                       <ac:visibilityarea id="UpdateGroupPrice">
                         <div class="ProductDetailsPricing">

@@ -658,7 +658,7 @@ header .navbar .dropdown-menu>li>a {
 
   .table--mobile td {
     border: none;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ddd;
     position: relative;
     padding-left: 35% !important;
   }
@@ -688,9 +688,9 @@ header .navbar .dropdown-menu>li>a {
     border: 1px solid #ddd;
   }
 
-  .table--mobile.table-striped>tbody>tr:nth-of-type(odd),
-  .table--mobile.table-striped>tbody>tr:nth-of-type(even) {
-    background-color: #f9f9f9 !important;
+  .table--mobile>tbody>tr:nth-of-type(odd),
+  .table--mobile>tbody>tr:nth-of-type(even) {
+    background-color: #f4f4f4 !important;
   }
 }
 

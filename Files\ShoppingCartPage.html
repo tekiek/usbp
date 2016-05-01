@@ -33,21 +33,21 @@
             <!-- Left Rail -->
             <div class="col-md-8 xs-m0 xs-p0 ">
 
-              <div class="xs-border xs-p2 rounded">
+              <div class="xs-border rounded">
 
                 <!-- Shopping Cart Table -->
-                <div class="row cart--row__header xs-border-bottom xs-p0 xs-pb2 bold xs-m0 text-2">
-                  <div class="col-xs-3">Product</div>
-                  <div class="col-xs-3">Cost</div>
-                  <div class="col-xs-3">Count</div>
-                  <div class="col-xs-3">Total</div>
+                <div class="row cart--row__header xs-border-bottom xs-p2 bold xs-m0 text-2 xs-text-center fill-gray-lighter">
+                  <div class="col-xs-3 xs-p1 xs-text-left">Product</div>
+                  <div class="col-xs-3 xs-p1">Cost</div>
+                  <div class="col-xs-3 xs-p1">Count</div>
+                  <div class="col-xs-3 xs-p1 xs-text-right">Total</div>
                 </div>
 
                 <ac:layoutarea id="ShopCartItem">
-                  <div class="row item--rows xs-border-bottom xs-pb3 xs-m0 xs-mt3">
+                  <div class="row item--rows xs-border-bottom xs-p2 xs-m0 xs-mt3">
 
                     <!-- Item Details | Info -->
-                    <div class="col-xs-3 item--rows__cols xs-p0">
+                    <div class="col-xs-3 item--rows__cols xs-p1">
                       <div class="media">
                         <div class="media-left hidden">
                         </div>
@@ -69,7 +69,7 @@
                     <!-- Item Details | Info: END -->
 
                     <!-- Item Details: Price -->
-                    <div class="col-xs-3">
+                    <div class="col-xs-3 xs-p1 xs-text-center">
                       <div>
                         <del>
                           $$ITEMORIGINALPRICEDOLLARS$$$$ITEMORIGINALPRICECENTS$$
@@ -80,39 +80,43 @@
                     <!-- Item Details: Price: END -->
 
                     <!-- Item Details: Quanity -->
-                    <div class="col-xs-3">
+                    <div class="col-xs-3 xs-p1">
                       <div class="CartUpdateItemArea">
                         <div>
                           $$QUANTITYTEXTBOX$$
                           <div class="UpdateButton">
-                            <div class="btn--quanity btn btn-default btn-xs">$$UPDATEBUTTON$$</div>
-                            <div class="btn--quanity btn btn-default btn-xs">$$REMOVEFROMCARTLINK$$</div>
+                            <div class="btn--quanity btn btn-link btn-xs">
+                              $$UPDATEBUTTON$$
+                            </div>
+                            <div class="btn--quanity btn btn-link btn-xs">
+                              $$REMOVEFROMCARTLINK$$
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <!-- Item Details: Quanity: END -->
 
-                    <div class="col-xs-3">
-                      <!-- Item Details: Price -->
+                    <!-- Item Details: Price -->
+                    <div class="col-xs-3 xs-p1 xs-text-right">
                       <div>
                         <del>
                           $$ITEMORIGINALTOTALDOLLARS$$$$ITEMORIGINALTOTALCENTS$$
                         </del>
                       </div>
                       <div>$$ITEMTOTALDOLLARS$$$$ITEMTOTALCENTS$$</div>
-                      <!-- Item Details: Price: END -->
                     </div>
                   </div>
+                  <!-- Item Details: Price: END -->
 
                 </ac:layoutarea>
 
                 <!-- Total Price -->
 
 
-                <div class="row row--tolal-price xs-p2 text-2 bold xs-m0">
-                  <div class="col-xs-10"> </div>
-                  <div class="col-xs-2 col--tolal-price text-1 xs-p0">
+                <div class="row row--tolal-price xs-p2 text-2 bold xs-m0 fill-gray-lighter">
+                  <div class="col-xs-9"> </div>
+                  <div class="col-xs-3 col--tolal-price text-1 xs-p1 xs-text-right">
                     <ac:visibilityarea id="SubtotalArea">
                       $$SUBTOTALDOLLARS$$$$SUBTOTALCENTS$$
                     </ac:visibilityarea>
@@ -120,22 +124,23 @@
                 </div>
                 <!-- Total Price: END -->
 
-                <!-- Checkout Button -->
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div>
-                      $$CHECKOUTBUTTON$$
-                    </div>
+              </div>
+
+              <!-- Checkout Button -->
+              <div class="row xs-p0 xs-pt2 xs-pb2">
+                <div class="col-xs-12">
+                  <div>
+                    $$CHECKOUTBUTTON$$
                   </div>
                 </div>
-                <!-- Checkout Button: END -->
-
               </div>
+              <!-- Checkout Button: END -->
+
             </div>
             <!-- Left Rail: END -->
 
             <!-- Right Rail -->
-            <div class="col-md-4 hidden-xs hidden-sm">
+            <div class="col-md-4 xs-p0 md-pl2">
               $$SAVEDCARTNOTIFICATION$$
 
               <!-- Pay With -->

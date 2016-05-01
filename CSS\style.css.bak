@@ -1321,7 +1321,7 @@ input.ShoppingCartQtyTextbox {
   width: 100%;
   text-align: left;
   padding: 5px;
-  margin: 10px 0;
+  margin: 0px;
   border-radius: 5px;
   border-color: #D6D5D4;
 }
@@ -1330,6 +1330,11 @@ input.ShoppingCartQtyTextbox {
 .btn--quanity {
   margin: 5px 0 0 0;
   width: 100%;
+  text-align: left;
+}
+
+.btn--quanity a {
+  color: #07e;
 }
 
 /* red buttons */
@@ -1362,10 +1367,6 @@ input.ShoppingCartQtyTextbox {
   width: 100%;
 }
 
-.col--tolal-price {
-  padding: 0px;
-}
-
 
 /* Custom CSS: END */
 
@@ -1376,7 +1377,7 @@ input.ShoppingCartQtyTextbox {
 .CartRight { width: 235px; float: right; }
 .ShoppingCartTable { width: 100%; background: #fff; }
 .ShoppingCart { text-align: left; padding: 30px 0 0; vertical-align: top; }
-.ShoppingCartHeader { font-weight: bold; letter-spacing: -1px; line-height: 100%; padding: 10px 0px 10px 0; border: 1px solid #dddfde; border-left: none; border-right: none; font-size: 16px; white-space: nowrap; }
+.ShoppingCartHeader { font-weight: bold; line-height: 100%; padding: 10px 0px 10px 0; border: 1px solid #dddfde; border-left: none; border-right: none; font-size: 16px; white-space: nowrap; }
 
 .ShoppingCartProductDescriptionHeader { width: 235px; }
 .ShoppingCartSpacer { width: 20px; padding: 0; }
@@ -1521,6 +1522,61 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
 /* [/WriteReview] */
 
 /* [OnePageCheckOut] */
+/* Custom CSS */
+
+/* Buttons */
+#btnAddToCart,
+#btnPlaceOrder {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: 300;
+  letter-spacing: .1em;
+}
+
+/* Buttons: end */
+
+/* text fields */
+#dvAddrBilling input[type=text],
+#dvAddrBilling textarea,
+#txtPassword1,
+#txtPassword2,
+#txtPublicComments
+{
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-color: #D6D5D4;
+}
+/* text fields: end */
+
+/* radio fields */
+#rblSameAsBillingAddress input[type=radio],
+.CustomFieldInput input[type=radio] {
+  -webkit-appearance: radio !important;
+  margin: 0 10px 0 0;
+}
+/* radio fields: end */
+
+/* select */
+#dvAddrBilling select,
+#ucPaymentMethodSelection_ddPaymentMethodSel {
+  width: 100%;
+  font-size: 14px;
+  margin: 15px 0;
+  height: 30px;
+  border-color: #D6D5D4;
+  background-color: white;
+}
+/* select: end */
+
 .ExistingAccountArea { height: 45px; }
 .AccountPasswordText { padding-left: 2px; }
 .ShippingMethodArea { float: left; width: 50%; }
@@ -1543,7 +1599,7 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
 .GiftMessageArea { margin-top: 12px; }
 .GiftMessage { margin-top: 4px; width: 100%; height: 50px; }
 .ShoppingCartHeaderText { text-align: center; }
-.CheckoutPageTable { border-bottom: 1px solid #000; padding-bottom: 10px; border-top: 1px solid black; }
+.CheckoutPageTable { border-bottom: 1px solid #D6D5D4; padding-bottom: 10px; border-top: 1px solid #D6D5D4; }
 /* [/OnePageCheckOut] */
 
 /* [MyAccount] */
