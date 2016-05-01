@@ -813,11 +813,11 @@
     <HideCategoryHeaderOnSort>false</HideCategoryHeaderOnSort>
     <HideSubcategoriesOnSort>false</HideSubcategoriesOnSort>
     <HideProductGroupHeaders>false</HideProductGroupHeaders>
-    <EditDate>2016-04-30T19:04:31.017-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:900437</EditedBy>
+    <EditDate>2016-04-30T22:16:07.957-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-12T15:15:38.823-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGd4gM=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd7DI=</DateTimeStamp>
     <HeaderControlHome>/Store/Templates/Default/Header.ascx</HeaderControlHome>
     <FooterControlHome>/Store/Templates/Default/Footer.ascx</FooterControlHome>
     <AllowOrderGifting>false</AllowOrderGifting>
@@ -8361,30 +8361,6 @@
     <WidgetType>WidgetArea</WidgetType>
   </ThemeLayoutControls>
   <ThemeLayoutControls>
-    <Id>5598</Id>
-    <ThemeID>23</ThemeID>
-    <ControlName>Widget Area</ControlName>
-    <FeaturedItemsDisplayThumbOnSeparateLine>false</FeaturedItemsDisplayThumbOnSeparateLine>
-    <RssNewsFeed_NumberToDisplay>0</RssNewsFeed_NumberToDisplay>
-    <DateTimeStamp>AAAAAAEaCmw=</DateTimeStamp>
-    <DoNotRenderInPlace>false</DoNotRenderInPlace>
-    <Identifier>P1882$Top</Identifier>
-    <ThemePageID>1882</ThemePageID>
-    <WidgetType>WidgetArea</WidgetType>
-  </ThemeLayoutControls>
-  <ThemeLayoutControls>
-    <Id>5599</Id>
-    <ThemeID>23</ThemeID>
-    <ControlName>Widget Area</ControlName>
-    <FeaturedItemsDisplayThumbOnSeparateLine>false</FeaturedItemsDisplayThumbOnSeparateLine>
-    <RssNewsFeed_NumberToDisplay>0</RssNewsFeed_NumberToDisplay>
-    <DateTimeStamp>AAAAAAEaCm0=</DateTimeStamp>
-    <DoNotRenderInPlace>false</DoNotRenderInPlace>
-    <Identifier>P1882$Bottom</Identifier>
-    <ThemePageID>1882</ThemePageID>
-    <WidgetType>WidgetArea</WidgetType>
-  </ThemeLayoutControls>
-  <ThemeLayoutControls>
     <Id>5633</Id>
     <ThemeID>23</ThemeID>
     <ControlName>Widget Area</ControlName>
@@ -9323,20 +9299,21 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-12T15:48:37.447-06:00</EditDate>
-    <EditedBy>s:291093</EditedBy>
+    <EditDate>2016-04-30T22:17:16.737-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-12T15:15:40.103-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpocw=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd7Dg=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/CMSPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2015-01-12T15:15:40.79-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-04-30T22:17:16.703-05:00</LayoutFileLastModified>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
     <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1530</ThemePageSettingsID>
@@ -9591,15 +9568,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-04-30T19:54:30.967-05:00</EditDate>
+    <EditDate>2016-04-30T21:52:38.35-05:00</EditDate>
     <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-12T15:15:40.213-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGd41k=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd62E=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/OnePageCheckOutPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-04-30T19:54:30.967-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-04-30T21:52:38.333-05:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
@@ -9653,15 +9630,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-04-30T19:00:13.397-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:900437</EditedBy>
+    <EditDate>2016-04-30T22:00:21.137-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-12T15:15:40.23-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGd4dI=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd65Q=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/CustomerLoginPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-04-30T19:00:13.397-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-04-30T22:00:21.137-05:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
@@ -11524,11 +11501,30 @@
     <ThemePageSettingsID>1882</ThemePageSettingsID>
     <StorePageType>ContactForm</StorePageType>
     <ThemeID>23</ThemeID>
-    <DateTimeStamp>AAAAAAEaCmg=</DateTimeStamp>
+    <DisplayLeftColumn>true</DisplayLeftColumn>
+    <DisplayRightColumn>false</DisplayRightColumn>
+    <DisplaySubHeader>true</DisplaySubHeader>
+    <DisplaySubFooter>true</DisplaySubFooter>
+    <UseCustomFile>false</UseCustomFile>
+    <CustomFile />
+    <SubHeaderHtml />
+    <SubFooterHtml />
+    <CustomStyleSheet />
+    <CustomContent />
+    <EditDate>2016-04-30T22:12:32.847-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
+    <EnteredBy />
+    <DateTimeStamp>AAAAAAGd7B4=</DateTimeStamp>
+    <SettingsSetName />
     <IsDefaultSet>false</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/ContactFormPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2015-03-25T16:37:26.597-05:00</LayoutFileLastModified>
-    <ForceFileWrite>true</ForceFileWrite>
+    <LayoutFileLastModified>2016-04-30T22:12:32.847-05:00</LayoutFileLastModified>
+    <ParseErrors />
+    <LayoutErrors />
+    <LayoutName />
+    <LayoutType>None</LayoutType>
+    <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1890</ThemePageSettingsID>
@@ -11948,16 +11944,22 @@
     <SettingKey>CMSPage</SettingKey>
     <SettingValue>    
   $$!Top$$
-  $$TOPPAGESPECIFICSNAPINAREA$$
-  $$EXTERNALCONTENT$$ $$CONTENT$$
-  $$BOTTOMPAGESPECIFICSNAPINAREA$$
-  $$!Bottom$$
+
+  &lt;div class="md-border xs-p3 rounded xs-mt3 xs-mb3 clearfix"&gt;
+    $$TOPPAGESPECIFICSNAPINAREA$$
+    $$EXTERNALCONTENT$$ $$CONTENT$$
+    $$BOTTOMPAGESPECIFICSNAPINAREA$$
+
+    $$!Bottom$$
+  &lt;/div&gt;  
+
+
 </SettingValue>
-    <EditDate>2015-01-12T15:48:37.463-06:00</EditDate>
-    <EditedBy>s:291093</EditedBy>
+    <EditDate>2016-04-30T22:17:16.69-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-12T15:48:37.463-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAADpoc0=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd7Dc=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>958</ID>
@@ -12805,114 +12807,18 @@
 
   $$ERRORTEXT$$
 
-  &lt;style&gt;
-    .check__address&gt;table&gt;tbody&gt;tr:nth-child(3)&gt;td {
-      width: 100%;
-      display: block;
-    }
-
-    #onepagecheckout a {
-      color: #07e !important;
-    }
-
-    .check__address .CheckOutText p {
-      margin: 0px !important;
-    }
-
-    .check__address .CheckOutHeader,
-    .check__address #ShippingInformationArea,
-    .CheckOutSubHeader {
-      border-bottom: 1px solid #ddd;
-      padding: 0 0 10px;
-      color: #517fa4;
-      text-align: left;
-    }
-
-    .check__address #rblSameAsBillingAddress tr td {
-      padding: 10px 0;
-    }
-
-
-
-    .check__address .ErrorText.alert.alert-danger {
-      background: none;
-      border: none;
-      box-shadow: none;
-      padding: 0px;
-      margin: 0px;
-      min-height: 0px;
-      color: #e32 !important;
-    }
-    .check__address input.field-has-error {
-      border-color: #e32 !important;
-    }
-
-    .check__address .AddressBookEditor tr td:nth-child(2) {
-      width: 70% !important;
-    }
-
-    .checkout--table2 .CustomFieldInput {
-      width: 50% !important;
-    }
-
-    .check__address .AddressBookEditor tr td {
-      padding: 2px 10px !important;
-    }
-
-    .AddressBookEditor&gt;tbody&gt;tr:nth-of-type(odd) {
-      background-color: #f9f9f9;
-      border-top: 1px solid #D6D5D4 !important;
-      border-bottom: 1px solid #D6D5D4 !important;
-    }
-
-    #ShippingDropDownArea {
-      padding: 0px;
-      margin: 20px 0;
-    }
-
-
-    td.ShoppingCartHeader,
-    #trSubtotal,
-    #trTotal {
-      padding: 10px; 
-      background-color: #f9f9f9;
-      font-weight: 500;
-    }
-
-    #lnkShopCart {
-      display: none;
-    }
-
-    .checkout--table1 .CheckOutText {
-      margin: 10px 0 0;
-      font-size: 16px;
-    }
-
-
-    @media only screen and (max-width: 760px) {
-      .PaymentMethodArea {
-        width: 100%;
-      }
-
-      .ShippingMethodArea {
-        width: 100%;
-      }
-    }
-
-  &lt;/style&gt;
-
   &lt;div id="onepagecheckout"&gt;
 
     &lt;!-- content wrapper --&gt;
-    &lt;div class="rounded md-border xs-p2 md-p3 xs-m0 xs-mt4 md-mt5 xs-mb5"&gt;
+    &lt;div class="rounded md-border md-p3 md-mt5 xs-m2 xs-mt4 xs-mb5"&gt;
 
       &lt;!-- address --&gt;
-      &lt;div class="checkout--table1  check__address"&gt;
+      &lt;div class="address-area"&gt;
         $$ADDRESSAREA$$
       &lt;/div&gt;
       &lt;!-- address: end --&gt;
 
-      &lt;div class="checkout--table2 check__address"&gt;
+      &lt;div class="xcheckout--table2 check__address"&gt;
         &lt;table&gt;
           &lt;tbody&gt;
 
@@ -12921,7 +12827,7 @@
             &lt;!-- password: end --&gt;
 
             &lt;!-- res/commerical --&gt;
-            &lt;tr&gt;
+            &lt;tr class="res-commerical"&gt;
               $$CUSTOMCUSTOMERFIELDS$$
               $$CUSTOMORDERFIELDS$$
             &lt;/tr&gt;
@@ -12970,10 +12876,11 @@
                 $$_OnePageCheckOutCartArea$$
                 &lt;!-- confirm order cart: end --&gt;
 
-
-
+                &lt;!------- DELETE? -------&gt;
                 $$_OnePageCheckOutItem$$
-                &lt;div&gt;$$UPDATECARTLINK$$&amp;raquo;&lt;/div&gt;
+
+                &lt;div&gt;$$UPDATECARTLINK$$&lt;/div&gt;
+
                 &lt;table width="100%"&gt;
                   &lt;tbody&gt;
                     &lt;tr&gt;
@@ -12984,7 +12891,10 @@
                     &lt;/tr&gt;
                   &lt;/tbody&gt;
                 &lt;/table&gt;
+
                 $$!Bottom$$
+                &lt;!------- DELETE?: end -------&gt;
+
               &lt;/td&gt;
             &lt;/tr&gt;
             &lt;!-- confirm order: end --&gt;
@@ -12993,16 +12903,22 @@
         &lt;/table&gt;
       &lt;/div&gt;
 
-      &lt;div style="DISPLAY:none;FLOAT:right;WIDTH:250px"&gt;
-        &lt;div class="CheckOutSubHeader"&gt;&lt;!--Order Totals--&gt;$$TOTALSHEADERTEXT$$&lt;/div&gt;
-        &lt;div class="CheckOutText"&gt;&lt;!--&lt;b&gt;Subtotal:&lt;/b&gt;--&gt;$$SUBTOTALTEXT$$
-          $$SUBTOTAL$$&lt;/div&gt;
+      &lt;!------- DELETE? -------&gt;
+      &lt;div class="hidden"&gt;
+        &lt;div class="CheckOutSubHeader"&gt;
+          $$TOTALSHEADERTEXT$$
+        &lt;/div&gt;
+        &lt;div class="CheckOutText"&gt;
+          $$SUBTOTALTEXT$$
+          $$SUBTOTAL$$
+        &lt;/div&gt;
         $$SHIPPING$$
         $$HANDLING$$
         $$DISCOUNT$$
         $$TAX$$
         $$TOTAL$$
       &lt;/div&gt;
+      &lt;!------- DELETE?: end -------&gt;
 
 
       &lt;!-- content wrapper: end --&gt;
@@ -13010,18 +12926,18 @@
 
   &lt;/div&gt;
 </SettingValue>
-    <EditDate>2016-04-30T19:49:34.783-05:00</EditDate>
+    <EditDate>2016-04-30T21:52:38.333-05:00</EditDate>
     <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-19T12:42:47.48-06:00</EnterDate>
     <EnteredBy>s:297438</EnteredBy>
-    <DateTimeStamp>AAAAAAGd40E=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd62A=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>983</ID>
     <ThemePageSettingsID>1538</ThemePageSettingsID>
     <SettingKey>OnePageCheckOutCartArea</SettingKey>
     <SettingValue>
-                  &lt;table width="100%" class="table ShoppingCart OnePageCheckoutShoppingCart"&gt;
+                  &lt;table class="table"&gt;
                     &lt;tbody&gt;
                       &lt;!-- cart headers --&gt;
                       &lt;tr&gt;
@@ -13042,13 +12958,8 @@
                         &lt;td class="ShoppingCartPrice"&gt;$$SUBTOTAL$$&lt;/td&gt;
                       &lt;/tr&gt;
                       &lt;!-- cart subtotal: end --&gt;
-                      
-                      &lt;ac:visibilityarea id="PointsEarnedArea"&gt;
-                        &lt;tr id="trPointsEarned"&gt;
-                          &lt;td colspan="##CARTCOLUMNCOUNT##" class="ShoppingCartTotals"&gt;##REWARDPOINTSLABEL## Earned&lt;/td&gt;
-                          &lt;td class="ShoppingCartPrice"&gt;$$REWARDPOINTSEARNED$$&lt;/td&gt;
-                        &lt;/tr&gt;
-                      &lt;/ac:visibilityarea&gt;
+
+                      &lt;!------- DELETE? -------&gt;
                       &lt;ac:visibilityarea id="ShippingArea"&gt;
                         &lt;tr id="trShipping"&gt;
                           &lt;td colspan="3" class="ShoppingCartTotals"&gt;
@@ -13058,12 +12969,18 @@
                           &lt;td class="ShoppingCartPrice"&gt;$$SHIPPING$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="HandlingArea"&gt;
                         &lt;tr id="trHandling"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;$$HANDLINGTEXT$$&lt;/td&gt;
-                          &lt;td class="ShoppingCartPrice"&gt;$$HANDLING$$&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            $$HANDLINGTEXT$$
+                          &lt;/td&gt;
+                          &lt;td class="ShoppingCartPrice"&gt;
+                            $$HANDLING$$
+                          &lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="DiscountArea"&gt;
                         &lt;tr id="trDiscount"&gt;
                           &lt;td colspan="3" class="ShoppingCartTotals"&gt;
@@ -13073,56 +12990,76 @@
                           &lt;td class="ShoppingCartPrice"&gt;$$DISCOUNT$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="TaxArea"&gt;
                         &lt;tr id="trTax"&gt;
                           &lt;td colspan="3" class="ShoppingCartTotals"&gt;$$TAXTEXT$$&lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$TAX$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="AdditionalFeesArea"&gt;
                         &lt;tr id="trAdditionalFees"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;$$ADDITIONALFEESTEXT$$&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            $$ADDITIONALFEESTEXT$$
+                          &lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$ADDITIONALFEES$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="TotalArea"&gt;
                         &lt;tr id="trTotal"&gt;
                           &lt;td colspan="3" class="ShoppingCartTotals"&gt;$$TOTALTEXT$$&lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$TOTAL$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="TotalInPointsArea"&gt;
                         &lt;tr id="trTotalInPoints"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;&lt;b&gt;Total in ##REWARDPOINTSLABEL##&lt;/b&gt;&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            &lt;b&gt;Total in ##REWARDPOINTSLABEL##&lt;/b&gt;
+                          &lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$TOTALINPOINTS$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="AppliedPointsArea"&gt;
                         &lt;tr id="trAppliedPointsTotal"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;&lt;b&gt;Applied ##REWARDPOINTSLABEL##&lt;/b&gt;&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            &lt;b&gt;Applied ##REWARDPOINTSLABEL##&lt;/b&gt;
+                          &lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$APPLIEDPOINTSTOTAL$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="AppliedPaymentsArea"&gt;
                         &lt;tr id="trAppliedPaymentsTotal"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;&lt;b&gt;Applied Payments&lt;/b&gt;&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            &lt;b&gt;Applied Payments&lt;/b&gt;
+                          &lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$APPLIEDPAYMENTSTOTAL$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+
                       &lt;ac:visibilityarea id="AdjustedTotalArea"&gt;
                         &lt;tr id="trAdjustedTotal"&gt;
-                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;&lt;b&gt;Adjusted Total&lt;/b&gt;&lt;/td&gt;
+                          &lt;td colspan="3" class="ShoppingCartTotals"&gt;
+                            &lt;b&gt;Adjusted Total&lt;/b&gt;
+                          &lt;/td&gt;
                           &lt;td class="ShoppingCartPrice"&gt;$$ADJUSTEDTOTAL$$&lt;/td&gt;
                         &lt;/tr&gt;
                       &lt;/ac:visibilityarea&gt;
+                      &lt;!------- DELETE?: end -------&gt;
+
+
                     &lt;/tbody&gt;
                   &lt;/table&gt;
                 </SettingValue>
-    <EditDate>2016-04-30T19:54:30.95-05:00</EditDate>
+    <EditDate>2016-04-30T21:34:20.48-05:00</EditDate>
     <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-19T12:42:47.603-06:00</EnterDate>
     <EnteredBy>s:297438</EnteredBy>
-    <DateTimeStamp>AAAAAAGd41g=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd6vE=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>984</ID>
@@ -13882,14 +13819,14 @@
     <SettingValue>
   $$!Top$$
   &lt;!-- Page: customer login --&gt;
-  
+
   $$CHECKOUTPROGRESS$$
 
-  &lt;div class="xs-mt3 xs-mb3 xs-pt3 xs-pb3 xs-mr1 xs-ml1 md-ml0 md-mr0"&gt;
+  &lt;div class="xs-mt3 xs-mb3 xs-pt3 xs-pb3 xs-pr1 xs-pl1"&gt;
 
     &lt;div class="text-1"&gt;$$EXISTINGCUSTOMERLABEL$$&lt;/div&gt;
 
-    &lt;div id="panLogin" class="xs-border xs-p2 xs-mt3 xs-mb3 rounded"&gt;
+    &lt;div id="panLogin" class="md-border rounded md-p2 xs-mt3"&gt;
 
       &lt;div class="xs-mb3"&gt;
         &lt;div class=""&gt;
@@ -13923,11 +13860,11 @@
 
   $$!Bottom$$
 </SettingValue>
-    <EditDate>2016-04-30T19:00:13.367-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:900437</EditedBy>
+    <EditDate>2016-04-30T22:00:21.12-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
     <EnterDate>2015-01-19T23:21:49.577-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:297438</EnteredBy>
-    <DateTimeStamp>AAAAAAGd4dE=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGd65M=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>1133</ID>
@@ -13977,21 +13914,24 @@
     <ThemePageSettingsID>1882</ThemePageSettingsID>
     <SettingKey>ContactFormPage</SettingKey>
     <SettingValue>
-  
+
   &lt;h1&gt;$$NAME$$&lt;/h1&gt;
   &lt;div class="ContactFormHeader"&gt;
     $$HEADER$$
   &lt;/div&gt;
-  
-$$_Form$$
-  
-$$_Field$$
-  
+
+  $$_Form$$
+
+  $$_Field$$
+
   &lt;div class="ContactFormFooter"&gt;
     $$FOOTER$$
   &lt;/div&gt;
-			</SettingValue>
-    <DateTimeStamp>AAAAAAEaCmk=</DateTimeStamp>
+</SettingValue>
+    <EditDate>2016-04-30T22:12:21.643-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
+    <EnteredBy />
+    <DateTimeStamp>AAAAAAGd7Bk=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>1158</ID>
@@ -14000,22 +13940,28 @@ $$_Field$$
     <SettingValue>
 
     &lt;div class="FormFields"&gt;$$FIELDS$$&lt;/div&gt;
-    
+
     $$SUBMITBUTTON$$
-    </SettingValue>
-    <DateTimeStamp>AAAAAAEaCmo=</DateTimeStamp>
+  </SettingValue>
+    <EditDate>2016-04-30T22:12:32.83-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
+    <EnteredBy />
+    <DateTimeStamp>AAAAAAGd7B0=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>1159</ID>
     <ThemePageSettingsID>1882</ThemePageSettingsID>
     <SettingKey>Field</SettingKey>
     <SettingValue>
-	&lt;div class="FormField pad-b-15"&gt;
+    &lt;div class="FormField pad-b-15"&gt;
       &lt;div&gt;$$FIELDNAME$$&lt;/div&gt;
       &lt;div&gt;$$FIELDCONTROL$$&lt;/div&gt;
     &lt;/div&gt;
-    </SettingValue>
-    <DateTimeStamp>AAAAAAEaCms=</DateTimeStamp>
+  </SettingValue>
+    <EditDate>2016-04-30T22:12:21.643-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:900471</EditedBy>
+    <EnteredBy />
+    <DateTimeStamp>AAAAAAGd7Bo=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>1290</ID>

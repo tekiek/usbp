@@ -1577,13 +1577,99 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
 }
 /* select: end */
 
+    /* Links */
+    #onepagecheckout a {
+      color: #07e !important;
+    }
+    /* Links: end */
+
+    /* Headers */
+    #onepagecheckout .CheckOutHeader,
+    #onepagecheckout #ShippingInformationArea,
+    #onepagecheckout .CheckOutSubHeader {
+      border-bottom: 1px solid #ddd;
+      padding: 0 0 10px;
+      color: #517fa4;
+      text-align: left;
+    }
+    /* Headers: end */
+
+    /* Errors */
+    #onepagecheckout .ErrorText.alert.alert-danger {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0px;
+      margin: 0px;
+      min-height: 0px;
+      color: #e32 !important;
+    }
+
+    #onepagecheckout input.field-has-error {
+      border-color: #e32 !important;
+    }
+    /* Errors: end */
+
+    /* Address area */
+    .address-area .CheckOutText {
+      margin: 10px 0 0;
+      font-size: 16px;
+    }
+
+    .address-area .CheckOutText p {
+      margin: 0px !important;
+    }
+
+    .address-area>table>tbody>tr:nth-child(3)>td {
+      width: 100%;
+      display: block;
+    }
+
+    .address-area .AddressBookEditor tr td:nth-child(2) {
+      width: 70% !important;
+    }
+
+    .address-area #rblSameAsBillingAddress tr td {
+      padding: 10px 0;
+    }
+
+    .address-area .AddressBookEditor>tbody>tr:nth-of-type(odd) {
+      background-color: #f9f9f9;
+      border-top: 1px solid #D6D5D4 !important;
+      border-bottom: 1px solid #D6D5D4 !important;
+    }
+    /* Address area: end */
+
+    /* residential/commerical */
+    .res-commerical .CustomFieldInput {
+      width: 50% !important;
+    }
+
+    .res-commerical .CustomFieldInput table tr td {
+      padding: 0 0 10px 0;
+    }
+    /* residential/commerical: end */
+
+    /* cart table */
+    td.ShoppingCartHeader,
+    #trSubtotal,
+    #trTotal {
+      padding: 10px; 
+      background-color: #f9f9f9;
+      font-weight: 500;
+    }
+
+    #lnkShopCart {
+      display: none;
+    }
+    /* cart table: end */
+
 .ExistingAccountArea { height: 45px; }
 .AccountPasswordText { padding-left: 2px; }
-.ShippingMethodArea { float: left; width: 50%; }
-.ShippingDropDownArea { padding-left: 10px; }
+.ShippingMethodArea { width: 100%; }
 .ShippingRatesText { text-align: center; }
 .MultipleShippingAddressesText { padding-left: 10px; }
-.PaymentMethodArea { width: 49%; float: right; }
+.PaymentMethodArea { width: 100%; }
 .CreditCardTextbox { width: 130px; }
 .ExplainCVVText { font-size: 10px; }
 .EcheckNameTextbox { width: 130px; }
@@ -2348,6 +2434,17 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
       color: #07e;
     }
 /* [/CustomerLogin] */
+
+/* [CMS] */
+#made_in_usa {
+  margin: 20px 0;
+}
+
+.CategoryChildCategoryHeader {
+  width: 100%;
+  margin: 20px 0;
+}
+/* [/CMS] */
 
 /* [Widget4445] HOMEPAGE */
 .Control_4445 { padding: 0; }
