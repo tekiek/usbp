@@ -18,6 +18,15 @@
   ##SET[isKit=##PRODUCTCUSTOMFIELD[isKit]##]##
   ##SET[ThisCat=##CATID##]##
 
+  ##IF[isKit=TRUE]##2nd##ENDIF##
+  ##IF[isKit=True]##2nd##ENDIF##
+
+  ##IF[isKit=FALSE]##1st##ENDIF##
+  ##IF[isKit=]##1st##ENDIF##
+
+
+  -----##PRODUCTCUSTOMFIELD[isKit]##-----
+
   <!-- breadcrumb  -->
   <div class="breadcrumb pdetails--breadcrumb hidden-xs hidden-sm">
     $$CATEGORYTRAIL$$
@@ -91,7 +100,6 @@
   </div>
   <!-- HEADER: END -->
 
-  ##IF[isKit=]##
   <!-- No Kit  -->
 
   <!-- Product Details  -->
@@ -101,7 +109,7 @@
 
       <!-- LEFT BAR -->
       <!-- Product Details: Photos  -->
-      <div class="col-md-6">
+      <div class="##IF[isKit=FALSE]##col-md-6##ENDIF## ##IF[isKit=]##col-md-6##ENDIF## ##IF[isKit=TRUE]##col-md-12##ENDIF## ##IF[isKit=True]##col-md-12##ENDIF##">
         <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           $$PHOTO$$
         </div>
@@ -110,7 +118,7 @@
 
       <!-- RIGHT BAR -->
       <!-- Product Details: Options  -->
-      <div class="col-md-6 pdetails--options">
+      <div class="col-md-6 pdetails--options ##IF[isKit=TRUE]##hidden##ENDIF## ##IF[isKit=True]##hidden##ENDIF##">
         <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
           <meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##">
           <meta itemprop="category" content="Hardware > Building Materials">
@@ -179,52 +187,10 @@
           </ac:visibilityarea>
         </div>
       </div>
+
       <!-- RIGHT BAR:END -->
     </div>
   </div>
-
-  <!-- Product Details: Tab  -->
-  <div class="xs-hide md-block md-mt5">
-    <div class="ProductDetailsTabs xs-border md-p3 rounded md-mt5 md-mb5">
-      $$DETAILS$$
-    </div>
-    <div class="MFGSnippet">
-      <span itemprop="brand">##MFGNAME##</span><br>
-      <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
-    </div>
-
-  </div>
-  <!-- Product Details: Tab: END  -->
-
-
-  ##ELSE##
-
-  <!-- KIT PRODUCTS -->
-
-  <div class="pdetails--details xs-mt5 xs-mb3">
-    <div class="row">
-
-      <!-- LEFT BAR -->
-      <!-- Product Details: Photos  -->
-      <div class="col-md-6">
-        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
-          $$PHOTO$$
-        </div>
-      </div>
-      <!-- LEFT BAR: END -->
-
-      <!-- Right BAR -->
-      <!-- Product Details: Options  -->
-      <div class="col-md-6 pdetails--options ">
-        <div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3">
-          $$DETAILS$$
-        </div>
-      </div>
-      <!-- Right BAR: END -->
-
-    </div>
-  </div>
-
 
   <div class="clearfix">
     <ac:visibilityarea id="ProductGroupArea">
@@ -313,6 +279,7 @@
             </ac:layoutarea>
 
             <!-- Add to cart -->
+            <style>#btnAddToCart { display: none !important; } </style>
             <div align="right" class="ProductGroupAddToCart xs-m2 md-m0 md-mb3">
               $$PRODUCTGROUPADDTOCARTBUTTON$$
             </div>
@@ -325,8 +292,18 @@
   </div>
   <!-- KIT PRODUCTS: END -->
 
+  <!-- Product Details: Tab  -->
+  <div class="xs-hide md-block md-mt5">
+    <div class="ProductDetailsTabs xs-border md-p3 rounded md-mt5 md-mb5">
+      $$DETAILS$$
+    </div>
+    <div class="MFGSnippet">
+      <span itemprop="brand">##MFGNAME##</span><br>
+      <img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##">
+    </div>
 
-  ##ENDIF##
+  </div>
+  <!-- Product Details: Tab: END  -->
 
   <div class="clearfix xs-m3"> </div>
 

@@ -768,7 +768,7 @@
     <RightHtml />
     <BottomHtml />
     <stockTheme>false</stockTheme>
-    <screenshot>/Shared/Themes/USBPDev/screenshot03302016195939.png</screenshot>
+    <screenshot>/Shared/Themes/USBPDev/screenshot05082016194838.png</screenshot>
     <UseTabs>true</UseTabs>
     <ProductListPaging>true</ProductListPaging>
     <OnePageCheckOut>false</OnePageCheckOut>
@@ -813,11 +813,11 @@
     <HideCategoryHeaderOnSort>false</HideCategoryHeaderOnSort>
     <HideSubcategoriesOnSort>false</HideSubcategoriesOnSort>
     <HideProductGroupHeaders>false</HideProductGroupHeaders>
-    <EditDate>2016-04-30T22:16:07.957-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:900471</EditedBy>
+    <EditDate>2016-05-14T16:23:21.897-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-12T15:15:38.823-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGd7DI=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhSNo=</DateTimeStamp>
     <HeaderControlHome>/Store/Templates/Default/Header.ascx</HeaderControlHome>
     <FooterControlHome>/Store/Templates/Default/Footer.ascx</FooterControlHome>
     <AllowOrderGifting>false</AllowOrderGifting>
@@ -8703,48 +8703,6 @@
     <WidgetType>HTML</WidgetType>
   </ThemeLayoutControls>
   <ThemeLayoutControls>
-    <Id>6676</Id>
-    <ThemeID>23</ThemeID>
-    <ControlName>Widget Area</ControlName>
-    <PagePosition />
-    <Location />
-    <Width />
-    <Display />
-    <Style />
-    <Content />
-    <ExternalUrl />
-    <FeaturedItemsPriceAlignment />
-    <FeaturedItemsDisplayThumbOnSeparateLine>false</FeaturedItemsDisplayThumbOnSeparateLine>
-    <RssNewsFeed_NumberToDisplay>0</RssNewsFeed_NumberToDisplay>
-    <EditDate>2016-03-12T23:04:12.323-06:00</EditDate>
-    <EditedBy>U,11,tekiek|s:819781</EditedBy>
-    <EnterDate>2016-03-12T23:04:12.323-06:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:819781</EnteredBy>
-    <DateTimeStamp>AAAAAAGSB3s=</DateTimeStamp>
-    <CacheControl>false</CacheControl>
-    <CustomContent />
-    <IsHidden>false</IsHidden>
-    <ControlNickname />
-    <TreeNavigation_Source />
-    <TreeNavigation_RootImageUrl />
-    <TreeNavigation_LeafImageUrl />
-    <TreeNavigation_ExpandedImageUrl />
-    <TreeNavigation_CollapsedImageUrl />
-    <TreeNavigation_HideExpander>false</TreeNavigation_HideExpander>
-    <TreeNavigation_EnableLevelStyles>false</TreeNavigation_EnableLevelStyles>
-    <TreeNavigation_SelectedImageUrl />
-    <DoNotRenderInPlace>false</DoNotRenderInPlace>
-    <Repeater_ItemBorderStyle />
-    <Repeater_ShowHiddenProducts>false</Repeater_ShowHiddenProducts>
-    <Repeater_DisplayOnlySubcategories>false</Repeater_DisplayOnlySubcategories>
-    <Repeater_ItemBorderColor />
-    <BrowseByCategory_BrowseCategoryIcon />
-    <BrowseByAttribute_BrowseByAttributeFilterButtonArea />
-    <Identifier>P1528$HomePageHeaderWidgets</Identifier>
-    <ThemePageID>1528</ThemePageID>
-    <WidgetType>WidgetArea</WidgetType>
-  </ThemeLayoutControls>
-  <ThemeLayoutControls>
     <Id>6678</Id>
     <ThemeID>23</ThemeID>
     <ControlName>Widget Area</ControlName>
@@ -9087,49 +9045,6 @@
     <WidgetType>Carousel</WidgetType>
   </ThemeLayoutControls>
   <ThemeLayoutControls>
-    <Id>6700</Id>
-    <ThemeID>23</ThemeID>
-    <ControlName>Slideshow</ControlName>
-    <PagePosition />
-    <SortOrder>0</SortOrder>
-    <Location>/store/controls/Slideshow.ascx</Location>
-    <Width />
-    <Display />
-    <Style />
-    <Content />
-    <ExternalUrl />
-    <FeaturedItemsPriceAlignment />
-    <FeaturedItemsDisplayThumbOnSeparateLine>false</FeaturedItemsDisplayThumbOnSeparateLine>
-    <RssNewsFeed_NumberToDisplay>0</RssNewsFeed_NumberToDisplay>
-    <EditDate>2016-03-13T18:52:30.31-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-13T18:48:43.717-05:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMyg=</DateTimeStamp>
-    <CacheControl>false</CacheControl>
-    <CustomContent />
-    <IsHidden>false</IsHidden>
-    <ControlNickname />
-    <TreeNavigation_Source />
-    <TreeNavigation_RootImageUrl />
-    <TreeNavigation_LeafImageUrl />
-    <TreeNavigation_ExpandedImageUrl />
-    <TreeNavigation_CollapsedImageUrl />
-    <TreeNavigation_HideExpander>false</TreeNavigation_HideExpander>
-    <TreeNavigation_EnableLevelStyles>false</TreeNavigation_EnableLevelStyles>
-    <TreeNavigation_SelectedImageUrl />
-    <DoNotRenderInPlace>false</DoNotRenderInPlace>
-    <Repeater_ItemBorderStyle />
-    <Repeater_ShowHiddenProducts>false</Repeater_ShowHiddenProducts>
-    <Repeater_DisplayOnlySubcategories>false</Repeater_DisplayOnlySubcategories>
-    <Repeater_ItemBorderColor />
-    <BrowseByCategory_BrowseCategoryIcon />
-    <BrowseByAttribute_BrowseByAttributeFilterButtonArea />
-    <Identifier>SLIDESHOW4445</Identifier>
-    <ParentThemeLayoutControlID>6676</ParentThemeLayoutControlID>
-    <WidgetType>Slideshow</WidgetType>
-  </ThemeLayoutControls>
-  <ThemeLayoutControls>
     <Id>6702</Id>
     <ThemeID>23</ThemeID>
     <ControlName>Blog/RSS Feed Reader</ControlName>
@@ -9269,15 +9184,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-03-13T20:32:32.013-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+    <EditDate>2016-05-08T21:29:23.08-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:40.103-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNvE=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf14k=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/DefaultPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-03-13T20:32:31.84-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-08T21:29:23.08-05:00</LayoutFileLastModified>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
@@ -9447,15 +9362,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-04-10T21:32:08.47-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:864685</EditedBy>
+    <EditDate>2016-05-14T18:13:59.06-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-12T15:15:40.167-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAUM=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIo=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/ProductDetailsPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-04-10T21:32:08.453-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-14T18:13:59.043-05:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
@@ -9692,21 +9607,22 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-12T15:15:40.243-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <EditDate>2016-05-12T11:15:27.47-05:00</EditDate>
+    <EditedBy>U,1,admin|s:917071</EditedBy>
     <EnterDate>2015-01-12T15:15:40.243-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpmco=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGg2y4=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/LostPasswordPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2014-03-06T14:14:31.523-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2015-01-12T15:15:41.807-06:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
     <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1543</ThemePageSettingsID>
@@ -9722,21 +9638,22 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-19T23:21:48.86-06:00</EditDate>
-    <EditedBy>U,1,admin|s:297438</EditedBy>
+    <EditDate>2016-05-05T12:42:18.423-05:00</EditDate>
+    <EditedBy>s:906732</EditedBy>
     <EnterDate>2015-01-12T15:15:40.243-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAEaBq4=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGfCQk=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/MyAccountPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2015-01-12T15:15:41.917-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-05T12:42:18.33-05:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
-    <ForceFileWrite>true</ForceFileWrite>
+    <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1544</ThemePageSettingsID>
@@ -9992,21 +9909,22 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-12T15:15:40.293-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <EditDate>2016-05-05T20:08:42.81-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
     <EnterDate>2015-01-12T15:15:40.293-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpmeg=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGfF3o=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/ViewOrderPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2014-03-06T14:14:31.837-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2015-01-12T15:15:42.353-06:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
     <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1553</ThemePageSettingsID>
@@ -10790,15 +10708,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-03-20T17:31:40.7-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:830699</EditedBy>
+    <EditDate>2016-05-08T21:01:12.303-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:40.417-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGT7rw=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1nw=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/HeaderPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-03-20T17:31:40.687-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-08T21:01:11.973-05:00</LayoutFileLastModified>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
@@ -10820,15 +10738,15 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2016-03-18T23:09:36.247-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:827486</EditedBy>
+    <EditDate>2016-05-08T20:09:33.543-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:40.417-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGTbko=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1SY=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/FooterPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2016-03-18T23:09:36.17-05:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-08T20:09:33.527-05:00</LayoutFileLastModified>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
@@ -10938,20 +10856,21 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-12T15:15:40.433-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <EditDate>2016-05-12T11:15:43.973-05:00</EditDate>
+    <EditedBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EditedBy>
     <EnterDate>2015-01-12T15:15:40.433-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpmkk=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGg2zc=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/ChangePasswordPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2014-03-06T14:14:33.597-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2015-01-12T15:15:43.897-06:00</LayoutFileLastModified>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
     <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1585</ThemePageSettingsID>
@@ -11176,21 +11095,22 @@
     <SubFooterHtml />
     <CustomStyleSheet />
     <CustomContent />
-    <EditDate>2015-01-12T15:15:40.463-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <EditDate>2016-05-05T20:12:51.62-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
     <EnterDate>2015-01-12T15:15:40.463-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpmmE=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGfF7M=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>true</IsDefaultSet>
     <LayoutFilePath>/Shared/Themes/USBPDev/StatementPage.html</LayoutFilePath>
-    <LayoutFileLastModified>2013-01-28T11:33:39.607-06:00</LayoutFileLastModified>
+    <LayoutFileLastModified>2016-05-05T20:12:51.603-05:00</LayoutFileLastModified>
     <ThemeTemplateID>110</ThemeTemplateID>
     <ParseErrors />
     <LayoutErrors />
     <LayoutName />
     <LayoutType>None</LayoutType>
     <ForceFileWrite>false</ForceFileWrite>
+    <LayoutThumbnail />
   </ThemePages>
   <ThemePages>
     <ThemePageSettingsID>1593</ThemePageSettingsID>
@@ -11255,7 +11175,7 @@
     <EditedBy>U,1,admin|s:291087</EditedBy>
     <EnterDate>2015-01-12T15:15:40.48-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAT8=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIY=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>false</IsDefaultSet>
     <LayoutFilePath>/shared/themes/USBPDev/ProductDetailsFairway.html</LayoutFilePath>
@@ -11342,7 +11262,7 @@
     <EditedBy>U,1,admin|s:291087</EditedBy>
     <EnterDate>2015-01-12T15:15:40.493-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAUA=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIc=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>false</IsDefaultSet>
     <LayoutFilePath>/shared/themes/USBPDev/PCAProduct.html</LayoutFilePath>
@@ -11399,7 +11319,7 @@
     <EditedBy>U,1,admin|s:291087</EditedBy>
     <EnterDate>2015-01-12T15:15:40.51-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAUE=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIg=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>false</IsDefaultSet>
     <LayoutFilePath>/shared/themes/USBPDev/WascoProduct.html</LayoutFilePath>
@@ -11457,7 +11377,7 @@
     <EditedBy>U,1,admin|s:291087</EditedBy>
     <EnterDate>2015-01-12T15:15:40.527-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAUI=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIk=</DateTimeStamp>
     <SettingsSetName />
     <IsDefaultSet>false</IsDefaultSet>
     <LayoutFilePath>/shared/themes/USBPDev/WascoProductCall.html</LayoutFilePath>
@@ -11644,9 +11564,28 @@
   &lt;div&gt;
 
     &lt;!-- Slideshow: wrapper --&gt;
-    &lt;div class="hidden-xs hidden-sm"&gt;
-      $$!HomePageHeaderWidgets$$
-    &lt;/div&gt;
+    &lt;a id="headerImageLink" class="xs-mt2 xs-mb2"&gt;
+      &lt;img id="headerImage"&gt;
+    &lt;/a&gt;
+
+    &lt;script&gt;
+      var headerImages = [
+        '/Shared/Themes/USBPDev/images/banner.jpg',
+        '/images/fairway.jpg',
+        '/images/fairway.jpg',
+        '/images/moulding.jpg'
+      ]
+      var headerImageLinks = [
+        '/skylights',
+        '/vinyl-railings',
+        '/aluminum-screen-doors/popular-models',
+        '/crown'
+      ]
+      var headerImage = headerImages[Math.floor(Math.random()*4)];
+      var headerImageLink = headerImageLinks[Math.floor(Math.random()*4)];
+      document.getElementById('headerImage').src=headerImage;
+      document.getElementById('headerImageLink').href=headerImageLink;
+    &lt;/script&gt;
     &lt;!-- Slideshow: wrapper: end --&gt;
 
     $$!Top$$
@@ -11662,11 +11601,11 @@
 
 
   &lt;/div&gt;</SettingValue>
-    <EditDate>2016-03-13T19:49:13.83-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+    <EditDate>2016-05-08T21:29:23.05-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:56.353-06:00</EnterDate>
     <EnteredBy>s:291090</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNS8=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf14g=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>955</ID>
@@ -11675,12 +11614,12 @@
     <SettingValue>  
 
   &lt;!-- Begin Header --&gt;
-  &lt;header class="global_header"&gt;
+  &lt;header class="global_header" data-category="header"&gt;
     &lt;div&gt;
 
       &lt;!-- logo: start --&gt;
       &lt;h1 class="logo hidden-xs hidden-sm"&gt;
-        &lt;a href="/"&gt;
+        &lt;a href="/" data-label="logo"&gt;
           &lt;img width="220" height="86" alt="US Building Products" title="US Building Products" src="/Shared/Themes/USBPDev/images/logo.png"&gt;
         &lt;/a&gt;
       &lt;/h1&gt;
@@ -11693,23 +11632,23 @@
           &lt;ul&gt;
             &lt;li&gt;
               ##IF[LoggedIn]##
-              &lt;a title="Logout" href="/store/logout.aspx"&gt;
+              &lt;a title="Logout" href="/store/logout.aspx" data-label="logout"&gt;
                 Logout
               &lt;/a&gt;
               ##ELSE##
-              &lt;a title="Login" href="/store/login.aspx"&gt;
+              &lt;a title="Login" href="/store/login.aspx" data-label="login"&gt;
                 Login
               &lt;/a&gt;
               ##ENDIF##
             &lt;/li&gt;
             &lt;li&gt;
-              &lt;a href="/store/myaccount.aspx"&gt;Account&lt;/a&gt;
+              &lt;a href="/store/myaccount.aspx" data-label="account"&gt;Account&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-              &lt;a href="/store/shopcart.aspx"&gt;View Cart&lt;/a&gt;
+              &lt;a href="/store/shopcart.aspx" data-label="cart"&gt;View Cart&lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-              &lt;a href="/store/checkout.aspx"&gt;Checkout&lt;/a&gt;
+              &lt;a href="/store/checkout.aspx" data-label="checkout"&gt;Checkout&lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/nav&gt;
@@ -11717,7 +11656,7 @@
 
         &lt;!-- search: start --&gt;
         &lt;search class="search_form"&gt;
-          &lt;input type="text" class="SearchBoxStyle SearchBox1 AutocompleteSearchBox" name="txtRedirectSearchBox" id="txtRedirectSearchBox" placeholder="Search"&gt;
+          &lt;input type="text" class="SearchBoxStyle SearchBox1 AutocompleteSearchBox" name="txtRedirectSearchBox" id="txtRedirectSearchBox" placeholder="Search" data-label="search"&gt;
           &lt;input type="image" name='btnSearchBox' id='btnSearchBox' class="SearchBox1 SearchImageStyle" src="/Shared/Themes/USBPDev/images/button.png" width="14" height="22" alt="Search" title="Search"&gt;
         &lt;/search&gt;
         &lt;!-- search: end --&gt;
@@ -11742,7 +11681,7 @@
               &lt;/a&gt;
             &lt;/li&gt;
             &lt;li&gt;
-              &lt;a href="tel:8002845194"&gt;(800) 284-5194&lt;/a&gt;
+              &lt;a href="tel:8002845194" data-label="phone"&gt;(800) 284-5194&lt;/a&gt;
             &lt;/li&gt;
           &lt;/ul&gt;
         &lt;/nav&gt;
@@ -11773,10 +11712,38 @@
           &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
             &lt;ul class="nav navbar-nav"&gt;
 
+              &lt;!-- Menu: Aluminum Screen Doors --&gt;
+              &lt;li class="dropdown"&gt;
+                &lt;a href="/aluminum-screen-doors" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-label="screen-doors"&gt;
+                  Aluminum Screen Doors &lt;span class="caret"&gt;&lt;/span&gt;
+                &lt;/a&gt;
+                &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;
+                    &lt;a href="/aluminum-screen-doors"&gt;All Models&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/aluminum-screen-doors/popular-models"&gt;Popular Models&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/aluminum-screen-doors/nature-series"&gt;Nature Series&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/aluminum-screen-doors/accessories"&gt;Parts &amp;amp; Accessories&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/aluminum-screen-doors/resources" data-label="screen-doors/rescources"&gt;Resources &amp;amp; Information&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+
               &lt;!-- Menu: molding --&gt;
               &lt;li class="dropdown"&gt;
-                &lt;a href="/moulding" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;Moulding &amp; Trim &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a href="/moulding" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-label="moulding"&gt;
+                  Moulding &amp; Trim &lt;span class="caret"&gt;&lt;/span&gt;
+                &lt;/a&gt;
                 &lt;ul class="dropdown-menu"&gt;
+                  &lt;li&gt;&lt;a href="/decorator"&gt;Decorator Series&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="/classic"&gt;Classic Series&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href="/baseboard"&gt;Baseboard Moulding&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href="/casing"&gt;Door/Window Casing&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href="/crown"&gt;Crown Moulding&lt;/a&gt;&lt;/li&gt;
@@ -11785,53 +11752,41 @@
                   &lt;li&gt;&lt;a href="/panel"&gt;Panel Moulding&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href="/corner"&gt;Corner Moulding&lt;/a&gt;&lt;/li&gt;
                   &lt;li&gt;&lt;a href="/dentil"&gt;Dentil Moulding&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/decorator"&gt;Decorator Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/classic"&gt;Classic Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/wood"&gt;All About Wood&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-
-              &lt;!-- Menu: Vinyl Railings --&gt;
-              &lt;li class="dropdown"&gt;
-                &lt;a href="/vinyl-railings" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;Vinyl Railings &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
-                &lt;ul class="dropdown-menu"&gt;
-                  &lt;li&gt;&lt;a href="/vinyl-railings/standard-series"&gt;Standard Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/vinyl-railings/contour-series"&gt;Contour Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/vinyl-railings/grand-view-series"&gt;Grand View Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/vinyl-railings/accessories"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
 
               &lt;!-- Menu: Skylights --&gt;
               &lt;li class="dropdown"&gt;
-                &lt;a href="/skylights" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;Skylights &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a href="/skylights" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-label="skylights"&gt;Skylights &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
                 &lt;ul class="dropdown-menu"&gt;
-                  &lt;li&gt;&lt;a href="/skylights/residential"&gt;Residential Skylights&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/residential/curb-mounted"&gt;Curb Mounted&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/residential/deck-mounted"&gt;Deck Mounted&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/residential/tubular"&gt;Tubular Skylights&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/architectural-series"&gt;Architectural Series&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/architectural-series/pyramids"&gt;Pyramids&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories"&gt;Parts &amp;amp; Accessories&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/skylights"&gt;Skylights&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/blinds"&gt;Blinds&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/flashing"&gt;Flashing &amp;amp; Installation&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/tubular-skylights"&gt;Tubular Skylights&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/replacement-parts"&gt;Replacement Parts&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/replacement-parts/glass"&gt;Replacement Glass&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/accessories/replacement-parts/domes"&gt;Replacement Domes&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/skylights/resources"&gt;Resources &amp;amp; Information&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/skylights/residential"&gt;Residential Skylights&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/skylights/architectural-series"&gt;Architectural Series&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/skylights/accessories"&gt;Parts &amp;amp; Accessories&lt;/a&gt;
+                  &lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
 
-              &lt;!-- Menu: Aluminum Screen Doors --&gt;
+              &lt;!-- Menu: Vinyl Railings --&gt;
               &lt;li class="dropdown"&gt;
-                &lt;a href="/aluminum-screen-doors" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;Aluminum Screen Doors &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;a href="/vinyl-railings" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-label="vinyl-rail"&gt;Vinyl Railings &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
                 &lt;ul class="dropdown-menu"&gt;
-                  &lt;li&gt;&lt;a href="/aluminum-screen-doors/popular-models"&gt;Popular Models&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/aluminum-screen-doors"&gt;All Models&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/aluminum-screen-doors/accessories"&gt;Parts &amp;amp; Accessories&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="/aluminum-screen-doors/resources"&gt;Resources &amp;amp; Information&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/vinyl-railings/standard-series" data-label="vinyl-rail/standard"&gt;Standard Series&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/vinyl-railings/contour-series" data-label="vinyl-rail/contour"&gt;Contour Series&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/vinyl-railings/grand-view-series" data-label="vinyl-rail/grand"&gt;Grand View Series&lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    &lt;a href="/vinyl-railings/accessories" data-label="vinyl-rail/accessories"&gt;Accessories&lt;/a&gt;
+                  &lt;/li&gt;
                 &lt;/ul&gt;
               &lt;/li&gt;
 
@@ -11853,90 +11808,67 @@
 
 
 </SettingValue>
-    <EditDate>2016-03-20T17:31:40.31-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:830699</EditedBy>
+    <EditDate>2016-05-08T21:01:11.943-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:56.87-06:00</EnterDate>
     <EnteredBy>s:291090</EnteredBy>
-    <DateTimeStamp>AAAAAAGT7rs=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1ns=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>956</ID>
     <ThemePageSettingsID>1580</ThemePageSettingsID>
     <SettingKey>FooterPage</SettingKey>
     <SettingValue>    
-  &lt;div&gt;
+  &lt;div data-category="footer"&gt;
 
     &lt;!-- footer links --&gt;
     &lt;section style="width:100%;"&gt;
 
-
-
       &lt;h2&gt;Useful Links&lt;/h2&gt;
-
-      &lt;style&gt;
-        .footer__links a {
-          color: white;
-        }
-        .footer__links .col-xs-4{
-          margin: 0 0 20px 0;
-        }
-      &lt;/style&gt;
 
       &lt;div class="row footer__links"&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/USBP/about"&gt;About Us&lt;/a&gt;
+          &lt;a href="/USBP/about" data-label="about"&gt;About Us&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/USBP/contact"&gt;Contact Us&lt;/a&gt;
+          &lt;a href="/USBP/contact" data-label="contact"&gt;Contact Us&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/USBP/privacy"&gt;Privacy Policy&lt;/a&gt;
+          &lt;a href="/USBP/privacy" data-label="privacy"&gt;Privacy Policy&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/USBP/return"&gt;Return Policy&lt;/a&gt;
+          &lt;a href="/USBP/return" data-label="return"&gt;Return Policy&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/USBP/shipping"&gt;Shipping &amp;amp; Delivery&lt;/a&gt;
+          &lt;a href="/USBP/shipping" data-label="shipping"&gt;Shipping &amp;amp; Delivery&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class="col-md-2 col-xs-4"&gt;
-          &lt;a href="/store/sitemap.aspx"&gt;Sitemap&lt;/a&gt;
+          &lt;a href="/store/sitemap.aspx" data-label="sitemap"&gt;Sitemap&lt;/a&gt;
         &lt;/div&gt;
 
 
       &lt;/div&gt;&lt;/section&gt;
 
-    &lt;!-- contact seciton --&gt;
-    &lt;section class="contact"&gt;
-      &lt;h1 class="logo"&gt;
-        &lt;a href="/"&gt;
-          &lt;img width="220" height="86" alt="US Building Products" title="US Building Products" src="/Shared/Themes/USBPDev/images/logo.png"&gt;
-        &lt;/a&gt;
-      &lt;/h1&gt;
-      &lt;section&gt;
-        &lt;h2&gt;Contact Us&lt;/h2&gt;
-        &lt;ul&gt;
-          &lt;li&gt;
-            &lt;a href="tel:8002845194"&gt;(800) 284-5194&lt;/a&gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a href="mailto:support@usbuildingproducts.com"&gt;support@usbuildingproducts.com&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/section&gt;
-    &lt;/section&gt;
-
     &lt;!-- copyright --&gt;
-    &lt;small&gt;
+    &lt;small class="xs-m0 xs-p0"&gt;
       &amp;copy; 2014-2015 US Building Products. Wholly owned and operated by Mount Equity LLC. All Rights Reserved. ##POWEREDBYLINK##
     &lt;/small&gt;
+    
+    &lt;!-- Bootstrap JS --&gt;
+    &lt;script src="##FILEPATHVERSIONED[/shared/themes/USBPDev/JS/bootstrap.min.js]##"&gt;&lt;/script&gt;
+
+    &lt;!-- GA Tracking --&gt;
+    &lt;script&gt;
+      window.gtrack=new function(){_gtrack=this,this.trackable_tags=["a","input","button","i","textarea","select"],this.category=null,this.init=function(){_gtrack.category=_gtrack.pageCategory(),$.each(_gtrack.trackable_tags,function(t,a){$(document.body).on("click",a,function(t){var e=$(t.currentTarget).closest(a)[0];_gtrack.click(e)})})},this.click=function(t){var a=$(t).attr("data-action"),e=$(t).attr("data-label"),r=null;_gtrack.elCategory(t)&amp;&amp;(r=_gtrack.elCategory(t)),a||(a=$(t).prop("tagName").toLowerCase()),a="click:"+a,$(t).is("a")&amp;&amp;(e=$(t).attr("href")),_gtrack.track_event(r,a,e)},this.pageCategory=function(){var t=window.location.pathname.replace(/\//g,"");return t?t:"app"},this.elCategory=function(t){try{for(var a=0,e=99;t!=document&amp;&amp;e&gt;a;){var r=$(t).parents();if(r.attr("data-category"))return r.attr("data-category");t=r,a++}return null}catch(n){return null}},this.track_event=function(t,a,e){t="undefined"!=typeof t&amp;&amp;t?_gtrack.category+"/"+t:_gtrack.category,"undefined"!=typeof a&amp;&amp;a||(a=""),"undefined"!=typeof e&amp;&amp;e||(e=""),ga("send","event",t,a,e),console.log("GA:",t,a,e)}},window.gtrack.init();
+    &lt;/script&gt;
 
   &lt;/div&gt;
 </SettingValue>
-    <EditDate>2016-03-18T23:09:36.047-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:827486</EditedBy>
+    <EditDate>2016-05-08T20:09:33.513-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:57.133-06:00</EnterDate>
     <EnteredBy>s:291090</EnteredBy>
-    <DateTimeStamp>AAAAAAGTbkk=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1SU=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>957</ID>
@@ -12421,6 +12353,15 @@
   ##SET[isKit=##PRODUCTCUSTOMFIELD[isKit]##]##
   ##SET[ThisCat=##CATID##]##
 
+  ##IF[isKit=TRUE]##2nd##ENDIF##
+  ##IF[isKit=True]##2nd##ENDIF##
+
+  ##IF[isKit=FALSE]##1st##ENDIF##
+  ##IF[isKit=]##1st##ENDIF##
+
+
+  -----##PRODUCTCUSTOMFIELD[isKit]##-----
+
   &lt;!-- breadcrumb  --&gt;
   &lt;div class="breadcrumb pdetails--breadcrumb hidden-xs hidden-sm"&gt;
     $$CATEGORYTRAIL$$
@@ -12494,7 +12435,6 @@
   &lt;/div&gt;
   &lt;!-- HEADER: END --&gt;
 
-  ##IF[isKit=]##
   &lt;!-- No Kit  --&gt;
 
   &lt;!-- Product Details  --&gt;
@@ -12504,7 +12444,7 @@
 
       &lt;!-- LEFT BAR --&gt;
       &lt;!-- Product Details: Photos  --&gt;
-      &lt;div class="col-md-6"&gt;
+      &lt;div class="##IF[isKit=FALSE]##col-md-6##ENDIF## ##IF[isKit=]##col-md-6##ENDIF## ##IF[isKit=TRUE]##col-md-12##ENDIF## ##IF[isKit=True]##col-md-12##ENDIF##"&gt;
         &lt;div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3"&gt;
           $$PHOTO$$
         &lt;/div&gt;
@@ -12513,7 +12453,7 @@
 
       &lt;!-- RIGHT BAR --&gt;
       &lt;!-- Product Details: Options  --&gt;
-      &lt;div class="col-md-6 pdetails--options"&gt;
+      &lt;div class="col-md-6 pdetails--options ##IF[isKit=TRUE]##hidden##ENDIF## ##IF[isKit=True]##hidden##ENDIF##"&gt;
         &lt;div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3"&gt;
           &lt;meta itemprop="identifier" content="mpn:##MFGPARTNUMBER##"&gt;
           &lt;meta itemprop="category" content="Hardware &gt; Building Materials"&gt;
@@ -12567,52 +12507,10 @@
           &lt;/ac:visibilityarea&gt;
         &lt;/div&gt;
       &lt;/div&gt;
+
       &lt;!-- RIGHT BAR:END --&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-
-  &lt;!-- Product Details: Tab  --&gt;
-  &lt;div class="xs-hide md-block md-mt5"&gt;
-    &lt;div class="ProductDetailsTabs xs-border md-p3 rounded md-mt5 md-mb5"&gt;
-      $$DETAILS$$
-    &lt;/div&gt;
-    &lt;div class="MFGSnippet"&gt;
-      &lt;span itemprop="brand"&gt;##MFGNAME##&lt;/span&gt;&lt;br&gt;
-      &lt;img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##"&gt;
-    &lt;/div&gt;
-
-  &lt;/div&gt;
-  &lt;!-- Product Details: Tab: END  --&gt;
-
-
-  ##ELSE##
-
-  &lt;!-- KIT PRODUCTS --&gt;
-
-  &lt;div class="pdetails--details xs-mt5 xs-mb3"&gt;
-    &lt;div class="row"&gt;
-
-      &lt;!-- LEFT BAR --&gt;
-      &lt;!-- Product Details: Photos  --&gt;
-      &lt;div class="col-md-6"&gt;
-        &lt;div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3"&gt;
-          $$PHOTO$$
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;!-- LEFT BAR: END --&gt;
-
-      &lt;!-- Right BAR --&gt;
-      &lt;!-- Product Details: Options  --&gt;
-      &lt;div class="col-md-6 pdetails--options "&gt;
-        &lt;div class="xs-border rounded xs-p3 xs-m2 md-m0 md-mt3"&gt;
-          $$DETAILS$$
-        &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;!-- Right BAR: END --&gt;
-
-    &lt;/div&gt;
-  &lt;/div&gt;
-
 
   &lt;div class="clearfix"&gt;
     &lt;ac:visibilityarea id="ProductGroupArea"&gt;
@@ -12677,6 +12575,7 @@
             $$_ProductGroupVariant$$
 
             &lt;!-- Add to cart --&gt;
+            &lt;style&gt;#btnAddToCart { display: none !important; } &lt;/style&gt;
             &lt;div align="right" class="ProductGroupAddToCart xs-m2 md-m0 md-mb3"&gt;
               $$PRODUCTGROUPADDTOCARTBUTTON$$
             &lt;/div&gt;
@@ -12689,17 +12588,27 @@
   &lt;/div&gt;
   &lt;!-- KIT PRODUCTS: END --&gt;
 
+  &lt;!-- Product Details: Tab  --&gt;
+  &lt;div class="xs-hide md-block md-mt5"&gt;
+    &lt;div class="ProductDetailsTabs xs-border md-p3 rounded md-mt5 md-mb5"&gt;
+      $$DETAILS$$
+    &lt;/div&gt;
+    &lt;div class="MFGSnippet"&gt;
+      &lt;span itemprop="brand"&gt;##MFGNAME##&lt;/span&gt;&lt;br&gt;
+      &lt;img itemprop="image" src="##ITEMPHOTOURL##" alt="##MFGNAME## ##ITEMNAME##"&gt;
+    &lt;/div&gt;
 
-  ##ENDIF##
+  &lt;/div&gt;
+  &lt;!-- Product Details: Tab: END  --&gt;
 
   &lt;div class="clearfix xs-m3"&gt; &lt;/div&gt;
 
 </SettingValue>
-    <EditDate>2016-04-10T21:15:26.293-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:864685</EditedBy>
+    <EditDate>2016-05-14T18:13:59.03-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.807-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAFA=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTIU=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>975</ID>
@@ -12718,11 +12627,11 @@
                       &lt;td class="tdProductGroupDisplayQuantity"&gt;$$QUANTITY$$$$ADDTOCART$$&lt;/td&gt;
                     &lt;/tr&gt;
                   </SettingValue>
-    <EditDate>2016-04-10T21:32:08.377-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:864685</EditedBy>
+    <EditDate>2016-05-14T18:06:24.323-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.823-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAT0=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTDE=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>976</ID>
@@ -12739,11 +12648,11 @@
                       &lt;td class="tdProductGroupDisplayAltQuantity"&gt;$$QUANTITY$$$$ADDTOCART$$&lt;/td&gt;
                     &lt;/tr&gt;
                   </SettingValue>
-    <EditDate>2016-04-10T21:32:08.39-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:864685</EditedBy>
+    <EditDate>2016-05-14T18:06:24.323-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.823-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGZAT4=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTDI=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>977</ID>
@@ -12752,11 +12661,11 @@
     <SettingValue>
               $$VARIANTGROUPCONTROLS$$
             </SettingValue>
-    <EditDate>2016-03-30T22:05:50.873-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:844678</EditedBy>
+    <EditDate>2016-05-14T18:06:24.323-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.823-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGWQWI=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTDM=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>978</ID>
@@ -12773,11 +12682,11 @@
                   $$VARIANTGROUPFOOTER$$
                   $$VARIANTGROUPCLOSER$$
                 </SettingValue>
-    <EditDate>2016-04-08T23:39:52.947-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:858289</EditedBy>
+    <EditDate>2016-05-14T18:06:24.323-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.823-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGYU3s=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTDQ=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>979</ID>
@@ -12789,11 +12698,11 @@
                       $$PERSONALIZATIONCONTROLS$$
                     &lt;/div&gt;
                   </SettingValue>
-    <EditDate>2016-04-08T23:39:52.947-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:858289</EditedBy>
+    <EditDate>2016-05-14T18:06:24.307-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:921505</EditedBy>
     <EnterDate>2015-01-13T16:08:29.823-06:00</EnterDate>
     <EnteredBy>s:291093</EnteredBy>
-    <DateTimeStamp>AAAAAAGYU3k=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGhTC8=</DateTimeStamp>
   </ThemePageSettingsValues>
   <ThemePageSettingsValues>
     <ID>982</ID>
@@ -14776,6 +14685,480 @@
     <EnteredBy>U,11,tekiek|s:900437</EnteredBy>
     <DateTimeStamp>AAAAAAGd4bg=</DateTimeStamp>
   </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1458</ID>
+    <ThemePageSettingsID>1552</ThemePageSettingsID>
+    <SettingKey>ViewOrderPage</SettingKey>
+    <SettingValue>
+  $$!Top$$
+  &lt;div align="center"&gt;
+    &lt;div class="CheckOutHeader"&gt;
+      $$ORDERHEADER$$
+    &lt;/div&gt;
+    &lt;div&gt;
+      $$PAYPALINSTRUCTIONS$$
+    &lt;/div&gt;
+    &lt;div&gt;
+      $$PLACEORDERSUBHEADER$$
+      $$ORDERSUBHEADER$$
+    &lt;/div&gt;
+    &lt;div class="CheckOutSubHeader"&gt;Order #
+      $$ORDERNUMBER$$
+      Placed
+      $$ORDERDATE$$
+      &lt;br&gt;
+    &lt;/div&gt;
+    
+    
+    &lt;ac:visibilityarea id="EProductsContainer"&gt;
+      &lt;div class="CheckOutEProducts EProductsContainer attentionText"&gt;
+        &lt;strong&gt;The URLs for your online purchases are:&lt;/strong&gt;
+        &lt;br&gt;
+        $$EPRODUCTDISPLAY$$
+        &lt;br&gt;
+        &lt;b&gt;You will also receive an email with these urls.&lt;/b&gt;
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    $$CONFIRMATIONMESSAGE$$
+    &lt;table width="100%"&gt;
+      &lt;tr&gt;
+        &lt;td width="50%" valign="top"&gt;
+          &lt;span class="CheckOutSubHeader"&gt;
+            $$ORDERPAYMENTINFORMATION$$
+          &lt;/span&gt;
+          &lt;div align="center"&gt;
+            &lt;table width="95%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;
+                  $$PAYMENTMETHOD$$
+                  &lt;br&gt;
+                  $$TRANSACTIONID$$
+                  &lt;br&gt;
+                  $$BILLINGADDRESS$$
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+          &lt;ac:visibilityarea id="CustomFieldContainer"&gt;
+            &lt;span class="CheckOutSubHeader"&gt;
+              other order information
+            &lt;/span&gt;
+            &lt;div align="center"&gt;
+              &lt;table width="95%"&gt;
+                &lt;tr&gt;
+                  &lt;td&gt;
+                    $$CUSTOMFIELDS$$
+                  &lt;/td&gt;
+                &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/div&gt;
+          &lt;/ac:visibilityarea&gt;
+        &lt;/td&gt;
+        &lt;td width="50%" valign="top"&gt;
+          &lt;span class="CheckOutSubHeader"&gt;
+            $$SHIPPINGADDRESSHEADER$$
+          &lt;/span&gt;
+          &lt;div align="center"&gt;
+            &lt;table width="95%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;
+                  $$SHIPPINGADDRESS$$
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+          &lt;br&gt;
+          &lt;span class="CheckOutSubHeader"&gt;
+            $$SHIPPINGDETAILSHEADER$$
+          &lt;/span&gt;
+          &lt;div align="center"&gt;
+            &lt;table width="95%"&gt;
+              &lt;tr&gt;
+                &lt;td&gt;
+                  $$ORDERSHIPPINGMETHOD$$
+                  &lt;br&gt;
+                  $$ORDERTRACKINGLINK$$
+                  $$ORDERSHIPPINGNOTICE$$
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;span class="CheckOutSubHeader"&gt;
+      $$ORDERSTATUSHEADER$$
+    &lt;/span&gt;
+    $$ORDERSTATUS$$&lt;br&gt;
+    $$PAYMENTREJECTIONREASON$$
+    $$PAYMENTSTATUS$$&lt;br&gt;
+    $$PAYMENTDIRECTIONS$$
+    $$RECEIPTLINK$$
+    &lt;br&gt;
+    &lt;div class="attentionText"&gt;$$SPECIALINSTRUCTIONS$$&lt;/div&gt;
+    &lt;ac:visibilityarea id="PublicCommentsContainer"&gt;
+      &lt;div class="ViewOrderText"&gt;
+        &lt;span class="CheckOutSubHeader"&gt;$$PUBLICCOMMENTSHEADER$$&lt;/span&gt;&lt;br&gt;
+        $$PUBLICCOMMENTS$$
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+    &lt;ac:visibilityarea id="OrderInstructionsContainer"&gt;
+      &lt;div class="ViewOrderText"&gt;
+        
+        &lt;span class="CheckOutSubHeader"&gt;$$ORDERINSTRUCTIONSHEADER$$&lt;/span&gt;&lt;br&gt;
+        $$ORDERINSTRUCTIONS$$
+      &lt;/div&gt;
+      &lt;br&gt;
+    &lt;/ac:visibilityarea&gt;
+    
+    &lt;table class="ViewOrderTable" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;
+      &lt;tr class="ViewOrderHeader"&gt;
+        &lt;td class="ViewOrderHeader" align="left"&gt;
+          $$ITEMNUMBERHEADER$$
+        &lt;/td&gt;
+        &lt;td class="ViewOrderHeader" align="left"&gt;
+          $$ITEMNAMEHEADER$$
+        &lt;/td&gt;
+        &lt;td class="ViewOrderHeader" align="center"&gt;
+          $$ITEMQTYHEADER$$
+        &lt;/td&gt;
+        &lt;td class="ViewOrderHeader" align="center"&gt;
+          $$ITEMQTYSHIPPEDHEADER$$
+        &lt;/td&gt;
+        &lt;td class="ViewOrderHeader" align="center"&gt;
+          $$ITEMPRICEHEADER$$
+        &lt;/td&gt;
+        &lt;td class="ViewOrderHeader" align="center"&gt;
+          $$ITEMTOTALHEADER$$
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      $$_ItemDetail$$
+      $$_ItemDetailAlt$$
+    &lt;/table&gt;
+    
+    &lt;table width="100%" cellspacing="1" cellpadding="3"&gt;
+      &lt;tr&gt;
+        &lt;td align="right" class="ViewOrderPricingText"&gt;
+          $$ORDERSUBTOTALHEADER$$
+        &lt;/td&gt;
+        &lt;td width="25%" align="right" class="ViewOrderPricing"&gt;$$ORDERSUBTOTAL$$&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;ac:visibilityarea id="ShippingRow"&gt;
+        &lt;tr&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;$$ORDERSHIPPINGHEADER$$&lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERSHIPPINGAMT$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt;
+      &lt;ac:visibilityarea id="HandlingRow"&gt;
+        &lt;tr&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;
+            $$ORDERHANDLINGHEADER$$
+          &lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERHANDLINGAMT$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt;
+      &lt;ac:visibilityarea id="DiscountRow"&gt;
+        &lt;tr&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;
+            $$ORDERDISCOUNTHEADER$$
+            $$ORDERDISCOUNTDESC$$&lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERDISCOUNTAMT$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt;
+      &lt;ac:visibilityarea id="TaxRow"&gt;
+        &lt;tr&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;
+            $$ORDERTAXHEADER$$
+          &lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERTAXAMT$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt;
+      &lt;ac:visibilityarea id="AdditionalFeeRow"&gt;
+        &lt;tr&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;$$ORDERADDITIONALFEEDESC$$&lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERADDITIONALFEEAMT$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt;
+      &lt;ac:visibilityarea id="TotalRow"&gt;
+        &lt;tr class="OrderPricing"&gt;
+          &lt;td align="right" class="ViewOrderPricingText"&gt;
+            $$ORDERTOTALHEADER$$
+          &lt;/td&gt;
+          &lt;td align="right" class="ViewOrderPricing"&gt;$$ORDERTOTAL$$&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/ac:visibilityarea&gt; 
+    &lt;/table&gt;
+    &lt;ac:visibilityarea id="OrderGiftMessageContainer"&gt;
+      &lt;div class="ViewOrderText"&gt;
+        &lt;span class="CheckOutSubHeader"&gt;
+          $$GIFTMESSAGEHEADER$$&lt;/span&gt;&lt;br&gt;
+        $$GIFTMESSAGE$$
+      &lt;/div&gt;
+    &lt;/ac:visibilityarea&gt;
+  &lt;/div&gt;
+  $$!Bottom$$
+</SettingValue>
+    <EditDate>2016-05-05T20:08:42.827-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:08:42.827-05:00</EnterDate>
+    <EnteredBy>C,2456,tekiek@gmail.com|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF3s=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1459</ID>
+    <ThemePageSettingsID>1552</ThemePageSettingsID>
+    <SettingKey>ItemDetail</SettingKey>
+    <SettingValue>
+        &lt;tr class="ViewOrderItem"&gt;
+          &lt;td&gt;&lt;div class="OrderDetailsItemNr"&gt;$$ITEMNUMBER$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class="OrderDetailsItemName"&gt;$$ITEMNAME$$&lt;/span&gt;
+            $$EPRODUCTLINK$$
+            $$VARIATIONINFO$$
+            $$CUSTOMIZATIONINFO$$
+            $$ITEMADDRESS$$
+            $$ITEMSHIPPINGMETHOD$$
+            $$ITEMGIFTMESSAGE$$
+            $$ITEMDELIVERYDATE$$
+          &lt;/td&gt;
+          &lt;td align="center"&gt;&lt;div class="OrderDetailsItemQuantity"&gt;$$ITEMQTY$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td align="center"&gt;$$ITEMQTYSHIPPED$$&lt;/td&gt;
+          &lt;td align="center"&gt;&lt;div class="OrderDetailsItemPrice"&gt;$$ITEMPRICE$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td align="center"&gt;$$ITEMTOTAL$$&lt;/td&gt;
+        &lt;/tr&gt;
+      </SettingValue>
+    <EditDate>2016-05-05T20:08:42.873-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:08:42.873-05:00</EnterDate>
+    <EnteredBy>C,2456,tekiek@gmail.com|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF3w=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1460</ID>
+    <ThemePageSettingsID>1552</ThemePageSettingsID>
+    <SettingKey>ItemDetailAlt</SettingKey>
+    <SettingValue>
+        &lt;tr class="ViewOrderItemAlt"&gt;
+          &lt;td&gt;&lt;div class="OrderDetailsItemNr"&gt;$$ITEMNUMBER$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;span class="OrderDetailsItemName"&gt;$$ITEMNAME$$&lt;/span&gt;
+            $$EPRODUCTLINK$$
+            $$VARIATIONINFO$$
+            $$CUSTOMIZATIONINFO$$
+            $$ITEMADDRESS$$
+            $$ITEMSHIPPINGMETHOD$$
+            $$ITEMGIFTMESSAGE$$
+            $$ITEMDELIVERYDATE$$
+          &lt;/td&gt;
+          &lt;td align="center"&gt;&lt;div class="OrderDetailsItemQuantity"&gt;$$ITEMQTY$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td align="center"&gt;$$ITEMQTYSHIPPED$$&lt;/td&gt;
+          &lt;td align="center"&gt;&lt;div class="OrderDetailsItemPrice"&gt;$$ITEMPRICE$$&lt;/div&gt;&lt;/td&gt;
+          &lt;td align="center"&gt;$$ITEMTOTAL$$&lt;/td&gt;
+        &lt;/tr&gt;
+      </SettingValue>
+    <EditDate>2016-05-05T20:08:42.873-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:08:42.873-05:00</EnterDate>
+    <EnteredBy>C,2456,tekiek@gmail.com|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF30=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1461</ID>
+    <ThemePageSettingsID>1592</ThemePageSettingsID>
+    <SettingKey>StatementPage</SettingKey>
+    <SettingValue>
+  $$!Top$$
+  
+  -----------------------
+
+  $$MYACCOUNTMENU$$
+
+  &lt;div class="MyAccountPage"&gt;
+    &lt;div style="float:left;width:100%;"&gt;
+      &lt;h1&gt;My Account Statement&lt;/h1&gt;
+      &lt;div class="MyAccountSection"&gt;
+        &lt;h3 class="MyAccountSectionHeader"&gt;Statement&lt;/h3&gt;
+        &lt;div class="MyAccountSectionInner"&gt;
+          $$NORECORDS$$
+          &lt;table class="StatementTable MyAccountTable" width="100%" border="0" cellpadding="3" cellspacing="0"&gt;
+            $$_ItemHeader$$
+            $$_ItemDetail$$
+            $$_ItemDetailAlt$$
+            $$_ItemFooter$$
+          &lt;/table&gt;
+          &lt;input type="button" class="ThemeButton" id="btnClearPaymentTotals" value="Clear Totals"&gt; 
+          &lt;input type="button" class="ThemeButton" id="btnMarkAll" value="Mark All"&gt; 
+          &lt;input type="button" class="ThemeButton" id="btnMakePayment" value="Make Payment"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  $$!Bottom$$
+</SettingValue>
+    <EditDate>2016-05-05T20:12:51.573-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.573-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF6w=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1462</ID>
+    <ThemePageSettingsID>1592</ThemePageSettingsID>
+    <SettingKey>ItemHeader</SettingKey>
+    <SettingValue>
+              &lt;tr class="StatementHeader"&gt;
+                &lt;th class="StatmentHeader" align="left"&gt;
+                  $$ORDERNUMBERHEADER$$
+                &lt;/th&gt;
+                &lt;th class="StatementHeader" align="left"&gt;
+                  $$ORDERDATEHEADER$$
+                &lt;/th&gt;
+                &lt;th class="StatementHeader" align="center"&gt;
+                  $$ORDERTOTALHEADER$$
+                &lt;/th&gt;
+                &lt;th class="StatementHeader" align="center"&gt;
+                  $$ORDERBALANCEHEADER$$
+                &lt;/th&gt;
+                &lt;th class="StatementHeader" align="center"&gt;
+                  $$ORDERPAYMENTHEADER$$
+                &lt;/th&gt;
+              &lt;/tr&gt;
+            </SettingValue>
+    <EditDate>2016-05-05T20:12:51.573-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.573-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF60=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1463</ID>
+    <ThemePageSettingsID>1592</ThemePageSettingsID>
+    <SettingKey>ItemDetail</SettingKey>
+    <SettingValue>
+              &lt;tr class="StatementItem"&gt;
+                &lt;td&gt;
+                  &lt;div class="StatementOrderID"&gt;$$ORDERNUMBER$$&lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class="StatementOrderDate"&gt;$$ORDERDATE$$&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td align="right"&gt;
+                  &lt;div class="StatementOrderTotal"&gt;$$ORDERTOTAL$$&lt;/div&gt;&lt;/td&gt;
+                &lt;td align="right"&gt;
+                  &lt;div class="StatementOrderBalance"&gt;$$ORDERBALANCE$$&lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td align="left"&gt;$$PAYMENTINPUT$$ $$PAYINFULL$$&lt;/td&gt;
+              &lt;/tr&gt;
+            </SettingValue>
+    <EditDate>2016-05-05T20:12:51.573-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.573-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF64=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1464</ID>
+    <ThemePageSettingsID>1592</ThemePageSettingsID>
+    <SettingKey>ItemDetailAlt</SettingKey>
+    <SettingValue>
+              &lt;tr class="StatementItem"&gt;
+                &lt;td&gt;
+                  &lt;div class="StatementOrderID"&gt;$$ORDERNUMBER$$&lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class="StatementOrderDate"&gt;$$ORDERDATE$$&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td align="right"&gt;
+                  &lt;div class="StatementOrderTotal"&gt;$$ORDERTOTAL$$&lt;/div&gt;&lt;/td&gt;
+                &lt;td align="right"&gt;
+                  &lt;div class="StatementOrderBalance"&gt;$$ORDERBALANCE$$&lt;/div&gt;
+                &lt;/td&gt;
+                &lt;td align="left"&gt;$$PAYMENTINPUT$$ $$PAYINFULL$$&lt;/td&gt;
+              &lt;/tr&gt;
+            </SettingValue>
+    <EditDate>2016-05-05T20:12:51.59-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.59-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF68=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1465</ID>
+    <ThemePageSettingsID>1592</ThemePageSettingsID>
+    <SettingKey>ItemFooter</SettingKey>
+    <SettingValue>
+              &lt;tr class="StatementFooter"&gt;
+                &lt;td&gt; &amp;nbsp;&lt;/td&gt;
+                &lt;td&gt;Totals&lt;/td&gt;
+                &lt;td align="right"&gt;&lt;span class="StatementOrderTotal"&gt;$$GRANDTOTAL$$&lt;/span&gt;&lt;/td&gt;
+                &lt;td align="right"&gt;&lt;span class="StatementOrderBalance"&gt;$$BALANCETOTAL$$&lt;/span&gt;&lt;/td&gt;
+                &lt;td align="left"&gt;$$TOTALPAYMENT$$&lt;/td&gt;
+              &lt;/tr&gt;
+            </SettingValue>
+    <EditDate>2016-05-05T20:12:51.59-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.59-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF7A=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1466</ID>
+    <ThemePageSettingsID>1542</ThemePageSettingsID>
+    <SettingKey>LostPasswordPage</SettingKey>
+    <SettingValue>
+  $$!Top$$
+  &lt;h1 class="CheckOutHeader"&gt;$$LOSTPASSWORDHEADER$$&lt;/h1&gt;
+  
+  
+  
+  $$CHECKEMAILTEXT$$
+  
+  &lt;div&gt;
+    $$ENTEREMAILTEXT$$
+  &lt;/div&gt;
+  $$EMAILADDRESSLABEL$$
+  $$EMAILTEXTBOX$$
+  $$CONTINUEBUTTON$$
+  &lt;div&gt;
+    $$ERRORTEXT$$
+  &lt;/div&gt;
+  
+  
+  $$!Bottom$$
+</SettingValue>
+    <EditDate>2016-05-12T11:15:27.517-05:00</EditDate>
+    <EditedBy>U,1,admin|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:27.517-05:00</EnterDate>
+    <EnteredBy>U,1,admin|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2y8=</DateTimeStamp>
+  </ThemePageSettingsValues>
+  <ThemePageSettingsValues>
+    <ID>1467</ID>
+    <ThemePageSettingsID>1584</ThemePageSettingsID>
+    <SettingKey>ChangePasswordPage</SettingKey>
+    <SettingValue>
+	$$!Top$$
+
+	$$CHANGEPASSWORDHEADER$$
+
+	$$NEWPASSWORDLABEL$$
+	$$PASSWORDTEXTBOX1$$
+	$$REPEATPASSWORDLABEL$$
+	$$PASSWORDTEXTBOX2$$
+	$$CONTINUEBUTTON$$
+	$$ERRORTEXT$$
+
+	$$PASSWORDCHANGEDLABEL$$
+
+	$$!Bottom$$
+</SettingValue>
+    <EditDate>2016-05-12T11:15:44.007-05:00</EditDate>
+    <EditedBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:44.007-05:00</EnterDate>
+    <EnteredBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2zg=</DateTimeStamp>
+  </ThemePageSettingsValues>
   <ThemeLayoutControlSettingsValues>
     <ID>1932</ID>
     <ThemeLayoutControlID>4446</ThemeLayoutControlID>
@@ -15372,19 +15755,6 @@ $$#BILLMELATERBANNER4488$$
     <DateTimeStamp>AAAAAAGQLLI=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
-    <ID>2600</ID>
-    <ThemeLayoutControlID>6676</ThemeLayoutControlID>
-    <SettingKey>WidgetArea</SettingKey>
-    <SettingValue>
-$$#SLIDESHOW4445$$
-</SettingValue>
-    <EditDate>2016-03-13T18:48:43.717-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-12T23:04:12.403-06:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:819781</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMu0=</DateTimeStamp>
-  </ThemeLayoutControlSettingsValues>
-  <ThemeLayoutControlSettingsValues>
     <ID>2602</ID>
     <ThemeLayoutControlID>6678</ThemeLayoutControlID>
     <SettingKey>WidgetArea</SettingKey>
@@ -15593,37 +15963,37 @@ $$#SLIDESHOW4445$$
     <ThemeLayoutControlID>6696</ThemeLayoutControlID>
     <SettingKey>SnapIn</SettingKey>
     <SettingValue>
-  &lt;ac:visibilityarea id="dvControl"&gt;
-    &lt;div class="row"&gt;
-      $$_QuickList$$
-    &lt;/div&gt;
-  &lt;/ac:visibilityarea&gt;
-</SettingValue>
-    <EditDate>2016-03-13T20:17:42.2-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+        &lt;ac:visibilityarea id="dvControl"&gt;
+          &lt;div class="row"&gt;
+            $$_QuickList$$
+          &lt;/div&gt;
+        &lt;/ac:visibilityarea&gt;
+      </SettingValue>
+    <EditDate>2016-05-08T21:22:20.647-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2016-03-13T18:48:43.157-05:00</EnterDate>
     <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNoc=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1xc=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
     <ID>2668</ID>
     <ThemeLayoutControlID>6696</ThemeLayoutControlID>
     <SettingKey>QuickList</SettingKey>
     <SettingValue>
-        &lt;div class="col-md-12"&gt;
-          &lt;div class="panel panel-default"&gt;
-            &lt;div class="catlist__head panel-heading"&gt;##CATNAME##&lt;/div&gt;
-            &lt;div class="panel-body"&gt;
-              $$SUBCATEGORIES$$
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-      </SettingValue>
-    <EditDate>2016-03-13T20:32:31.81-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+              &lt;div class="col-md-12"&gt;
+                &lt;div class="panel panel-default"&gt;
+                  &lt;div class="catlist__head panel-heading"&gt;##CATNAME##&lt;/div&gt;
+                  &lt;div class="panel-body"&gt;
+                    $$SUBCATEGORIES$$
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </SettingValue>
+    <EditDate>2016-05-08T21:22:20.617-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2016-03-13T18:48:43.157-05:00</EnterDate>
     <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNvA=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1xY=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
     <ID>2669</ID>
@@ -15643,38 +16013,38 @@ $$#SLIDESHOW4445$$
     <ThemeLayoutControlID>6697</ThemeLayoutControlID>
     <SettingKey>SnapIn</SettingKey>
     <SettingValue>
-  &lt;div class="row"&gt;
-    &lt;ac:visibilityarea id="dvControl"&gt;
+        &lt;div class="row"&gt;
+          &lt;ac:visibilityarea id="dvControl"&gt;
 
-      $$_QuickList$$
+            $$_QuickList$$
 
-    &lt;/ac:visibilityarea&gt;
-  &lt;/div&gt;
-</SettingValue>
-    <EditDate>2016-03-13T20:04:22.303-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+          &lt;/ac:visibilityarea&gt;
+        &lt;/div&gt;
+      </SettingValue>
+    <EditDate>2016-05-08T21:22:20.647-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2016-03-13T18:48:43.187-05:00</EnterDate>
     <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNaQ=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1xk=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
     <ID>2671</ID>
     <ThemeLayoutControlID>6697</ThemeLayoutControlID>
     <SettingKey>QuickList</SettingKey>
     <SettingValue>
-        &lt;div class="col-md-6 featured__col"&gt;
-          &lt;div class="CategoryQuickListIndividualContainer"&gt;
-            &lt;a class="CategoryQuickListRootCategory btn btn-link" href="##CATURL##"&gt;##CATNAME##&lt;/a&gt;
-            &lt;a class="featured__image CategoryQuickListRootImage" href="##CATURL##"&gt;&lt;img src="##CATICON##"&gt;&lt;/a&gt;
-            $$SUBCATEGORIES$$
-          &lt;/div&gt;
-        &lt;/div&gt;
-      </SettingValue>
-    <EditDate>2016-03-13T20:13:14.437-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
+              &lt;div class="col-md-6 featured__col"&gt;
+                &lt;div class="CategoryQuickListIndividualContainer"&gt;
+                  &lt;a class="CategoryQuickListRootCategory btn btn-link" href="##CATURL##"&gt;##CATNAME##&lt;/a&gt;
+                  &lt;a class="featured__image CategoryQuickListRootImage" href="##CATURL##"&gt;&lt;img src="##CATICON##"&gt;&lt;/a&gt;
+                  $$SUBCATEGORIES$$
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </SettingValue>
+    <EditDate>2016-05-08T21:22:20.647-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2016-03-13T18:48:43.187-05:00</EnterDate>
     <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSNjk=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf1xg=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
     <ID>2672</ID>
@@ -15794,40 +16164,6 @@ $$#SLIDESHOW4445$$
     <DateTimeStamp>AAAAAAGSMuY=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemeLayoutControlSettingsValues>
-    <ID>2679</ID>
-    <ThemeLayoutControlID>6700</ThemeLayoutControlID>
-    <SettingKey>SnapIn</SettingKey>
-    <SettingValue>
-          &lt;ul&gt;
-            &lt;li id='slide_4'&gt;
-              &lt;a href='/skylights' class='predefined_slide_item' target=''&gt;
-                &lt;img alt='Wasco Residential &amp; Architectural Skylights' title='Wasco Residential &amp; Architectural Skylights' src='/Shared/Themes/USBPDev/images/banner.jpg' style='height:362px;width:960px;'&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li id='slide_2'&gt;
-              &lt;a href='/vinyl-railings' class='predefined_slide_item' target=''&gt;
-                &lt;img alt='Fairway Vinyl Railing Systems' title='Fairway Vinyl Railing Systems' src='/images/fairway.jpg'&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li id='slide_1'&gt;
-              &lt;a href='/aluminum-screen-doors/popular-models' class='predefined_slide_item' target=''&gt;
-                &lt;img alt='PCA Products Aluminum Screen Doors' title='PCA Products Aluminum Screen Doors' src='/images/pca.jpg'&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-            &lt;li id='slide_3'&gt;
-              &lt;a href='/crown' class='predefined_slide_item' target=''&gt;
-                &lt;img alt='Ferche Crown Moulding' title='Ferche Crown Moulding' src='/images/moulding.jpg'&gt;
-              &lt;/a&gt;
-            &lt;/li&gt;
-          &lt;/ul&gt;
-        </SettingValue>
-    <EditDate>2016-03-13T18:48:43.717-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-13T18:48:43.717-05:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMvE=</DateTimeStamp>
-  </ThemeLayoutControlSettingsValues>
-  <ThemeLayoutControlSettingsValues>
     <ID>2682</ID>
     <ThemeLayoutControlID>6702</ThemeLayoutControlID>
     <SettingKey>SnapIn</SettingKey>
@@ -15938,6 +16274,102 @@ $$#SLIDESHOW4445$$
     <EnterDate>2016-04-30T18:56:47.367-05:00</EnterDate>
     <EnteredBy>U,11,tekiek|s:900437</EnteredBy>
     <DateTimeStamp>AAAAAAGd4bo=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2694</ID>
+    <ThemeLayoutControlID>4526</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-05T20:08:42.873-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:08:42.873-05:00</EnterDate>
+    <EnteredBy>C,2456,tekiek@gmail.com|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF34=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2695</ID>
+    <ThemeLayoutControlID>4527</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-05T20:08:42.89-05:00</EditDate>
+    <EditedBy>C,2456,tekiek@gmail.com|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:08:42.89-05:00</EnterDate>
+    <EnteredBy>C,2456,tekiek@gmail.com|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF38=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2696</ID>
+    <ThemeLayoutControlID>4628</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-05T20:12:51.59-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.59-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF7E=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2697</ID>
+    <ThemeLayoutControlID>4629</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-05T20:12:51.59-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:906112</EditedBy>
+    <EnterDate>2016-05-05T20:12:51.59-05:00</EnterDate>
+    <EnteredBy>U,11,tekiek|s:906112</EnteredBy>
+    <DateTimeStamp>AAAAAAGfF7I=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2698</ID>
+    <ThemeLayoutControlID>4506</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-12T11:15:27.547-05:00</EditDate>
+    <EditedBy>U,1,admin|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:27.547-05:00</EnterDate>
+    <EnteredBy>U,1,admin|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2zA=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2699</ID>
+    <ThemeLayoutControlID>4507</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-12T11:15:27.563-05:00</EditDate>
+    <EditedBy>U,1,admin|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:27.563-05:00</EnterDate>
+    <EnteredBy>U,1,admin|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2zE=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2700</ID>
+    <ThemeLayoutControlID>4612</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-12T11:15:44.007-05:00</EditDate>
+    <EditedBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:44.007-05:00</EnterDate>
+    <EnteredBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2zk=</DateTimeStamp>
+  </ThemeLayoutControlSettingsValues>
+  <ThemeLayoutControlSettingsValues>
+    <ID>2701</ID>
+    <ThemeLayoutControlID>4613</ThemeLayoutControlID>
+    <SettingKey>WidgetArea</SettingKey>
+    <SettingValue xml:space="preserve">
+</SettingValue>
+    <EditDate>2016-05-12T11:15:44.007-05:00</EditDate>
+    <EditedBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EditedBy>
+    <EnterDate>2016-05-12T11:15:44.007-05:00</EnterDate>
+    <EnteredBy>U,1,admin|C,96,kevin.rewkowski@gmail.com|s:917071</EnteredBy>
+    <DateTimeStamp>AAAAAAGg2zo=</DateTimeStamp>
   </ThemeLayoutControlSettingsValues>
   <ThemePageSettings>
     <ID>2015</ID>
@@ -19229,45 +19661,6 @@ $$#SLIDESHOW4445$$
     <SettingGroupKey>Shared</SettingGroupKey>
   </ThemeLayoutControlSettings>
   <ThemeLayoutControlSettings>
-    <ID>41242</ID>
-    <ThemeLayoutControlID>6700</ThemeLayoutControlID>
-    <SettingInfoID>576</SettingInfoID>
-    <SettingKey>pause</SettingKey>
-    <SettingValue>6000</SettingValue>
-    <EditDate>2016-03-13T18:48:43.733-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-13T18:48:43.733-05:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMvI=</DateTimeStamp>
-    <SettingGroupKey>Slideshow</SettingGroupKey>
-  </ThemeLayoutControlSettings>
-  <ThemeLayoutControlSettings>
-    <ID>41243</ID>
-    <ThemeLayoutControlID>6700</ThemeLayoutControlID>
-    <SettingInfoID>582</SettingInfoID>
-    <SettingKey>slideheight</SettingKey>
-    <SettingValue>362px</SettingValue>
-    <EditDate>2016-03-13T18:48:43.733-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-13T18:48:43.733-05:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMvM=</DateTimeStamp>
-    <SettingGroupKey>Slideshow</SettingGroupKey>
-  </ThemeLayoutControlSettings>
-  <ThemeLayoutControlSettings>
-    <ID>41244</ID>
-    <ThemeLayoutControlID>6700</ThemeLayoutControlID>
-    <SettingInfoID>583</SettingInfoID>
-    <SettingKey>slidewidth</SettingKey>
-    <SettingValue>100%</SettingValue>
-    <EditDate>2016-03-13T18:48:43.733-05:00</EditDate>
-    <EditedBy>U,11,tekiek|s:820753</EditedBy>
-    <EnterDate>2016-03-13T18:48:43.733-05:00</EnterDate>
-    <EnteredBy>U,11,tekiek|s:820753</EnteredBy>
-    <DateTimeStamp>AAAAAAGSMvQ=</DateTimeStamp>
-    <SettingGroupKey>Slideshow</SettingGroupKey>
-  </ThemeLayoutControlSettings>
-  <ThemeLayoutControlSettings>
     <ID>41247</ID>
     <ThemeLayoutControlID>6702</ThemeLayoutControlID>
     <SettingInfoID>521</SettingInfoID>
@@ -19944,12 +20337,12 @@ $$#SLIDESHOW4445$$
     <ThemeID>23</ThemeID>
     <SettingInfoID>339</SettingInfoID>
     <SettingKey>AfterAddToCartAction</SettingKey>
-    <SettingValue>NoRedirect</SettingValue>
-    <EditDate>2015-01-12T15:15:45.053-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <SettingValue>ShoppingCart</SettingValue>
+    <EditDate>2016-05-08T19:48:38.537-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:45.053-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpni8=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf0+E=</DateTimeStamp>
     <SettingGroupKey>ShoppingCart</SettingGroupKey>
   </ThemeSettings>
   <ThemeSettings>
@@ -20100,12 +20493,12 @@ $$#SLIDESHOW4445$$
     <ThemeID>23</ThemeID>
     <SettingInfoID>356</SettingInfoID>
     <SettingKey>EnableSocialBookmarking</SettingKey>
-    <SettingValue>True</SettingValue>
-    <EditDate>2015-01-12T15:15:45.147-06:00</EditDate>
-    <EditedBy>U,1,admin|s:291087</EditedBy>
+    <SettingValue>False</SettingValue>
+    <EditDate>2016-05-08T19:47:34.373-05:00</EditDate>
+    <EditedBy>U,11,tekiek|s:912179</EditedBy>
     <EnterDate>2015-01-12T15:15:45.147-06:00</EnterDate>
     <EnteredBy>U,1,admin|s:291087</EnteredBy>
-    <DateTimeStamp>AAAAAADpnjs=</DateTimeStamp>
+    <DateTimeStamp>AAAAAAGf08o=</DateTimeStamp>
     <SettingGroupKey>SocialBookmarking</SettingGroupKey>
   </ThemeSettings>
   <ThemeSettings>

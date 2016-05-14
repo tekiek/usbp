@@ -2446,6 +2446,15 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
 }
 /* [/CMS] */
 
+/* [Footer] */
+.footer__links a {
+  color: white;
+}
+.footer__links .col-xs-4{
+  margin: 0 0 20px 0;
+}
+/* [/Footer] */
+
 /* [Widget4445] HOMEPAGE */
 .Control_4445 { padding: 0; }
 .ControlHeader_4445 {  }

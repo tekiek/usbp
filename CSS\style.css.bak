@@ -2440,8 +2440,9 @@ div.FeaturedItemsThumbNail_2946 { border: none; height: auto; margin: 0; padding
   margin: 20px 0;
 }
 
-#CategoryChildCategoryHeader {
+.CategoryChildCategoryHeader {
   width: 100%;
+  margin: 20px 0;
 }
 /* [/CMS] */
 

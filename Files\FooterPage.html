@@ -1,69 +1,46 @@
 <ac:pagelayout id="FooterPage">    
-  <div>
+  <div data-category="footer">
 
     <!-- footer links -->
     <section style="width:100%;">
 
-
-
       <h2>Useful Links</h2>
-
-      <style>
-        .footer__links a {
-          color: white;
-        }
-        .footer__links .col-xs-4{
-          margin: 0 0 20px 0;
-        }
-      </style>
 
       <div class="row footer__links">
         <div class="col-md-2 col-xs-4">
-          <a href="/USBP/about">About Us</a>
+          <a href="/USBP/about" data-label="about">About Us</a>
         </div>
         <div class="col-md-2 col-xs-4">
-          <a href="/USBP/contact">Contact Us</a>
+          <a href="/USBP/contact" data-label="contact">Contact Us</a>
         </div>
         <div class="col-md-2 col-xs-4">
-          <a href="/USBP/privacy">Privacy Policy</a>
+          <a href="/USBP/privacy" data-label="privacy">Privacy Policy</a>
         </div>
         <div class="col-md-2 col-xs-4">
-          <a href="/USBP/return">Return Policy</a>
+          <a href="/USBP/return" data-label="return">Return Policy</a>
         </div>
         <div class="col-md-2 col-xs-4">
-          <a href="/USBP/shipping">Shipping &amp; Delivery</a>
+          <a href="/USBP/shipping" data-label="shipping">Shipping &amp; Delivery</a>
         </div>
         <div class="col-md-2 col-xs-4">
-          <a href="/store/sitemap.aspx">Sitemap</a>
+          <a href="/store/sitemap.aspx" data-label="sitemap">Sitemap</a>
         </div>
 
 
       </div></section>
 
-    <!-- contact seciton -->
-    <section class="contact">
-      <h1 class="logo">
-        <a href="/">
-          <img width="220" height="86" alt="US Building Products" title="US Building Products" src="/Shared/Themes/USBPDev/images/logo.png">
-        </a>
-      </h1>
-      <section>
-        <h2>Contact Us</h2>
-        <ul>
-          <li>
-            <a href="tel:8002845194">(800) 284-5194</a>
-          </li>
-          <li>
-            <a href="mailto:support@usbuildingproducts.com">support@usbuildingproducts.com</a>
-          </li>
-        </ul>
-      </section>
-    </section>
-
     <!-- copyright -->
-    <small>
+    <small class="xs-m0 xs-p0">
       &copy; 2014-2015 US Building Products. Wholly owned and operated by Mount Equity LLC. All Rights Reserved. ##POWEREDBYLINK##
     </small>
+    
+    <!-- Bootstrap JS -->
+    <script src="##FILEPATHVERSIONED[/shared/themes/USBPDev/JS/bootstrap.min.js]##"></script>
+
+    <!-- GA Tracking -->
+    <script>
+      window.gtrack=new function(){_gtrack=this,this.trackable_tags=["a","input","button","i","textarea","select"],this.category=null,this.init=function(){_gtrack.category=_gtrack.pageCategory(),$.each(_gtrack.trackable_tags,function(t,a){$(document.body).on("click",a,function(t){var e=$(t.currentTarget).closest(a)[0];_gtrack.click(e)})})},this.click=function(t){var a=$(t).attr("data-action"),e=$(t).attr("data-label"),r=null;_gtrack.elCategory(t)&&(r=_gtrack.elCategory(t)),a||(a=$(t).prop("tagName").toLowerCase()),a="click:"+a,$(t).is("a")&&(e=$(t).attr("href")),_gtrack.track_event(r,a,e)},this.pageCategory=function(){var t=window.location.pathname.replace(/\//g,"");return t?t:"app"},this.elCategory=function(t){try{for(var a=0,e=99;t!=document&&e>a;){var r=$(t).parents();if(r.attr("data-category"))return r.attr("data-category");t=r,a++}return null}catch(n){return null}},this.track_event=function(t,a,e){t="undefined"!=typeof t&&t?_gtrack.category+"/"+t:_gtrack.category,"undefined"!=typeof a&&a||(a=""),"undefined"!=typeof e&&e||(e=""),ga("send","event",t,a,e),console.log("GA:",t,a,e)}},window.gtrack.init();
+    </script>
 
   </div>
 </ac:pagelayout>

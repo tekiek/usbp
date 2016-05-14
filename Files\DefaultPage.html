@@ -9,34 +9,28 @@
   <div>
 
     <!-- Slideshow: wrapper -->
-    <div class="hidden-xs hidden-sm">
-      <ac:widgetarea id="HomePageHeaderWidgets">
-<ac:widget id="SLIDESHOW4445" type="Slideshow" slidewidth="100%" slideheight="362px" pause="6000">
-          <ul>
-            <li id='slide_4'>
-              <a href='/skylights' class='predefined_slide_item' target=''>
-                <img alt='Wasco Residential & Architectural Skylights' title='Wasco Residential & Architectural Skylights' src='/Shared/Themes/USBPDev/images/banner.jpg' style='height:362px;width:960px;'>
-              </a>
-            </li>
-            <li id='slide_2'>
-              <a href='/vinyl-railings' class='predefined_slide_item' target=''>
-                <img alt='Fairway Vinyl Railing Systems' title='Fairway Vinyl Railing Systems' src='/images/fairway.jpg'>
-              </a>
-            </li>
-            <li id='slide_1'>
-              <a href='/aluminum-screen-doors/popular-models' class='predefined_slide_item' target=''>
-                <img alt='PCA Products Aluminum Screen Doors' title='PCA Products Aluminum Screen Doors' src='/images/pca.jpg'>
-              </a>
-            </li>
-            <li id='slide_3'>
-              <a href='/crown' class='predefined_slide_item' target=''>
-                <img alt='Ferche Crown Moulding' title='Ferche Crown Moulding' src='/images/moulding.jpg'>
-              </a>
-            </li>
-          </ul>
-        </ac:widget>
-</ac:widgetarea>
-    </div>
+    <a id="headerImageLink" class="xs-mt2 xs-mb2">
+      <img id="headerImage">
+    </a>
+
+    <script>
+      var headerImages = [
+        '/Shared/Themes/USBPDev/images/banner.jpg',
+        '/images/fairway.jpg',
+        '/images/fairway.jpg',
+        '/images/moulding.jpg'
+      ]
+      var headerImageLinks = [
+        '/skylights',
+        '/vinyl-railings',
+        '/aluminum-screen-doors/popular-models',
+        '/crown'
+      ]
+      var headerImage = headerImages[Math.floor(Math.random()*4)];
+      var headerImageLink = headerImageLinks[Math.floor(Math.random()*4)];
+      document.getElementById('headerImage').src=headerImage;
+      document.getElementById('headerImageLink').href=headerImageLink;
+    </script>
     <!-- Slideshow: wrapper: end -->
 
     <ac:widgetarea id="Top">
@@ -171,38 +165,38 @@
         </ac:visibilityarea>
       </ac:widget>
 <ac:widget id="CATEGORYQUICKLIST4448" type="CategoryQuickList" showmorelink="False" subcategoryoverridelist=" | | |123, 124, 125" subcategorycount="5|5|5|5" rootcategorylist="148|131|157|122" listsperline="2" enablemergecode="True" controlwidth="100%">
-  <ac:visibilityarea id="dvControl">
-    <div class="row">
-      <ac:layoutarea id="QuickList">
-        <div class="col-md-12">
-          <div class="panel panel-default">
-            <div class="catlist__head panel-heading">##CATNAME##</div>
-            <div class="panel-body">
-              $$SUBCATEGORIES$$
-            </div>
+        <ac:visibilityarea id="dvControl">
+          <div class="row">
+            <ac:layoutarea id="QuickList">
+              <div class="col-md-12">
+                <div class="panel panel-default">
+                  <div class="catlist__head panel-heading">##CATNAME##</div>
+                  <div class="panel-body">
+                    $$SUBCATEGORIES$$
+                  </div>
+                </div>
+              </div>
+            </ac:layoutarea>
           </div>
-        </div>
-      </ac:layoutarea>
-    </div>
-  </ac:visibilityarea>
-</ac:widget>
+        </ac:visibilityarea>
+      </ac:widget>
 <ac:widget id="CATEGORYQUICKLIST4451" type="CategoryQuickList" showmorelink="False" subcategoryoverridelist=" | | | " subcategorycount="0|0|0|0" rootcategorylist="169|170|176|183" listsperline="2" enablemergecode="True">
-  <div class="row">
-    <ac:visibilityarea id="dvControl">
+        <div class="row">
+          <ac:visibilityarea id="dvControl">
 
-      <ac:layoutarea id="QuickList">
-        <div class="col-md-6 featured__col">
-          <div class="CategoryQuickListIndividualContainer">
-            <a class="CategoryQuickListRootCategory btn btn-link" href="##CATURL##">##CATNAME##</a>
-            <a class="featured__image CategoryQuickListRootImage" href="##CATURL##"><img src="##CATICON##"></a>
-            $$SUBCATEGORIES$$
-          </div>
+            <ac:layoutarea id="QuickList">
+              <div class="col-md-6 featured__col">
+                <div class="CategoryQuickListIndividualContainer">
+                  <a class="CategoryQuickListRootCategory btn btn-link" href="##CATURL##">##CATNAME##</a>
+                  <a class="featured__image CategoryQuickListRootImage" href="##CATURL##"><img src="##CATICON##"></a>
+                  $$SUBCATEGORIES$$
+                </div>
+              </div>
+            </ac:layoutarea>
+
+          </ac:visibilityarea>
         </div>
-      </ac:layoutarea>
-
-    </ac:visibilityarea>
-  </div>
-</ac:widget>
+      </ac:widget>
 <ac:widget id="HTML4703" type="HTML" enablemergecode="True"><a class="twitter-timeline" href="https://twitter.com/USBProducts" data-widget-id="488038819946455041">Tweets by @USBProducts</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></ac:widget>
 <ac:widget id="CAROUSEL4707" type="Carousel" scrollby="4" repeatabletype="ProductList" rotatorstartdate="1/19/2015" displaycount="100" enablemergecode="True" productlistid="1">

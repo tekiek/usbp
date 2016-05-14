@@ -237,7 +237,57 @@
         </div>
       </ac:visibilityarea>
       
-      <ac:visibilityarea id="ShowHideOrders">
+      <ac:visibilityarea id="ShowHideRewardPoints">
+							<div class="panel panel-default" id="RewardPoints">
+								<h3 class="panel-heading no-margin MyAccountSectionHeader ShowHideRewardPointsLink">$$SHOWHIDEREWARDPOINTSLINK$$</h3>
+								<div class="MyAccountSectionInner">
+									$$NOREWARDPOINTS$$
+									<div class="overflow-x-scroll">
+										<table class="MyAccountShowHideTable table" id="tblRewardPoints">
+											<thead>
+												<tr class="RewardPointsHistoryHeader">
+													<th>TimeStamp</th>
+													<th>Points Earned</th>
+													<th>Type</th>
+													<th>Note</th>
+													<th>Order #</th>
+													<th>Activated Date</th>
+													<th>Expired Date</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<ac:layoutarea id="RewardPointsDetail"><tr class="RewardPointsHistoryItem">
+						<td>$$REWARDTIMESTAMP$$</td>
+						<td>$$REWARDPOINTSEARNED$$</td>
+						<td>$$REWARDPOINTSREMAINING$$</td>
+						<td>$$REWARDTYPE$$</td>
+						<td>$$REWARDNOTE$$</td>
+						<td>$$REWARDORDERNUMLINK$$</td>
+						<td>$$REWARDACTIVEDATE$$</td>
+						<td>$$REWARDEXPIREDDATE$$</td>
+						<td>$$REWARDSTATUS$$</td>
+					</tr>
+				</ac:layoutarea>
+											<ac:layoutarea id="RewardPointsDetailAlt"><tr class="RewardPointsHistoryAltItem">
+						<td>$$REWARDTIMESTAMP$$</td>
+						<td>$$REWARDPOINTSEARNED$$</td>
+						<td>$$REWARDPOINTSREMAINING$$</td>
+						<td>$$REWARDTYPE$$</td>
+						<td>$$REWARDNOTE$$</td>
+						<td>$$REWARDORDERNUMLINK$$</td>
+						<td>$$REWARDACTIVEDATE$$</td>
+						<td>$$REWARDEXPIREDDATE$$</td>
+						<td>$$REWARDSTATUS$$</td>
+					</tr>
+				</ac:layoutarea>
+											<ac:layoutarea id="RewardPointsFooter"></ac:layoutarea>
+										</table>
+									</div>
+								</div>
+							</div>
+						</ac:visibilityarea>
+						
+						<ac:visibilityarea id="ShowHideOrders">
         <div class="MyAccountSection" id="Orders">
           <h3 class="MyAccountSectionHeader ShowHideOrdersLink">$$SHOWHIDEORDERSLINK$$</h3>
           <div class="MyAccountSectionInner">
@@ -246,7 +296,8 @@
               <table border="0" cellpadding="3" cellspacing="0" class="MyAccountShowHideTable" rules="all" id="tblOrders">
                 <tr class="OrderHistoryHeader">
                   <th>Reorder</th>
-                  <th>Date</th>
+                  <th>$$CUSTOMERNAMEHEADER$$</th>
+						<th>Date</th>
                   <th>Order #</th>
                   <th>Total</th>
                   <th>Order Status</th>
@@ -255,7 +306,8 @@
                 <ac:layoutarea id="OrderDetail">
                   <tr class="OrderHistoryItem">
                     <td>$$REORDERLINK$$</td>
-                    <td>$$ORDERDATE$$</td>
+                    <td>$$ORDERCUSTOMERNAME$$</td>
+							<td>$$ORDERDATE$$</td>
                     <td>$$ORDERNUMLINK$$</td>
                     <td>$$ORDERTOTAL$$</td>
                     <td>$$ORDERSTATUS$$</td>
@@ -265,7 +317,8 @@
                 <ac:layoutarea id="OrderDetailAlt">
                   <tr class="OrderHistoryAltItem">
                     <td>$$REORDERLINK$$</td>
-                    <td>$$ORDERDATE$$</td>
+                    <td>$$ORDERCUSTOMERNAME$$</td>
+							<td>$$ORDERDATE$$</td>
                     <td>$$ORDERNUMLINK$$</td>
                     <td>$$ORDERTOTAL$$</td>
                     <td>$$ORDERSTATUS$$</td>
@@ -296,7 +349,8 @@
                 <ac:layoutarea id="ReviewsListDetail">
                   <tr class="OrderHistoryItem">
                     <td>$$REVIEWRATING$$</td>
-                    <td>$$REVIEWDATE$$</td>
+                    <td>$$CUSTOMERNAME$$</td>
+							<td>$$REVIEWDATE$$</td>
                     <td>$$PRODUCTNAME$$</td>
                     <td>$$REVIEWTITLE$$</td>
                   </tr>
@@ -304,7 +358,8 @@
                 <ac:layoutarea id="ReviewsListDetailAlt">
                   <tr class="OrderHistoryAltItem">
                     <td>$$REVIEWRATING$$</td>
-                    <td>$$REVIEWDATE$$</td>
+                    <td>$$CUSTOMERNAME$$</td>
+							<td>$$REVIEWDATE$$</td>
                     <td>$$PRODUCTNAME$$</td>
                     <td>$$REVIEWTITLE$$</td>
                   </tr>
@@ -325,7 +380,8 @@
                 <ac:layoutarea id="SavedCartListHeader">
                   <tr class="OrderHistoryHeader">
                     <th></th>
-                    <th>$$CARTDATESORTABLEHEADER$$</th>
+                    <th>$$CARTCUSTOMERNAMESORTABLEHEADER$$</th>
+							<th>$$CARTDATESORTABLEHEADER$$</th>
                     <th>$$CARTNAMESORTABLEHEADER$$</th>
                     <th>$$CARTTYPESORTABLEHEADER$$</th>
                     <th></th>
@@ -334,7 +390,8 @@
                 <ac:layoutarea id="SavedCartListDetail">
                   <tr class="OrderHistoryItem">
                     <td>$$VIEWCARTLINK$$</td>
-                    <td>$$CARTENTERDATE$$</td>
+                    <td>$$CUSTOMERNAME$$</td>
+							<td>$$CARTENTERDATE$$</td>
                     <td>$$CARTNAME$$</td>
                     <td>$$CARTTYPE$$</td>
                     <td>$$DELETESAVEDCART$$</td>
@@ -343,7 +400,8 @@
                 <ac:layoutarea id="SavedCartListDetailAlt">
                   <tr class="OrderHistoryAltItem">
                     <td>$$VIEWCARTLINK$$</td>
-                    <td>$$CARTENTERDATE$$</td>
+                    <td>$$CUSTOMERNAME$$</td>
+							<td>$$CARTENTERDATE$$</td>
                     <td>$$CARTNAME$$</td>
                     <td>$$CARTTYPE$$</td>
                     <td>$$DELETESAVEDCART$$</td>
@@ -409,7 +467,11 @@
               toggleSavedCarts();
               break;
                 }
-            case "orders":{
+            case "rewardpoints": {
+							toggleRewardPoints();
+							break;
+						}
+						case "orders":{
               toggleOrders();
               break;
                 }
